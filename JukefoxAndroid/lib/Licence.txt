@@ -1,0 +1,2 @@
+Audioscrobbler: Apache Licence 2.0, http://code.google.com/p/ascrblr/
+

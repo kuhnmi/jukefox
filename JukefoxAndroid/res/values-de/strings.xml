@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">jukefox</string>
+	<string name="search">Suchen</string>
+	<string name="ok">OK</string>
+	<string name="ok_i_got_it">OK</string>
+	<string name="cancel">Abbrechen</string>
+	<string name="scan_music_library">Musik importieren</string>
+	<string name="menu_settings">Einstellungen</string>
+	<string name="menu_help">Hilfe</string>
+	<string name="menu_about">Ueber jukefox</string>
+	<string name="rated_mode">rated mode</string>
+	<string name="study_mode">study mode</string>
+	<string name="skip_simulation_mode">skip simulation mode</string>
+	<string name="pampalk_mode">pampalk mode</string>
+	<string name="welcome">Willkommen</string>
+	<string name="first_start">Erster Start</string>
+	<string name="welcome_text">Hallo, Ich bin jukefox, der mobile Musikexperte. In
+		den nächsten Minuten werde ich Album Covers und
+		Ähnlichkeitsinformationen zu Deiner Musik herunterladen. Wir empfehlen
+		eine schnelle Internetverbindung (wenn möglich WLAN) bevor Du
+		fortfährst.</string>
+	<string name="update_text_and_question">Damit deine Songs korrekt importiert werden können,
+		müssen diese KORREKTE ID3 TAGS FÜR ARTIST, ALBUM UND TITEL HABEN. Der
+		Import setzt eine Internetverbindung voraus (wenn möglich WLAN) und
+		kann einige Minuten dauern. Möchtest du jetzt beginnen?</string>
+	<string name="yes">Ja</string>
+	<string name="no">Nein</string>
+	<string name="no_exit">Nein (Beenden)</string>
+	<string name="can_press_home">Danke für Deine Geduld.</string>
+	<string name="about">Ueber jukefox</string>
+	<string name="about_info">Copyright DISCO @ ETH
+		Zürich\nhttp://jukefox.org\n\nbasiert auf last.fm Daten und
+		MusicExplorer\nwww.musicexplorer.org\nwww.last.fm\n\nIcons von Mathias
+		Kober\n\nContact:\nmusicexplorer@tik.ee.ethz.ch</string>
+	<string name="loading">Lädt...</string>
+	<string name="is_played_by_jukefox">wird von jukefox abgespielt</string>
+	<string name="nothing">Interpret - Titel</string>
+	<string name="shuffle">Zufällig</string>
+	<string name="repeat">Alle Songs wiederholen</string>
+	<string name="similar">Spiele ähnliche Songs</string>
+	<string name="smart_shuffle">Smart shuffle</string>
+	<string name="playlist_menu">Wiedergabelistenmenü:</string>
+	<string name="artistaddmenu">Füge Songs von diesem Interpreten zur
+		Wiedergabeliste hinzu:</string>
+	<string name="genreaddmenu">Füge Songs dieses Genres zur Wiedergabeliste hinzu:
+	</string>
+	<string name="load_playlist">Wiedergabeliste laden</string>
+	<string name="load">Laden</string>
+	<string name="save_playlist">Wiedergabeliste speichern</string>
+	<string name="save">Speichern</string>
+	<string name="clear_playlist">Wiedergabeliste leeren</string>
+	<string name="save_playlist_as">Wiedergabeliste speichern als:</string>
+	<string name="select_playlist">Wähle die zu ladende Wiedergabeliste:</string>
+	<string name="remove_song_from_playlist">Entferne Song aus Wiedergabeliste</string>
+	<string name="show_album">Zeige Album</string>
+	<string name="go_to_album">Gehe zu Album</string>
+	<string name="show_similar_songs">Zeige ähnliche Songs</string>
+	<string name="song_menu">Songmenü:</string>
+	<string name="select_list">Wähle eine Liste:</string>
+	<string name="artists">Künstler</string>
+	<string name="albums">Alben</string>
+	<string name="songs">Songs</string>
+	<string name="genres">Genres</string>
+	<string name="tags">Tags</string>
+	<string name="play">Play</string>
+	<string name="go_to">Gehe zu</string>
+	<string name="search_result_title1">Kein</string>
+	<string name="search_result_title2">auf dem Gerät. Meintest du:</string>
+	<string name="search_screen_title">Suche nach Interpret/Titel</string>
+	<string name="search_artists">Künstler</string>
+	<string name="search_titles">Titel</string>
+	<string name="famous_artists">Berühmte Interpreten</string>
+	<string name="results">Resultate:</string>
+	<string name="songs_might_be_similar">Diese Songs könnten ähnlich sein zu </string>
+	<string name="nothing_found">Sorry, es wurde nichts gefunden zu</string>
+	<string name="album_info">Album Info:</string>
+	<string name="artist">Interpret</string>
+	<string name="album">Album</string>
+	<string name="haptic_feedback">Vibrationsfeedback</string>
+	<string name="draw_floor">Boden anzeigen</string>
+	<string name="always_notify">Zeige Benachrichtigung</string>
+	<string name="you_want_an_update">So, du willst aktualisieren...</string>
+	<string name="incrementally_or_everything">Willst du teilweise aktualisieren (schneller) oder
+		alles aktualisieren?</string>
+	<string name="incrementally">Teilweise</string>
+	<string name="update_everything">Alles aktualisieren</string>
+	<string name="title">Titel</string>
+	<string name="menu_quit">Beenden</string>
+	<string name="scrobble_to_lastfm">Zu last.fm scrobbeln</string>
+	<string name="username">Benutzername</string>
+	<string name="password">Passwort</string>
+	<string name="warning">Warnung</string>
+	<string name="could_not_connect_audioscrobbler">Es konnte keine Verbindung zu Audioscrobbler
+		hergestellt werden. Entweder sind Benutzername und Passwort falsch,
+		oder du hast keine aktive Internetverbindung.</string>
+	<string name="ok_i_am_aware_of_it">OK, Ich bin mir dessen bewusst</string>
+	<string name="traffic_warning1">jukefox stellt immer nach</string>
+	<string name="traffic_warning2">gespielten Song(s) eine Internetverbindung her.
+		Beachte, dass dies je nach Vertrag zusätzliche Kosten verursachen
+		kann.</string>
+	<string name="ok_use_it_anyway">OK, trotzdem benutzen</string>
+	<string name="settings_similar">Einstellungen für ähnliche Songs:</string>
+	<string name="settings_similar_desc1">Vermeide den gleichen Interpreten für</string>
+	<string name="settings_similar_desc2">aufeinanderfolgende Songs.</string>
+	<string name="apply">Anwenden</string>
+	<string name="widget_start_text">Zum Start auf Logo klicken.</string>
+	<string name="menu_hide">Verstecken</string>
+	<string name="ask_if_log">Zum Verbessern von jukefox und zu Forschungszwecken
+		würden wir gerne anonym Daten sammeln. Ist dies OK für dich? Falls du
+		auf Ja klickst wirst du vor dem Absenden noch einmal gefragt.(siehe
+		FAQ auf jukefox.org für mehr Informationen).</string>
+	<string name="send_log_question">Wir haben anonyme Benutzungsdaten gesammelt (ob du
+		Tags benützt oder die Karte usw.; siehe FAQ auf jukefox.org für
+		mehr Infos). Wir möchten diese jetzt senden. Ist dies OK?</string>
+	<string name="ask_later">Später fragen</string>
+	<string name="never_ask">Nie wieder fragen</string>
+	<string name="send_log_question2">Du kannst die Protokollierung auf der SD-Karte
+		einsehen (.jukefoxUsageLog.txt). Dürfen wir dich später wieder fragen?
+	</string>
+	<string name="pity">Wie schade!</string>
+	<string name="do_usage_log">Nutzungsdaten protokollieren (Siehe FAQ auf
+		jukefox.org)</string>
+	<string name="path_validation_failed_msg">Fehler: Konnte nicht auf Musikdatei zugreifen!
+	</string>
+	<string name="log_size">Protokollgrösse</string>
+	<string name="playartisttext">Spiele alle Songs dieses Interpreten</string>
+	<string name="appendartisttext">Hänge alle Songs an der Wiedergabeliste an</string>
+	<string name="insertartisttext">Füge alle Songs in die Wiedergabeliste ein</string>
+	<string name="playgenretext">Spiele alle Songs dieses Genres</string>
+	<string name="appendgenretext">Hänge alle Songs an der Wiedergabeliste an</string>
+	<string name="insertgenretext">Füge alle Songs in die Wiedergabeliste ein</string>
+	<string name="really_cancel">Abbrechen?</string>
+	<string name="really_cancel_text">Willst du wirkliche ohne Aktualisierung abbrechen?
+	</string>
+	<string name="info">Info</string>
+	<string name="update_again">Aktualisierung abgebrochen. Bitte starte die
+		Aktualisierung erneut um die Anwendung zu benutzen.</string>
+	<string name="settings_shuffle">Wähle den Zufallsmodus</string>
+	<string name="shuffle_playlist">Zufällig über Wiedergabeliste</string>
+	<string name="shuffle_collection">Zufällig über ganze Sammlung</string>
+	<string name="no_songs_imported">Es konnten keine Songs importiert werden. Stelle
+		sicher, dass die SD-Karte im Gerät ist und das Gerät korrekt vom
+		Rechner getrennt wurde.</string>
+	<string name="error">Fehler</string>
+	<string name="use_zoom_bar">Fahre mit dem Finger über dem Zoombalken um
+		schneller und präziser zu zoomen.</string>
+	<string name="select_play_mode">Wähle einen Abspielmodus</string>
+	<string name="show_tipps">Zeige Tipps beim starten</string>
+	<string name="tip_title">Tipp:</string>
+	<string name="use_jukefox">Du kannst jukefox jetzt verwenden</string>
+	<string name="jukefox_started">jukefox wurde gestartet</string>
+	<string name="similar_songs_for">Ähnliche Songs zu</string>
+	<string name="please_help">Hilf uns bitte</string>
+	<string name="slow_album">Lass ein Update laufen (Einstellungen->Update) um
+		das Laden der Alben zu beschleunigen</string>
+	<string name="send_every">Sende alle</string>
+	<string name="pause_scrobbling">Warten mit senden</string>
+	<string name="scrobble_pause_activated">jukefox speichert die gespielten Songs lokal und
+		sendet diese erst wenn diese Option deaktiviert wird.</string>
+	<string name="fullscreen">Verstecke Benachrichtigungsleiste</string>
+	<string name="please_restart">Bitte jukefox neustarten um die Einstellungen
+		anzuwenden.</string>
+	<string name="sleep">Sleep (automatischer stop)</string>
+	<string name="sleep_desc1">Stoppe Musik nach</string>
+	<string name="sleep_desc2">Minuten</string>
+	<string name="dont_sleep">Sleep Abbrechen</string>
+	<string name="sleep_menu">Sleep Menü</string>
+	<string name="sleep_toast1">Musik wird nach</string>
+	<string name="sleep_toast2">Minuten stoppen (Nachdem ein Song fertig ist).
+	</string>
+	<string name="show_zoom_bar">Zeige Zoombalken</string>
+	<string name="always_to_cur_playing_album">Gehe immer zum aktuell gespielten Album</string>
+	<string name="auto_show_cover">Zeige automatisch das aktuelle Albumcover anstelle
+		der Playlist</string>
+	<string name="explain_why_import">jukefox bietet Abspielmodi die auf Musikähnlichkeit
+		basieren. Wir haben eine grosse Datenbank mit
+		Ähnlichkeitsinformationen zu Künstlern und Sontiteln. Diese
+		Information wollen wir von unserem Server abrufen. Dazu senden wir nur
+		den Namen des Interpreten und den Sontitel an unseren Server. Der
+		ganze Datenaustausch ist anonym und es werden keine Daten
+		weitergegeben.</string>
+	<string name="why_import">Warum?</string>
+
+
+	<string name="highlight_current_album">Markiere das aktuell gespielte Album auf der Karte
+	</string>
+	<string name="reupdate_text_and_question">Damit deine Songs korrekt importiert werden können,
+		müssen diese KORREKTE ID3 TAGS FÜR ARTIST, ALBUM UND TITEL HABEN. Der
+		Import setzt eine Internetverbindung voraus (wenn möglich WLAN) und
+		kann einige Minuten dauern. Möchtest du jetzt beginnen?</string>
+	<string name="select_directories">Wähle die Verzeichnisse in denen deine Musik ist:
+	</string>
+	<string name="showiconlists">Zeige Vorschaubilder in den Listen</string>
+	<string name="select_all">Alle auswählen</string>
+	<string name="deselect_all">Keine auswählen</string>
+	<string name="unrecognized_songs">Die folgenden Songs konnten nicht erkannt werden.
+		Dies liegt meist an inkorrekten ID3-Tags. Du kannst die Liste in der
+		Datei "UnrecognizedSongs.txt" auf der SD-Karte finden.</string>
+	<string name="unknown_songs_title">Nicht erkannte Songs</string>
+	<string name="resume_on_headset">Starte Musik wieder wenn Kopfhörer eingesteckt
+		werden</string>
+	<string name="play_pause">play/pause</string>
+	<string name="next">vor</string>
+	<string name="previous">zurück</string>
+	<string name="remove">Entfernen</string>
+	<string name="gapless_playback">Lückelose Wiedergabe</string>
+	<string name="gapless_explanation">Die lückenlose Wiedergabe funktioniert eigentlich
+		nach einigen gehörten Musikstücken automatisch. Wenn du aber nach
+		einiger Zeit immer noch eine kleine Lücke zwischen den Stücken hörst,
+		erhöhe den unten stehenden Wert. Wenn sich die Musikstücke überlappen,
+		verringere ihn.</string>
+	<string name="milliseconds">ms</string>
+	<string name="small_collection_title">Lieber Benutzer</string>
+	<string name="small_collection_text">Die Vorteile eines Players mit
+		Musik-ähnlichkeitsinformationen (wie jukefox) werden erst bei grossen
+		Musiksammlungen sichtbar. Du hast leider ziemlich wenige Songs auf
+		Deinem Gerät und wirst deshalb nicht das volle Potential sehen können.
+		Um eine Vorstellung zu kriegen was möglich ist, suche auf youtube nach
+		jukefox.</string>
+	<string name="use_cover_files">Benutze cover.jpg etc. in Verzeichnissen als Album
+		Cover (Siehe Hilfe)</string>
+
+	<string name="lock_orientation">Lock screen orientation</string>
+	<string name="help_improving_jukefox">Help improving jukefox by sending usage data
+	</string>
+
+	<string name="unknown_title_alias">&lt;Unbekannter Titel&gt;</string>
+	<string name="unknown_artist_alias">&lt;Unbekannter Interpret&gt;</string>
+	<string name="unknown_album_alias">&lt;Unbekanntes Album&gt;</string>
+	<string name="playlist">Playlist</string>
+	<string name="no_playlists_available">Es wurden keine Playlist im
+		jukefox-Playlistverzeichnis gefunden.</string>
+	<string name="too_many_results">Zu viele Resultate. Einige Resultate werden nicht
+		gezeigt. Bitte verwende einen spezifischeren Suchausdruck.</string>
+	<string name="show_artist">Zeige Interpret</string>
+	<string name="append_to_playlist">Hänge an Playlist</string>
+	<string name="insert_into_playlist">Füge ein in Playlist</string>
+	<string name="please_wait">Bitte warten...</string>
+	<string name="loading_albums">lade Alben</string>
+	<string name="regenerate_playlist">neu generieren</string>
+	<string name="playlist_size">Playlistgrösse</string>
+	<string name="loading_playlist">lade Playlist</string>
+	<string name="sd_card_missing">SD-card fehlt</string>
+	<string name="click_to_remove_status_info">hier klicken um diese Nachricht zu schliessen.
+	</string>
+	<string name="list_not_yet_loaded">jukefox importiert im Moment deine Musiksammlung.
+		Deswegen kann diese Liste unvollständig sein.</string>
+	<string name="tags_not_yet_loaded">jukefox berechnet Eigenschaften deiner Musik. Die
+		Tag Cloud wird erst verfügbar sein wenn dies beendet ist.</string>
+	<string name="map_not_yet_loaded">jukefox berechnet Eigenschaften deiner Musik. Die
+		Musikkarte wird erst verfügbar sein wenn dies beendet ist.</string>
+	<string name="covers_not_yet_fetched">jukefox lädt im Moment Album Covers für Deine Musik.
+		Deswegen sind noch nicht alle verfügbar.</string>
+	<string name="will_do_import_in_background">jukefox wird Deine neue Musik im Hintergrund
+		importieren. Dies wird einige Minuten dauern.</string>
+
+	<string name="smart_shuffling_not_available">Zur Zeit sind nicht genügend Songs mit
+		Ähnlichkeitsinformationen verfügbar um Smart Shuffle zu benutzen.
+		Bitte stelle sicher das sich mindestens 30 korrekt getaggte songs auf
+		Deinem Gerät befinden und Du mit dem Internet verbunden bist.</string>
+	<string name="dont_show_msg_again">Nicht wieder zeigen.</string>
+	<string name="tour_general">Allgemein</string>
+	<string name="tour_playlists">Playlists</string>
+	<string name="tour_play_modes">Playmodi</string>
+	<string name="tour_cool_features">Coole Funktionen</string>
+	<string name="get_to_know_jukefox">Lerne jukefox kennen. Bitte wähle ein Thema.
+	</string>
+	<string name="show_genre_artists">Zeige Interpreten für Genre</string>
+	<string name="show_genre_albums">Zeige Albums für Genre</string>
+	<string name="show_genre_songs">Zeige Songs für Genre</string>
+	<string name="delete_playlist">Lösche Playlist</string>
+	<string name="general_tour_1">Diese Einführung zeigt die Hauptfunktionen von
+		jukefox. Drücke auf vor oder zurück um zu navigieren. Du kannst
+		jederzeit zum Menu zurück indem du den zurück Knopf auf dem Telefon
+		drückst.</string>
+	<string name="general_tour_2">jukefox ist ein Player für grosse Musiksammlungen.
+		Neben den normalen Funktionen bietet er neuartige Wege Deine Sammlung
+		zu entdecken, die auf
+		Musikähnlichkeit basieren.</string>
+	<string name="general_tour_3">Die grundlegende Navigation geschieht über die 5
+		Knöpfe oben am Bildschirm. Von links nach recht sind das: der Player,
+		die Listen, die Suche, die 3D-Karte, die 2D-Karte.
+	</string>
+	<string name="general_tour_4">Der Player bietet folgende Grundfunktionen: den
+		Playmodus wechseln (1) oder das Playlistmenu aufrufen (2). Die
+		aktuelle Playlist wird angezeigt wenn man auf das grosse Albumcover
+		klickt (3).
+	</string>
+	<string name="general_tour_5"> Die Listen erlauben Musik nach verschiedenen
+		Kriterien auszuwählen. Ein langer Klick auf gewisse Einträge zeigt ein
+		Kontextmenu.</string>
+	<string name="general_tour_6">Hier kannst du nach Interpreten und Liedtiteln
+		suchen (es wird schon während dem Tippen gesucht). Wähle die
+		\"berühmte
+		Interpreten\" Option um nach Interpreten zu suchen die nicht
+		auf Deinem
+		Gerät sind. jukefox wird daraufhin Lieder vorschlagen die
+		ähnlich zum
+		gesuchten Interpreten sind.</string>
+	<string name="general_tour_7"> Die 3D (1) und die 2D (2) Musikkarte ordnen Deine
+		Musik nach Ähnlichkeit an.</string>
+	<string name="general_tour_8">Benutze die Zoombar auf der rechten Seite (mit dem
+		Finger darüberfahren) um hinein und hinaus zu zoomen. Auf Geräten mit
+		Android 2.0 oder können auch Multitouchgesten verwendet werden.
+	</string>
+	<string name="general_tour_9">Diese Ansicht siehst Du wenn Du ein Album
+		auswählst. Sie zeigt den Interpreten, den Albumnamen und die
+		Songliste.</string>
+	<string name="general_tour_10">Jeder Song kann mit Hilfe der grünen Häckchen
+		ausgewählt werden. Der \"Wähle alle\" Knopf (1) und der \"Wähle
+		keine\"
+		Knopf (2) vereinfachen dies. Wenn du auf play (3) drückst
+		werden die
+		gewählten Songs abgespielt (und die aktuelle Playlist
+		gelöscht).
+	</string>
+	<string name="general_tour_11">Durch drücken des \"Hänge an Playlist\" Knopfes
+		(1),
+		werden alle ausgewählten Songs an das Ende der aktuellen Playlist
+		gehängt. Durch drücken des \"Füge in Playlist ein\" Knopfes (2),
+		werden
+		alle ausgewählten Songs nach dem aktuellen Song in die Playlist
+		eingefügt.
+	</string>
+	<string name="playlists_tour_1">Um die aktuelle Playlist zu sehen drücke kurz auf
+		das grosse Albumcover (1). Das Playlistmenu erreichst du über den
+		dazugehörigen Knopf (2).</string>
+	<string name="playlists_tour_2">Wenn Du lang auf einen Song in der Playlist klickst
+		wird das Kontextmenu dazu geöffnet.</string>
+	<string name="playlists_tour_3">Wenn Du eine Playlist im Playlistmenu speicherst
+		wird auch die aktuelle Position in der Playlist und im aktuelle Song
+		gespeichert (auch nützlich für Hörbucher).</string>
+	<string name="play_modes_tour_1">Du kannst den Playmodus wählenindem Du auf den
+		Playmodusmenu-Knopf (1) drückst.</string>
+	<string name="play_modes_tour_2">Der \"Wiederhole alles\" Playmodus beginnt die
+		Playlist wieder von vorne sobald das Ende erreicht ist.</string>
+	<string name="play_modes_tour_3">Der \"Spiele einmal\" Playmodus stoppt die
+		Wiedergabe am Ende der Playlist.</string>
+	<string name="play_modes_tour_4">Der \"Zufällig\" Playmodus erlaubt auszuwählen ob
+		zufällige Songs der aktuellen Playlist abgespielt werden sollen oder
+		ob zufällige Song aus der Ganzen Sammlung.</string>
+	<string name="play_modes_tour_5">Der \"Ähnliche Songs\" Playmodus fügt automatisch
+		Songs an das Ende der Playlist hinzu die ähnlich zum letzten
+		gespielten Song sind.</string>
+	<string name="play_modes_tour_6">Um langweilige Playlisten zu wermeiden (alle Songs
+		vom gleichen Interpreten), lässt jukefox Dich bestimmen wieviele
+		aufeinanderfolgende Songs nicht vom gleichen Interpreten sein sollen.
+	</string>
+	<string name="play_modes_tour_7">Der \"smart shuffle\" Playmodus beachtet welche
+		Songs du zu Ende gehört hast und welche du skippst um passende Musik
+		auszuwählen.</string>
+	<string name="cool_features_tour_1">Wenn Du in der 2D-Kartenansicht bist, drücke das
+		D-Pad und selektiere mit dem Finger eine Region um eine Playlist mit
+		den entsprechenden Songs zu kreieren. </string>
+	<string name="cool_features_tour_2">Ein langer Klick auf einen Artist in der Artist
+		Liste öffnet das zugehörige Kontext-Menu. </string>	
+	<string name="play_once">Einmal spielen</string>
+	<string name="press_home_to_unlock">Drücke den Home-Knopf um den Bildschirm zu
+		entsperren</string>
+	<string name="connection_error_message">Du bist im Moment nicht mit dem Internet verbunden.
+		Bitte verbinde dein Gerät mit dem Internet.</string>
+	<string name="not_available_videos">Im Moment sind keine Youtubevideos für diesen Song
+		verfügbar.</string>
+	<string name="no_more_available_videos">Es sind nicht mehr Videos verfügbar.</string>
+	<string name="video_playlist">Lade Videoplaylist</string>
+	<string name="artistvideotext">Spiele Livevideos von diesem Interpreten</string>
+	<string name="similar_artistvideotext">Play live videos of similar artists not on my
+		device</string>
+	<string name="continuetext">Möchtest Du den nächsten Song abspielen?</string>
+	<string name="cont">Weiter</string>
+	<string name="back_to_menu">menu</string>
+	<string name="play_same_video">Video wieder abspielen</string>
+	<string name="empty_playlist">Diese Playlist ist leer</string>
+	<string name="move_slider_to_unlock">Bewege den Slider um den Bildschirm zu entsperren.
+	</string>
+	<string name="unknown_exception_during_import_1">Ein unbekannterFehler ist während dem importieren
+		deiner Musik aufgetreten: </string>
+	<string name="unknown_exception_during_import_2">Falls Probleme auftreten, empfehlen wir die
+		Musikbibliothek neu einzulesen (menu->Musik importieren).</string>
+	<string name="take_a_tour_dialog">In den ersten Minuten wird jukefox ein bisschen
+		langsamer reagieren und es werden noch nicht alle Funktionen verfügbar
+		sein weil Deine Musikbibliothek im Hintergrund importiert wird. Wir
+		empfehlen eine kleine Einführung in jukefox. Ist das OK?</string>
+	<string name="take_a_tour_now">Einführung jetzt starten</string>
+	<string name="take_a_tour_later">Mach ich später</string>
+	<string name="please_read">BITTE LESEN</string>
+	<string name="import_completed">jukefox hat den Importvorgang abgeschlossen</string>
+	<string name="fixed_orientation_to_portrait">Bildschirmeinstellung "hoch" fixiert.</string>
+	<string name="fixed_orientation_to_landscape">Bildschirmeinstellung "breit" fixiert.</string>
+	<string name="screen_orientation_not_fixed">Bildschirmeinstellung nicht fixiert.</string>
+	<string name="cover_fetcher_no_sd">Es ist ein Problem beim Herunterladen der
+		Albumcover aufgetreten. Bitte starte den Musikimport wieder wenn die
+		SD-karte beschreibbar ist.</string>
+	<string name="no_song_coordinates">Sorry¨ die Musikkarte kann für deine Musiksammlung
+		nicht angezeigt werden. Sorry! No Music map can be displayed for your
+		collection. Bitte stelle sicher das sich mindestens 30 korrekt
+		getaggte songs auf Deinem Gerät befinden und Du mit dem Internet
+		verbunden bist. Starte danach den Musikimport(menu=>Musik
+		importieren).</string>
+	<string name="tour_menu">Menu</string>
+	<string name="scrobble_every_n1">Scrobble alle</string>
+	<string name="scrobble_every_n2">songs</string>
+
+	<string name="fb_senddaily">täglich</string>
+	<string name="fb_sendweekly">wöchentlich</string>
+	<string name="fb_sendNow">Sende eine Collage an Facebook</string>
+	<string name="fb_sendingNow">Sende...</string>
+	<string name="fb_automat">Sende Collagen</string>
+
+	<string name="fb_featuretext">Sende automatisch Collagen meiner Lieblingsalben an
+		Facebook</string>
+	<string name="fb_loginconnecting">Verbinde zu Facebook...</string>
+	<string name="fb_loginnoconnection">Keine Internetverbindung</string>
+	<string name="fb_feedsuccess">Erfolgreich Tagesfavoriten auf Facebook publiziert.
+	</string>
+	<string name="fb_feedabort">Konnte Collage nicht publizieren. Bitte vesuche es
+		später noch einmal.</string>
+	<string name="fb_collagecreationerror">Konnte Collage nicht erstellen.</string>
+	<string name="fb_nocoversabort">Es sind keine Albumcover vorhanden um eine Collage
+		zu erstellen.</string>
+	<string name="fb_toofewcoversabort">Es sind zu wenig Albumcover vorhanden um eine
+		Collage zu erstellen.</string>
+	<string name="fb_loginabort">Login fehlgeschlagen. Bitte vesuche es später noch
+		einmal.</string>
+	<string name="fb_loginsuccess">Der Login auf Facebook war erfolgreich.</string>
+	<string name="fb_send_manual_msg">Wenn Du auf senden drückst wird die folgende
+		Collage auf deinem Facebook-Account publiziert.</string>
+	<string name="fb_send_auto_login_msg">Konnte die Collage nicht senden weil Du nicht mehr
+		eingeloggt bist. Möchtest Du dich wieder einloggen?</string>
+
+	<!--
+		these are the strings contained in the published entry on facebook
+	-->
+	<string name="fb_collagetitlemanual">Meine Lieblingsalben in den letzten 24 Stunden
+		(powered by jukefox)</string>
+	<string name="fb_collagetitleweekly">Meine Lieblingsalben der letzten Woche (powered by
+		jukefox)</string>
+	<string name="fb_collagetitledaily">Meine Lieblingsalben in den letzten 24 Stunden
+		(powered by jukefox)</string>
+	<string name="fb_albumtitle">jukefox - Favoriten</string>
+	<string name="send">senden</string>
+	<string name="could_not_play_tag_intent_playlist">Konnte Playlist nicht abspielen für tag:</string>
+	<string name="fblogout">Von Facebook ausloggen</string>
+	<string name="menu_facebook">Facebook</string>
+	<string name="famous_artists_not_ready">Berühmte Interpreten sind noch nicht geladen.
+	</string>
+	<string name="menu_feedback">Feedback</string>
+	<string name="jukefox_is_currently_importing">jukefox importiert zur Zeit Deine Musiksammlung und
+		könnte deshalb langsamer reagieren.
+	</string>
+
+	<string name="feedback_dialog_text">Vielen Dank dass Du jukefox verwendest. Falls Du
+		Probleme oder Anregungen zu jukefox kontaktiere uns bitte per Email
+		bevor du jukefox schlecht bewertest. Es ist viel einfacher auf eine
+		Email zu reagieren als auf einen Kommentar im Market.</string>
+	<string name="rate_app_in_market">Bewerte oder kommentiere jukefox im Market</string>
+	<string name="send_mail_to_developers">Sende Email an die Entwickler</string>
+
+	<string name="welcome_text_version_change">
+		Danke fürs Vertrauen in jukefox. Wir haben wichtige
+		Teile von jukefox grundlegend überarbeitet um die
+		Benutzerfreundlichkeit zu verbessern. Insbesondere wird von nun an die
+		Musikbibliothek im Hintergrund importiert, und es sollte sämtliche
+		Musikdateien erkannt werden (auch solche, welche nicht in der jukefox
+		DB enthalten sind). Diese Aenderungen machen einen Neuimport nötig.
+		Sollten Probleme auftauchen, sind wir für Feedback per Mail
+		(Menu->Feedback) äusserst dankbar.
+	</string>
+	<string name="could_not_delete_old_db">Beim Löschen der alten Datenbank ist ein Fehler
+		aufgetreten.</string>
+	<string name="tip_long_click_on_album_for_grouping">Wir haben entdeckt dass Du mehrere Songs mit dem
+		selben Albumnamen aber verschiedenen Interpreten hast. Wenn du ein
+		solches Album gruppieren möchtest, klicke lang auf das Album in der
+		Liste und wähle \'Album gruppieren\'. Alternativ kann in ITunes das
+		compilation Flag gesetzt werden.</string>
+
+	<string name="group_album">Album gruppieren</string>
+	<string name="msg_album_with_this_name_exists_only_once">Diese Funktion ist gedacht um Compilation-Alben zu
+		gruppieren (Alben mit verschiedenen Interpreten). Das ausgewählte
+		Album erscheint aber nur einmal in der Albumliste. Es kann deshalb
+		nicht gruppiert werden.</string>
+
+	<string name="grouping_album_finished_toast">Alben sind gruppiert. Es wird ein Import augeführt
+		aus um die Änderungen anzuwenden.</string>
+
+	<string name="grouping_album_failed_toast">Gruppieren des Albums fehlgeschlagen..</string>
+
+	<string name="album_artist_alias">Various Artists</string>
+
+	<string name="ungroup_album">Album Gruppierung aufheben</string>
+
+	<string name="ungrouping_album_finished_toast">Albumgruppierung ist aufgehoben. Es wird ein Import
+		augeführt aus um die Änderungen anzuwenden.</string>
+
+	<string name="ungrouping_album_failed_toast">Das aufheben der Albumgruppierung ist
+		fehlgeschlagen.</string>
+
+	<string name="unknown_exception_while_loading_data">Unbekannter Fehler während dem Laden der Daten:
+	</string>
+	<string name="appended_songs">Songs an Playlist angehängt.</string>
+	<string name="inserted_songs">Songs in Playlist eingefügt.</string>
+	<string name="click_cover">Berühre das Cover um die Songliste zu sehen.</string>
+	<string name="click_cover_to_see_playlist">Berühre das Cover um die Wiedergabeliste zu sehen.</string>
+	<string name="empty_playlist_use_tabs">Wiedergabeliste ist leer. Verwende die Tabs um deine Musiksammlung anzuschauen.</string>
+	<string name="museek_renamed_dialog">Wegen eines rechtlichen Problems wurde museek in jukefox umbenannt (siehe Icons). Deswegen musst Du den Player nun über das jukefox icon starten. Das museek-icon wird mit dem nächsten update entfernt. Viel Spass mit jukefox!</string>
+	<string name="cool_features_tour_3">Du kannst Shake-Skip aktivieren, das Dir erlaubt zum nächsten Song zu springen, indem Du das Telefon schüttelst.</string>
+	
+	<string name="cancel_import_question">Möchtest du dass jukefox the Musikimport im Hintergrund zu Ende bringt (empfohlen)?</string>
+	<string name="cancel_import">Nein</string>
+	<string name="continue_import">Ja</string>
+	<string name="widget_name_large">jukefox gross</string>
+	<string name="delete_song_menu">Song löschen</string>
+	<string name="ignore_song">ignoriere Song in jukefox</string>
+	<string name="delete_song_permanently">lösche song definitiv</string>
+	
+	<string name="delete_song">Lösche Song</string>
+	
+	<string name="search_in_label">Suchen in: </string>
+	
+	<string name="menu_statistics">Statistiken</string>
+  <string name="statistics_settings">Statistikeinstellungen:</string>
+  <string name="top_or_flop_title">Top oder Flop</string>
+  <string name="top_or_flop_summary">Zeige Top or Flop data?</string>
+  <string name="display_type_title">Zeige Typ</string>
+  <string name="display_type_summary">Anzeigeart</string>
+  <string name="title_new">Neue %s</string>
+  <string name="title_top">Top %s</string>
+  <string name="title_flop">Flop %s</string>
+  <string name="title_suggested">Vorgeschlagen %s</string>
+  <string name="date_less_than_one_minute">&lt;vor 1 min</string>
+  <string name="date_range_minutes">vor %d min</string>
+  <string name="date_range_hours">vor %dh</string>
+  <string name="date_range_days">vor %d Tagen</string>
+	
+</resources>

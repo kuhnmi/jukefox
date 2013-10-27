@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="TITLE_DIRECTORY_SELECTION">Verzeichnisse auswählen</string>
+	<string name="SUMMARY_DIRECTORY_SELECTION">Wähle welche Verzeichnisse nach Musik durchsucht
+		werden.</string>
+	<string name="TITLE_SHOW_ZOOM_BAR">Zeige Zoombar</string>
+	<string name="SUMMARY_SHOZ_ZOOM_BAR">Zeige die Zoombar in der Muiskkarte</string>
+
+	<string name="TITLE_LOCK_SCREEN_CONTROLS">Bildschirmsperre</string>
+	<string name="SUMMARY_LOCK_SCREEN_CONTROLS">Aktiviere Bildschirmsperre mit Kontrollelementen für jukefox.
+	</string>
+
+	<string name="TITLE_RESUME_ON_HEADSET_PLUG">Kopfhörer</string>
+	<string name="SUMMARY_RESUME_ON_HEADSET_PLUG">Wiedergabe beim Einstecken der Kopfhörer
+		fortsetzen.</string>
+
+	<string name="TITLE_HAPTIC_FEEDBACK">Vibrations Feedback</string>
+	<string name="SUMMARY_HAPTIC_FEEDBACK">Vibriere kurz bei Klicks usw.</string>
+
+	<string name="TITLE_GOTO_CUR_ALBUM">Zum aktuellen Album gehen</string>
+	<string name="SUMMARY_GOTO_CUR_ALBUM">Gehe zum Album des aktuell gespielten Songs in der
+		Musikkarte.</string>
+
+	<string name="TITLE_HIGHLIGHT_CUR_ALBUM">Markiere aktuelles Album</string>
+	<string name="SUMMARY_HIGHLIGHT_CUR_ALBUM">Markiere das aktuell gespielte Album in der
+		Musikkarte.</string>
+
+
+	<string name="TITLE_AUTO_SHOW_COVER">Grosses Albumcover</string>
+	<string name="SUMMARY_AUTO_SHOW_COVER">Zeige das grosse Albumcover im Player
+		anstelle der Playlist.</string>
+
+	<string name="TITLE_SHOW_TIPS">Show tipps at startup</string>
+	<string name="SUMMARY_SHOW_TIPS"></string>
+
+	<string name="TITLE_ICON_LISTS">Zeige Icons in der Albumiste</string>
+	<string name="SUMMARY_ICON_LISTS">Kann das scrollen verlangsamen.</string>
+
+	<string name="TITLE_SHOW_NOTIFICATIONS">Benachrichtigungen</string>
+	<string name="SUMMARY_SHOW_NOTIFICATIONS">Zeige Benachrichtigungen in der
+		Android-Benachrichtigungsleiste.</string>
+
+	<string name="TITLE_GAPLESS">Lückenlose Wiedergabe</string>
+	<string name="SUMMARY_GAPLESS">Aktiviere lückenlose Wiedergabe von Songs</string>
+
+	<string name="TITLE_SCROBBLE_ENABLED">Scrobble zu Last.fm</string>
+	<string name="SUMMARY_SCROBBLE_ENABLED"></string>
+
+	<string name="TITLE_SCROBBLE_PAUSED">Pausiere scrobbling</string>
+	<string name="SUMMARY_SCROBBLE_PAUSED">Gespielte Songs werden lokal gespeichert und werden
+		erst gesendet wenn dieses Hackchen wieder entfernt wird.</string>
+
+	<string name="TITLE_SCROBBLE_INTERVAL">Scrobbleintervall</string>
+	<string name="SUMMARY_SCROBBLE_INTERVAL">Sende die Songs in Paketen.</string>
+
+	<string name="TITLE_SCROBBLE_USERNAME">Last.fm Username</string>
+	<string name="SUMMARY_SCROBBLE_USERNAME"></string>
+
+	<string name="TITLE_SCROBBLE_PWD">Last.fm Passwort</string>
+	<string name="SUMMARY_SCROBBLE_PWD"></string>
+
+	<string name="LAST_FM_CATEGORY">Last.fm scrobbling</string>
+	<string name="LAST_FM_PREFERENCES">Last.fm Einstellungen</string>
+	<string name="LAST_FM_PREFERENCES_TITLE">Scrobble zu Last.fm</string>
+	<string name="LAST_FM_PREFERENCES_DESCRIPTION">Setze Username, Scrobbleinterval...</string>
+
+	<string name="MUSIC_MAP_TITLE">Musikkarte</string>
+
+	<string name="PLAYBACK_TITLE">Wiedergabe</string>
+
+	<string name="GENERAL_TITLE">Allgemein</string>
+	<string name="DIRECTORIES_TITLE">Verzeichnisse</string>
+
+	<string name="TITLE_GATHER_USAGE_DATA">jukefox verbessern</string>
+	<string name="SUMMARY_GATHER_USAGE_DATA">Hilf mit jukefox zu verbessern indem du anonyme
+		Nutzungsdaten an uns sendest.</string>
+
+	<string name="TITLE_FIX_SCREEN_ORIENTATION">Fixiere Bildschirmorientierung</string>
+	<string name="SUMMARY_FIX_SCREEN_ORIENTATION"></string>
+
+	<string name="TITLE_KINETIC_MOVEMENT">Kinetische Bewegungen</string>
+	<string name="SUMMARY_KINETIC_MOVEMENT">Kinetisches Bewegungsverhalten in der Musikkarte.
+	</string>
+
+	<string name="TITLE_SEARCH_WHILE_TYPING">Suche während tippen</string>
+	<string name="SUMMARY_SEARCH_WHILE_TYPING">Schalte diese Option auf alten Geräten ab</string>
+
+	<string name="TITLE_ADVANCED_SETTINGS">Weitere Einstellungen</string>
+	<string name="SUMMARY_ADVANCED_SETTINGS">Detailanpassungen...</string>
+
+	<string name="FACEBOOK_CATEGORY">Facebook</string>
+	<string name="FACEBOOK_PREFERENCES_TITLE">Covers an Facebook senden</string>
+	<string name="FACEBOOK_PREFERENCES_DESCRIPTION">jukefox kann automatisch generierte Collagen deiner
+		Lieblingsmusik an deinen Facebookaccount senden.</string>
+
+	<string name="TITLE_FACEBOOK_AUTOSEND_ENABLED">Covers an Facebook senden</string>
+
+	<string name="TITLE_FACEBOOK_AUTOSEND_INTERVAL">Intervall</string>
+	<string name="SUMMARY_AUTOSEND_INTERVAL">Definiert wie oft jukefox automatisch Collagen an Faebook sendet.</string>
+
+	<string name="TITLE_ENABLE_LOG_FILE">Aktiviere Debug-Logdatei</string>
+	<string name="SUMMARY_ENABLE_LOG_FILE">Sollte nur aktiviert werden um Probleme an
+		Entwickler zu melden.</string>
+
+	<string name="TITLE_IGNORE_MEDIA_BUTTONS">Ignoriere Headsetbuttons</string>
+	<string name="SUMMARY_IGNORE_MEDIA_BUTTONS">Ignore Headsetbuttons when jukefox nicht am laufen ist.</string>
+	
+	<string name="TITLE_DISPLAY_SETTINGS">Displayeinstellungen</string>
+	<string name="SUMMARY_DISPLAY_SETTINGS"></string>
+
+	<string name="TITLE_USE_WALLPAPER_BACKGROUND">Benutze Desktop-Hintergund</string>
+	<string name="SUMMARY_USE_WALLPAPER_BACKGROUND">Benutze den Desktop-Hintergund als Hintergrund</string>
+	
+	<string name="TITLE_SHAKE_SKIP">Shake Skip</string>
+	<string name="SUMMARY_SHAKE_SKIP">Schüttle dein Gerät um zum nächsten Song zu springen.</string>
+
+	<string name="TITLE_PICK_BACKGROUND_FROM_GALLERY">Eigener Hintergrund</string>
+	<string name="SUMMARY_PICK_BACKGROUND_FROM_GALLERY">Wähle das Hintergrundbild für den Player</string>
+
+	<string name="TITLE_SHAKE_SKIP_THRESHHOLD">Empfindlichkeit</string>
+	
+	<string name="TITLE_IGNORE_LEADING_THE">Ignoriere \"The\" bei Listen</string>
+	<string name="SUMMARY_IGNORE_LEADING_THE">Listen werden ohne vorgestelltes \"The\" sortiert</string>
+	
+	<string name="TITLE_AUTOMATIC_IMPORTS">Automatische Imports</string>
+	<string name="SUMMARY_AUTOMATIC_IMPORTS">Überprüfe bei jedem Start und bei Änderungen auf SD-Karte auf neue songs.</string>
+	
+	<string name="TITLE_DIRECTLY_SHOW_ALBUM_LIST">Zeige sofort Songliste</string>
+	<string name="SUMMARY_DIRECTLY_SHOW_ALBUM_LIST">Zeige direkt die Songliste bei den Albumdetails ohne auf das Cover zu klicken.</string>
+</resources>

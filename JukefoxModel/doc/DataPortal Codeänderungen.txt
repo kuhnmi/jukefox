@@ -1,0 +1,8 @@
+Codeänderungen:
+
+- deleteGenreSongMapping(int genreId, int songId)
+	- db.delete umbeschrieben
+- deleteTable() or emptyTable() ??? now one is commented
+- some Constants should be changed (COVER_DIRECTORY and DB_ACTIVATED_PLAY_LOG_SIZE)
+- writePlayLogEntry & getPlayLogString
+	Neue Spalte (context) anstatt wie bisher alle context-spezifischen sachen (light, networkstate,...)

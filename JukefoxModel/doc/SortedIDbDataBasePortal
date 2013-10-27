@@ -1,0 +1,126 @@
+AlbumProvider
+
+	public List<MapAlbum> getAllMapAlbums();
+	public CompleteAlbum getCompleteAlbumById(int albumId) throws DataUnavailableException;
+	public List<ListAlbum> getAllAlbumsAsListAlbums();
+	public List<ListAlbum> getAllAlbumsForArtist(BaseArtist artist, boolean includeCompilations);
+	public List<BaseAlbum> getAllAlbumsWithoutAlbumArt();
+	public List<ListAlbum> findAlbumBySearchString(String searchTerm, int maxResults);
+	public CompleteAlbum getCompleteAlbum(BaseAlbum album) throws DataUnavailableException;
+	public List<ListAlbum> getAlbumsForGenre(Genre genre);
+	public MapAlbum getMapAlbum(BaseAlbum album) throws DataUnavailableException;
+	public MapAlbum getMapAlbumBySong( BaseSong<? extends BaseArtist, ? extends BaseAlbum> song) throws DataUnavailableException;
+
+ArtistProvider
+
+	public List<BaseArtist> getAllArtists();
+	public CompleteArtist getCompleteArtist(BaseArtist baseArtist) throws DataUnavailableException;
+	public List<BaseArtist> findArtistBySearchString(String searchTerm, int maxResults);
+	public List<BaseArtist> findFamousArtistBySearchString(String searchTerm, int maxResults);
+	public List<BaseArtist> getArtistsForGenre(Genre genre);
+
+GenreProvider
+
+	public List<Genre> getAllGenres();
+	public List<Pair<Genre, Integer>> getGenresForArtist(BaseArtist artist) throws DataUnavailableException;
+
+OtherDataProvider
+
+	public GenreSongMap getGenreSongMappings() throws DataUnavailableException;
+	public List<PreloadedSongInfo> getPreloadedSongInfo();
+	public PlayLogSendEntity getPlayLogString(int profileId, int playLogVersion, int coordinateVersion, long lastSentId) throws DataUnavailableException;
+
+	public boolean hasArtistCoords(int artistId);
+	public Integer getTagId(String tagName, boolean onlyRelevantTags) throws DataUnavailableException;
+	public List<Integer> getSongIdsForAlbum(int albumId);
+	public Integer getMusicExplorerArtistId(BaseArtist artist) throws DataUnavailableException;
+	public Integer getMusicExplorerIdForSong( BaseSong<BaseArtist, BaseAlbum> song) throws DataUnavailableException;	
+	public int getRandomSongId() throws DataUnavailableException;
+	public float[] getCoordsForSongById(int songId) throws DataUnavailableException;
+	public float[] getCoordsForAlbum(BaseAlbum album) throws DataUnavailableException;
+	public HashSet<String> getAllSongsPaths() throws DataUnavailableException;
+	public List<String> getSongPathsForAlbumName(String name);
+	public String getSongPath(BaseSong<BaseArtist, BaseAlbum> song) throws DataUnavailableException;
+	public String getAlbumArtPath(BaseAlbum album, boolean lowRes) throws DataUnavailableException;
+
+PlaylistProvider
+
+
+ResourceLoaderProvider
+
+
+SettingsProvider
+
+
+SongProvider
+
+	public HashMap<String, ImportSong> getAllSongsForImport() throws DataUnavailableException;
+	public List<BaseSong<BaseArtist, BaseAlbum>> getSongListForAlbum( BaseAlbum album);
+	public List<BaseSong<BaseArtist, BaseAlbum>> getAllSongs();
+	public BaseSong<BaseArtist, BaseAlbum> getBaseSongById(int randomId) throws DataUnavailableException;
+	public List<WebDataSong> getWebDataSongsForStatus(SongStatus[] statuses, AlbumStatus[] albumStatuses);
+	public List<PlaylistSong<BaseArtist, BaseAlbum>> getSongListForPaths( List<String> paths);
+	public PlaylistSong<BaseArtist, BaseAlbum> getSongForPath(String path) throws DataUnavailableException;
+	public PlaylistSong<BaseArtist, BaseAlbum> getSongForPath(String path, boolean caseSensitive) throws DataUnavailableException;
+	public List<BaseSong<BaseArtist, BaseAlbum>> getSongsForArtist( BaseArtist artist);
+	public List<BaseSong<BaseArtist, BaseAlbum>> getSongsForGenre(Genre genre);
+	public List<BaseSong<BaseArtist, BaseAlbum>> findTitleBySearchString( String searchTerm, int maxResults);
+	public List<BaseSong<BaseArtist, BaseAlbum>> getSongListForIds( Vector<KdTreePoint<Integer>> points);
+	public BaseSong<BaseArtist, BaseAlbum> getArbitrarySongInTimeRange( int profileId, long fromTimestamp, long toTimestamp) throws DataUnavailableException;
+	public BaseSong<BaseArtist, BaseAlbum> getBaseSongByMusicExplorerId(int meId) throws DataUnavailableException;
+	public BaseSong<BaseArtist, BaseAlbum> getSongCloseToTimeRange( int profileId, long fromTimestamp, long toTimestamp, float toleranceRange, float toleranceGlobal) throws DataUnavailableException;
+	public List<PlaylistSong<BaseArtist, BaseAlbum>> getSongsForTimeRange( int profileId, long fromTimestamp, long toTimestamp, int number);
+	public List<Pair<BaseSong<BaseArtist, BaseAlbum>, KdTreePoint<Integer>>> getSongListForIds2( Vector<KdTreePoint<Integer>> points);
+	
+
+SongCoordinatesProvider
+
+	public List<SongCoords> getSongCoords(boolean includeSongWithoutCoords);
+	public SongCoords getSongCoordsById(Integer songId) throws DataUnavailableException;
+
+
+TagProvider
+
+	public List<MapTag> getHighestVarianceTags(int numTags);
+	public CompleteTag getCompleteTagById(int tagId) throws DataUnavailableException;
+	public HashMap<Integer, CompleteTag> getCompleteTags( boolean onlyRelevantTags) throws DataUnavailableException;
+	public List<MapTag> getMapTags();
+
+ModifyProvider
+
+	public int insertGenre(String name) throws DataWriteException;
+	public int insertSong(ImportSong s) throws DataWriteException;
+	public int insertTag(int meId, String name, float[] coords) throws DataWriteException;
+	public int replaceFamousArtist(int meId, String name, String meName) throws DataWriteException;
+	public void insertSongGenreMapping(int genreId, int songId) throws DataWriteException;
+	public void deleteGenreSongMapping(int genreId, int songId) throws DataWriteException;
+	public void removeUnusedAlbums() throws DataWriteException;
+	public void removeSongById(int jukefoxId) throws DataWriteException;
+	public void insertArtistCoords(int artistId, float[] coords) throws DataWriteException;
+	public void emptyArtistsTable() throws DataWriteException;
+	public void emptyTagsTable() throws DataWriteException;
+	public void emptyArtistCoordsTable() throws DataWriteException;
+	public void logArtistSetTable();
+	public void updateWebDataSong(WebDataSong song) throws DataWriteException;
+	public void insertAlbumArtInfo(BaseAlbum album, String highResPath, String lowResPath, int color, AlbumStatus status) throws DataWriteException;
+	public void setRelevantTags(Collection<CompleteTag> relevantTags) throws DataWriteException;
+	public void updateSongsPcaCoords(HashMap<Integer, float[]> songPcaCoords) throws DataWriteException;
+	public void updateMapAlbumsPcaCoords(Collection<MapAlbum> mapAlbums) throws DataWriteException;
+	public void deleteTagTable() throws DataWriteException;
+	public void removeObsoleteGenres() throws DataWriteException;
+	public void updateUnusedArtists() throws DataWriteException;
+	public long writePlayLogEntry(int profileId, PlaylistSong<BaseArtist, BaseAlbum> song, long utcTime, int timeZoneOffset, int dayOfWeek, int hourOfDay, boolean skip, int playMode);
+
+
+DirectDataBaseAccess
+
+	public void close();
+	public boolean isDbOpen();
+	public void beginTransaction();
+	public void setTransactionSuccessful();
+	public void endTransaction();
+	public void clearDb();
+	
+Unknown
+
+	public void printPlayLog(int profileId);

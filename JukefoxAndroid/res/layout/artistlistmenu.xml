@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+ 	xmlns:android="http://schemas.android.com/apk/res/android"
+ 	xmlns:jf="http://schemas.android.com/apk/res/ch.ethz.dcg.pancho3"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:focusable="false"
+	android:background="@drawable/d049_bg_overlay">	
+	
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"		
+		android:visibility="visible"
+		android:gravity="center_horizontal|center_vertical">
+	
+		<View android:layout_width="fill_parent"
+		android:layout_height="5dip"/>
+	
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"		
+			android:visibility="visible"
+			android:focusable="false"
+			android:gravity="center_horizontal|center_vertical">	
+			<TextView 
+				android:id="@+id/artistListMenuTitle"
+				android:text="@string/artistaddmenu"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:gravity="center_horizontal|center_vertical"/>			
+		</LinearLayout>
+
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/playArtistButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginTop="5dip"
+			jf:img_src="@drawable/d134_play_button_inverted"
+			jf:text="@string/playartisttext"
+			/>
+							
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/appendArtistButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginTop="2dip"
+			jf:img_src="@drawable/d135_playlist_append_button_inverted"
+			jf:text="@string/appendartisttext"
+			/>
+
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/insertArtistButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginTop="2dip"
+			jf:img_src="@drawable/d136_playlist_insert_button_inverted"
+			jf:text="@string/insertartisttext"
+			/>
+		
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/artistVideosButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginTop="2dip"
+			android:layout_marginBottom="5dip"
+			jf:img_src="@drawable/d141_youtube_logo_inverted"
+			jf:text="@string/artistvideotext"
+			/>
+
+<!--
+		
+		<View android:layout_width="fill_parent"
+			android:layout_height="2dip" />
+		<LinearLayout android:orientation="horizontal"
+			android:id="@+id/similarArtistVideoButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:background="@drawable/d046_bg_button"
+			android:gravity="center_vertical">
+			<ImageView android:src="@drawable/video3"
+				android:layout_width="50sp"
+				android:layout_height="50sp"			          	
+	          	android:visibility="visible"/>	
+			<TextView 
+				android:text="@string/similar_artistvideotext"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_gravity="center_vertical|center_horizontal"/>
+		</LinearLayout>
+		
+		-->
+	</LinearLayout>	 
+	     
+</LinearLayout>

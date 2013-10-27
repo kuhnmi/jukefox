@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/background"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingLeft="0dip"
+	android:paddingRight="0dip"
+	android:paddingTop="0dip"
+	android:layout_centerInParent="true">
+	
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"	
+		android:paddingTop="0dip"
+		android:layout_centerInParent="true"
+		android:background="@drawable/d093_bg_tabs">				
+		
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:visibility="visible"
+			android:padding="0dip"
+			android:layout_centerInParent="true"
+			> 					
+			
+			<include layout="@layout/tabbuttons" />	
+			
+			<RelativeLayout android:orientation="vertical" 
+				android:id="@+id/playlistWithTitle"
+				android:layout_width="720dip"	    		
+		    	android:layout_height="fill_parent"
+				android:focusable="false"
+				android:layout_gravity="center_horizontal|center_vertical">
+				
+				<!--<ListView 
+					android:id="@+id/playlist"				
+		    		android:layout_width="fill_parent"	    		
+		    		android:layout_height="fill_parent"
+		    		android:layout_weight="1" 
+		    		android:cacheColorHint="#00000000"
+		    		android:visibility="gone"/>-->
+		    			    	
+		    	<ImageView android:id="@+id/bigCoverArt"
+					android:visibility="visible"
+					android:src="@drawable/d137_fox_reflection"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:layout_centerInParent="true"					
+					android:paddingTop="15dip"
+					android:paddingBottom="10dip"
+					android:paddingRight="10dip"
+					android:paddingLeft="10dip"/>	
+					
+				<com.commonsware.cwac.tlv.TouchListView
+				    xmlns:tlv="http://schemas.android.com/apk/res/ch.ethz.dcg.pancho3"
+				
+				    android:id="@+id/playlist"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:drawSelectorOnTop="false"
+				    android:layout_weight="1" 
+				    android:cacheColorHint="#00000000"
+				    android:background="#a0000000"
+				    tlv:normal_height="48dip"
+				    tlv:expanded_height="48dip"
+				    tlv:grabber="@+id/icon"
+				    tlv:remove_mode="none"
+				    android:visibility="gone"/>		
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"														
+					android:focusable="false"
+					android:layout_gravity="bottom"
+					android:gravity="bottom|center_horizontal">	
+													 	
+					<View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+					<TextView android:id="@+id/clickCover"
+						  android:text="@string/click_cover_to_see_playlist"
+						  android:visibility="gone"
+				          android:layout_width="wrap_content"
+				          android:layout_height="wrap_content"	          	        
+				          android:textColor="#ffffffff"
+				          android:focusable="false"
+				          android:layout_gravity="bottom|center_horizontal"
+				          android:paddingBottom="0dip"
+				          android:textAppearance="?android:attr/textAppearanceSmall"/>
+				</LinearLayout>						
+		    </RelativeLayout>
+			
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:visibility="visible"
+				android:padding="0dip"
+				android:layout_weight="1"
+				android:layout_centerInParent="true"
+				> 	
+			
+				<View android:layout_height="wrap_content"
+					android:layout_width="2dip"
+					android:layout_weight="1"
+					android:background="#00000000" />
+			
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:visibility="visible"
+					android:paddingBottom="6dip"
+					android:layout_centerInParent="true"
+					>     
+					<ch.ethz.dcg.pancho3.view.commons.ScrollingTextView
+			          	android:id="@+id/nowPlayingText"
+				  		android:text="@string/artist_title_place_holder"
+				  		android:visibility="visible"
+			          	android:layout_width="wrap_content"
+			          	android:layout_height="wrap_content"	
+			          	android:layout_gravity="center_horizontal"	   
+			          	android:ellipsize="marquee"       	        
+			          	android:marqueeRepeatLimit="marquee_forever"
+		    			android:scrollHorizontally="true"
+		    			android:textColor="@color/text_color"
+			         	android:textAppearance="?android:attr/textAppearanceMedium"
+			         	android:maxLines="1"/>	
+			    </LinearLayout>
+			       
+				<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="30dip"
+					android:gravity="center_horizontal|center_vertical">
+				   
+				  	<ch.ethz.dcg.pancho3.view.commons.SongProgressBar
+						android:id="@+id/songProgressBar"
+						android:layout_width="fill_parent"
+						android:layout_height="30dip"
+						android:max="10000"
+						android:layout_centerHorizontal="true"
+						android:progressDrawable="@drawable/d023_progress_horizontal"/>
+				       
+					<TextView android:id="@+id/songProgressText"
+					       android:layout_width="wrap_content"
+					       android:layout_height="wrap_content"
+					       android:text="0:00"
+					       android:textColor="#ffffff"
+					       android:layout_centerHorizontal="true"
+					       android:layout_centerVertical="true"
+					       android:textAppearance="?android:attr/textAppearanceSmall"/>
+				       
+				</RelativeLayout>
+			        	
+				<View android:layout_height="wrap_content"
+					android:layout_width="2dip"
+					android:layout_weight="1"
+					android:background="#00000000" />	
+					
+				<include layout="@layout/playerconsole" />	
+					
+			</LinearLayout>		
+		    	    
+		</LinearLayout>	
+	
+	</LinearLayout>
+</LinearLayout>			
+

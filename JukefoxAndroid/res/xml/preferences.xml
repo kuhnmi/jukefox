@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+	        android:title="@string/DIRECTORIES_TITLE">
+	        <Preference android:title="@string/TITLE_DIRECTORY_SELECTION" 
+	        	android:key="@string/KEY_DIRECTORY_SELECTION"
+	        	android:summary="@string/SUMMARY_DIRECTORY_SELECTION"/>
+	</PreferenceCategory>
+	<PreferenceCategory
+	        android:title="@string/GENERAL_TITLE">
+	        <PreferenceScreen
+		        android:title="@string/TITLE_DISPLAY_SETTINGS"
+		        android:summary="@string/SUMMARY_DISPLAY_SETTINGS"> 	        
+		        <CheckBoxPreference
+		            android:title="@string/TITLE_AUTO_SHOW_COVER"
+		            android:summary="@string/SUMMARY_AUTO_SHOW_COVER"
+		            android:defaultValue="@string/DEFAULT_AUTO_SHOW_COVER"
+		            android:key="@string/KEY_AUTO_SHOW_COVER" />  
+		        <!--<CheckBoxPreference
+		            android:title="@string/TITLE_USE_WALLPAPER_BACKGROUND"
+		            android:summary="@string/SUMMARY_USE_WALLPAPER_BACKGROUND"
+		            android:defaultValue="@string/DEFAULT_USE_WALLPAPER_BACKGROUND"
+		            android:key="@string/KEY_USE_WALLPAPER_BACKGROUND" />
+		        --><CheckBoxPreference
+		            android:title="@string/TITLE_PICK_BACKGROUND_FROM_GALLERY"
+		            android:summary="@string/SUMMARY_PICK_BACKGROUND_FROM_GALLERY"
+		            android:defaultValue="@string/DEFAULT_PICK_BACKGROUND_FROM_GALLERY"
+		            android:key="@string/KEY_PICK_BACKGROUND_FROM_GALLERY" />   
+		        <CheckBoxPreference
+		            android:title="@string/TITLE_ICON_LISTS"
+		            android:defaultValue="@string/DEFAULT_ICON_LISTS"
+		            android:summary="@string/SUMMARY_ICON_LISTS"
+		            android:key="@string/KEY_ICON_LISTS" />
+		        <CheckBoxPreference
+		            android:title="@string/TITLE_IGNORE_LEADING_THE"
+		            android:defaultValue="@string/DEFAULT_IGNORE_LEADING_THE"
+		            android:summary="@string/SUMMARY_IGNORE_LEADING_THE"
+		            android:key="@string/KEY_IGNORE_LEADING_THE" />
+		        <CheckBoxPreference
+		            android:title="@string/TITLE_FIX_SCREEN_ORIENTATION"
+		            android:defaultValue="@string/DEFAULT_FIX_SCREEN_ORIENTATION"
+		            android:summary="@string/SUMMARY_FIX_SCREEN_ORIENTATION"
+		            android:key="@string/KEY_FIX_SCREEN_ORIENTATION" />
+		        <CheckBoxPreference
+		            android:title="@string/TITLE_SHOW_NOTIFICATIONS"
+		            android:defaultValue="@string/DEFAULT_SHOW_NOTIFICATIONS"
+		            android:summary="@string/SUMMARY_SHOW_NOTIFICATIONS"
+		            android:key="@string/KEY_SHOW_NOTIFICATIONS" /> 
+		        <CheckBoxPreference
+		            android:title="@string/TITLE_SEARCH_WHILE_TYPING"
+		            android:defaultValue="@string/DEFAULT_SEARCH_WHILE_TYPING"
+		            android:summary="@string/SUMMARY_SEARCH_WHILE_TYPING"
+		            android:key="@string/KEY_SEARCH_WHILE_TYPING" />
+		        <CheckBoxPreference
+		            android:title="@string/TITLE_DIRECTLY_SHOW_ALBUM_LIST"
+		            android:defaultValue="@string/DEFAULT_DIRECTLY_SHOW_ALBUM_LIST"
+		            android:summary="@string/SUMMARY_DIRECTLY_SHOW_ALBUM_LIST"
+		            android:key="@string/KEY_DIRECTLY_SHOW_ALBUM_LIST" />
+		    </PreferenceScreen>
+	       <PreferenceScreen
+		        android:title="@string/PLAYBACK_TITLE">
+		        <CheckBoxPreference
+			            android:title="@string/TITLE_IGNORE_MEDIA_BUTTONS"
+			            android:defaultValue="@string/DEFAULT_IGNORE_MEDIA_BUTTONS"
+			            android:summary="@string/SUMMARY_IGNORE_MEDIA_BUTTONS"
+			            android:key="@string/KEY_IGNORE_MEDIA_BUTTONS" />
+				<CheckBoxPreference
+			            android:title="@string/TITLE_RESUME_ON_HEADSET_PLUG"
+			            android:defaultValue="@string/DEFAULT_RESUME_ON_HEADSET_PLUG"
+			            android:summary="@string/SUMMARY_RESUME_ON_HEADSET_PLUG"
+			            android:key="@string/KEY_RESUME_ON_HEADSET_PLUG" />
+				<CheckBoxPreference
+			            android:title="@string/TITLE_GAPLESS"
+			            android:defaultValue="@string/DEFAULT_GAPLESS"
+			            android:summary="@string/SUMMARY_GAPLESS"
+			            android:key="@string/KEY_GAPLESS" />    
+			    <CheckBoxPreference
+			            android:title="@string/TITLE_CROSSFADING"
+			            android:defaultValue="@string/DEFAULT_CROSSFADING"
+			            android:summary="@string/SUMMARY_CROSSFADING"
+			            android:key="@string/KEY_CROSSFADING" /> 
+			    <!-- <CheckBoxPreference
+			        	android:dependency="@string/KEY_CROSSFADING"
+			            android:title="@string/TITLE_BEAT_MATCHING"
+			            android:defaultValue="@string/DEFAULT_BEAT_MATCHING"
+			            android:summary="@string/SUMMARY_BEAT_MATCHING"
+			            android:key="@string/KEY_BEAT_MATCHING" />--> 
+			    <CheckBoxPreference
+			            android:title="@string/TITLE_SHAKE_SKIP"
+			            android:defaultValue="@string/DEFAULT_SHAKE_SKIP"
+			            android:summary="@string/SUMMARY_SHAKE_SKIP"
+			            android:key="@string/KEY_SHAKE_SKIP" />   
+			    <ch.ethz.dcg.pancho3.view.commons.SeekBarPreference  
+		                android:dependency="@string/KEY_SHAKE_SKIP"
+		                android:key="@string/KEY_SHAKE_SKIP_THRESHHOLD"
+		                android:defaultValue="@string/DEFAULT_SHAKE_SKIP_THRESHHOLD"
+		                android:title="@string/TITLE_SHAKE_SKIP_THRESHHOLD" /> 
+			</PreferenceScreen>
+			<PreferenceScreen
+		        android:title="@string/MUSIC_MAP_TITLE">
+		        <CheckBoxPreference
+			           android:title="@string/TITLE_SHOW_ZOOM_BAR"
+			           android:defaultValue="@string/DEFAULT_SHOW_ZOOM_BAR"	            
+			           android:key="@string/KEY_SHOW_ZOOM_BAR" />
+				<CheckBoxPreference
+		               android:title="@string/TITLE_HIGHLIGHT_CUR_ALBUM"
+		               android:defaultValue="@string/DEFAULT_HIGHLIGHT_CUR_ALBUM"
+		               android:summary="@string/SUMMARY_HIGHLIGHT_CUR_ALBUM"
+		               android:key="@string/KEY_HIGHLIGHT_CUR_ALBUM" />
+		           <CheckBoxPreference
+		               android:title="@string/TITLE_GOTO_CUR_ALBUM"
+		               android:defaultValue="@string/DEFAULT_GOTO_CUR_ALBUM"
+		               android:summary="@string/SUMMARY_GOTO_CUR_ALBUM"
+		               android:key="@string/KEY_GOTO_CUR_ALBUM"/>
+		           <CheckBoxPreference
+		               android:title="@string/TITLE_KINETIC_MOVEMENT"
+		               android:defaultValue="@string/DEFAULT_KINETIC_MOVEMENT"
+		               android:summary="@string/SUMMARY_KINETIC_MOVEMENT"
+		               android:key="@string/KEY_KINETIC_MOVEMENT"/>
+		   	</PreferenceScreen>
+	        <CheckBoxPreference
+                android:title="@string/TITLE_HAPTIC_FEEDBACK"
+                android:defaultValue="@string/DEFAULT_HAPTIC_FEEDBACK"
+                android:summary="@string/SUMMARY_HAPTIC_FEEDBACK"
+                android:key="@string/KEY_HAPTIC_FEEDBACK" />
+            <CheckBoxPreference
+                android:title="@string/TITLE_LOCK_SCREEN_CONTROLS"
+                android:defaultValue="@string/DEFAULT_LOCK_SCREEN_CONTROLS"
+                android:summary="@string/SUMMARY_LOCK_SCREEN_CONTROLS"
+                android:key="@string/KEY_LOCK_SCREEN_CONTROLS" />            
+	</PreferenceCategory>
+    <PreferenceCategory
+	        android:title="@string/LAST_FM_CATEGORY">
+	<PreferenceScreen
+	        android:key="@string/LAST_FM_CATEGORY"
+	        android:title="@string/LAST_FM_PREFERENCES_TITLE"
+	        android:summary="@string/LAST_FM_PREFERENCES_DESCRIPTION">
+	        <ListPreference
+            	android:title="@string/SCROBBLE_TYPE_CATEGORY"
+            	android:key="@string/KEY_SCROBBLE_TYPE"
+            	android:defaultValue="@string/DEFAULT_SCROBBLE_TYPE"
+            	android:entries="@array/scrobbleTypeEntries"
+            	android:entryValues="@array/scrobbleTypeValues" 
+            />
+<!-- 	        
+			<CheckBoxPreference
+                android:title="@string/TITLE_SCROBBLE_ENABLED"
+                android:defaultValue="@string/DEFAULT_SCROBBLE_ENABLED"
+                android:key="@string/KEY_SCROBBLE_ENABLED"/>
+-->                
+            <CheckBoxPreference
+                android:title="@string/TITLE_SCROBBLE_PAUSED"
+                android:defaultValue="@string/DEFAULT_SCROBBLE_PAUSED"
+                android:key="@string/KEY_SCROBBLE_PAUSED"
+                android:summary="@string/SUMMARY_SCROBBLE_PAUSED" />
+            <Preference
+		        android:title="@string/TITLE_SCROBBLE_INTERVAL"
+		        android:summary="@string/SUMMARY_SCROBBLE_INTERVAL"
+		        android:key="@string/KEY_SCROBBLE_INTERVAL"/>
+	        <EditTextPreference
+                android:name="last.fm username"
+                android:title="@string/TITLE_SCROBBLE_USERNAME"
+                android:key="@string/KEY_SCROBBLE_USERNAME" />
+	        <EditTextPreference
+                android:name="last.fm password"
+                android:title="@string/TITLE_SCROBBLE_PWD"
+                android:key="@string/KEY_SCROBBLE_PWD"
+                android:password="true" />
+	</PreferenceScreen>
+	</PreferenceCategory>	
+<!-- 	
+	<PreferenceCategory
+	        android:title="@string/TWITTER_CATEGORY">
+	<PreferenceScreen
+	        android:key="@string/TWITTER_CATEGORY"
+	        android:title="@string/TWITTER_PREFERENCES_TITLE"
+	        android:summary="@string/TWITTER_PREFERENCES_DESCRIPTION">
+			<CheckBoxPreference
+                android:title="@string/TITLE_TWITTER_NOWPLAYING_ENABLED"
+                android:defaultValue="@string/DEFAULT_TWITTER_NOWPLAYING_ENABLED"
+                android:key="@string/KEY_TWITTER_NOWPLAYING_ENABLED"/>
+	</PreferenceScreen>
+	</PreferenceCategory>	
+ -->	
+		
+    <!-- <PreferenceCategory
+	        android:title="@string/FACEBOOK_CATEGORY">
+	<PreferenceScreen
+	        android:key="@string/FACEBOOK_CATEGORY"
+	        android:title="@string/FACEBOOK_PREFERENCES_TITLE"
+	        android:summary="@string/FACEBOOK_PREFERENCES_DESCRIPTION">
+			<CheckBoxPreference
+                android:title="@string/TITLE_FACEBOOK_AUTOSEND_ENABLED"
+                android:defaultValue="@string/DEFAULT_FACEBOOK_AUTOSEND_ENABLED"
+                android:key="@string/KEY_FACEBOOK_AUTOSEND_ENABLED"/>
+            <ListPreference
+                android:title="@string/TITLE_FACEBOOK_AUTOSEND_INTERVAL"
+                android:defaultValue="@string/DEFAULT_FACEBOOK_AUTOSEND_INTERVAL"
+                android:key="@string/KEY_FACEBOOK_AUTOSEND_INTERVAL"
+                android:summary="@string/SUMMARY_AUTOSEND_INTERVAL" 
+				android:entryValues="@array/FACEBOOK_AUTOSEND_INTERVALS"
+                android:entries="@array/FACEBOOK_AUTOSEND_INTERVALS"
+                />
+	</PreferenceScreen>
+	</PreferenceCategory>	-->
+	<PreferenceCategory
+		android:title="@string/TITLE_ADVANCED_SETTINGS">
+	 	<PreferenceScreen
+		        android:title="@string/TITLE_ADVANCED_SETTINGS"
+		        android:summary="@string/SUMMARY_ADVANCED_SETTINGS"> 	                  		        		        
+		        <CheckBoxPreference
+		            android:title="@string/TITLE_AUTOMATIC_IMPORTS"
+		            android:defaultValue="@string/DEFAULT_AUTOMATIC_IMPORTS"
+		            android:summary="@string/SUMMARY_AUTOMATIC_IMPORTS"
+		            android:key="@string/KEY_AUTOMATIC_IMPORTS" />
+		        <CheckBoxPreference
+		            android:title="@string/TITLE_ENABLE_LOG_FILE"
+		            android:defaultValue="@string/DEFAULT_ENABLE_LOG_FILE"
+		            android:summary="@string/SUMMARY_ENABLE_LOG_FILE"
+		            android:key="@string/KEY_ENABLE_LOG_FILE" />
+		        <CheckBoxPreference
+		            android:title="@string/TITLE_GATHER_USAGE_DATA"
+		            android:defaultValue="@string/DEFAULT_GATHER_USAGE_DATA"
+		            android:summary="@string/SUMMARY_GATHER_USAGE_DATA"
+		            android:key="@string/KEY_GATHER_USAGE_DATA" />
+		      		       
+		</PreferenceScreen>
+	</PreferenceCategory>
+</PreferenceScreen>

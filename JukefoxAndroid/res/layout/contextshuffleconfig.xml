@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:layout_centerInParent="true" 
+	android:background="@drawable/d049_bg_overlay"
+	android:layout_gravity="center">
+	
+	<View android:layout_width="fill_parent"
+			android:layout_height="5dip"/>
+	
+	<LinearLayout android:orientation="vertical" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:visibility="visible" 
+		android:layout_centerInParent="true"
+		android:layout_gravity="center">
+		<TextView android:id="@+id/playModeMenuTitle" 
+			android:text="@string/select_play_mode"
+			android:visibility="visible" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	</LinearLayout>
+	
+	<View android:layout_width="fill_parent"
+			android:layout_height="5dip"/>
+			
+	<LinearLayout android:orientation="vertical" 
+			android:id="@+id/tagCloud"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"/> 
+    
+    <View android:layout_width="fill_parent"
+			android:layout_height="5dip"/>   	 	
+			
+	<EditText 
+		android:text="" 
+		android:id="@+id/contextName" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/d046_bg_button"
+		android:layout_weight="1"
+		android:maxLines="1"/>
+	
+	<View android:layout_width="fill_parent"
+			android:layout_height="5dip"/>	
+	
+	<LinearLayout android:orientation="horizontal" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:visibility="visible" 
+		android:layout_centerInParent="true"
+		android:layout_gravity="center">
+		<ImageView android:id="@+id/likeButton"
+			android:src="@drawable/d160_like"
+			android:layout_width="64sp"
+			android:layout_height="64sp"
+			android:maxWidth="64sp"
+			android:maxHeight="64sp"
+			android:layout_gravity="center"
+			android:visibility="visible"/>
+		<ImageView android:id="@+id/dislikeButton"
+			android:src="@drawable/d159_dislike"
+			android:layout_width="64sp"
+			android:layout_height="64sp"
+			android:maxWidth="64sp"
+			android:maxHeight="64sp"
+			android:layout_gravity="center"
+			android:visibility="visible"/>
+
+	</LinearLayout>	
+	
+	<View android:layout_width="fill_parent"
+			android:layout_height="5dip"/>		
+	
+	<LinearLayout android:orientation="horizontal"
+		android:id="@+id/newButton" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:visibility="visible"
+		android:background="@drawable/d046_bg_button"
+		android:gravity="center_vertical">
+		<ImageView 
+			android:src="@drawable/d126_smart_shuffle_inverted"
+			android:layout_width="50sp" 
+			android:layout_height="50sp"
+			android:visibility="visible" />
+		<TextView android:text="@string/new_profile" 
+			android:id="@+id/rep"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textColor="@color/button_text_color"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_gravity="center_vertical|center_horizontal" />
+	</LinearLayout>
+	
+	<View android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:layout_weight="0.0"/>
+
+</LinearLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ch.ethz.dcg.pancho3"
+      android:versionName="a0.9722" 
+      android:versionCode="69" 
+      android:installLocation="auto">
+      
+  <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+  	
+  	<uses-sdk android:minSdkVersion="5" 
+  		android:targetSdkVersion="11"/> 
+  		
+  	<supports-screens/>
+  	
+    <application android:icon="@drawable/d022_app_icon"
+			android:label="@string/app_name" 
+			android:configChanges="keyboardHidden|orientation"
+			android:name=".model.JukefoxApplication">
+
+		<activity android:name=".view.tabs.PlayerActivity" 
+			android:label="jukefox alpha"
+			android:launchMode="singleTask"
+			android:clearTaskOnLaunch="true">
+	
+			<intent-filter>
+		   		<action android:name="android.intent.action.MAIN" />
+		  		<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>	
+					
+		</activity>
+		
+		<activity android:name=".tablet.view.TabletActivity" 
+		      android:label="jukefox tablet"
+		      android:enabled="true"
+		      android:hardwareAccelerated="true"
+		      android:launchMode="singleTask"
+		      android:clearTaskOnLaunch="true"
+		      android:windowSoftInputMode="adjustResize"
+		      android:theme="?android:style/Theme.Holo">
+		  
+		      <intent-filter>
+		          <action android:name="android.intent.action.MAIN" />
+		          <category android:name="android.intent.category.LAUNCHER" />
+		      </intent-filter>  
+		          
+    	</activity>
+
+		<activity android:name=".view.dialogs.StandardDialog"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+		<activity android:name=".view.dialogs.FeedbackDialog"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+		<activity android:name=".view.dialogs.FirstStartDialog"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+			
+		<activity android:name=".view.dialogs.ContinueDialog"/>
+
+		<activity android:name=".view.dialogs.SdCardProblemDialog"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+		<activity android:name=".view.dialogs.DontShowAgainDialog"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+			
+		<activity android:name=".view.dialogs.ImportDialog"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:launchMode="singleTask"/>
+			
+		<activity android:name=".view.dialogs.GaplessSettingsDialog"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+			
+		<activity android:name=".view.dialogs.ScrobbleIntervalDialog"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+		
+		<activity android:name=".view.dialogs.CancelImportDialog"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+			
+		<activity android:name=".view.dialogs.TakeATourDialog"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:launchMode="singleTask"/>
+
+        <activity android:name=".view.overlays.StatisticsMenu"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+		<activity android:name=".view.statistics.StatisticsActivity"/>
+  		<activity android:name=".view.statistics.lists.SkipCountList"/>
+  		
+        <activity android:name=".view.tabs.lists.ListSelectionActivity"/>
+			
+		<activity android:name=".view.tabs.lists.ArtistList"/>
+		
+		<activity android:name=".view.tabs.lists.ArtistListMenu"
+		android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+			
+		<activity android:name=".view.tabs.lists.AlbumList"/>
+
+		<activity android:name=".view.tabs.lists.AlbumListMenu"
+		android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+		
+		<activity android:name=".view.tabs.albumswipe.AlbumSwipeActivity"/>
+			
+		<activity android:name=".view.tabs.lists.SongList"/>
+		
+		<activity android:name=".view.overlays.DeleteSongMenu"
+		android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+			
+		<activity android:name=".view.tabs.lists.GenreList"/>
+		
+		<activity android:name=".view.tabs.lists.GenreListMenu"
+		android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+			
+		<activity android:name=".view.tabs.lists.TagCloud"/>		
+		
+		<activity android:name=".view.tabs.SearchActivity"/>		
+			
+		<activity android:name=".view.tabs.SpaceActivity"/>
+			
+		<activity android:name=".view.tabs.MapActivity"/>
+		
+		<activity android:name=".view.tour.TourStart"/>
+		
+		<activity android:name=".view.tour.GeneralTour"/>
+		
+		<activity android:name=".view.tour.PlaylistTour"/>
+		
+		<activity android:name=".view.tour.PlayModesTour"/>
+		
+		<activity android:name=".view.tour.CoolFeaturesTour"/>
+		
+		<activity android:name=".view.lockscreen.LockScreen"
+			android:launchMode="singleInstance"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:screenOrientation="portrait">			
+		</activity>
+		
+		<activity android:name=".view.overlays.PlaylistContextMenu"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+		
+		<activity android:name=".view.overlays.SongMenu"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+		
+		<activity android:name=".view.overlays.SimilarSongsToFamousArtist"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+		
+		<activity android:name=".view.overlays.TagPlaylistGenerationActivity"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+		
+		<activity android:name=".view.overlays.PlayModeMenu"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+			
+        <activity android:name=".view.overlays.SimpleAgentsMenu"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        
+        <activity android:name=".view.overlays.ComplexAgentsMenu"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        		
+		<activity android:name=".view.overlays.ContextShuffleConfig"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+		
+		<activity android:name=".view.overlays.PlaylistMenu"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+		
+		<activity android:name=".view.overlays.LoadPlaylistMenu"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+			
+		<activity android:name=".view.overlays.LoadVideoPlaylistMenu"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+		
+		<activity android:name=".view.overlays.SavePlaylistMenu"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+		
+		<activity android:name=".view.overlays.SleepMenu"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+		
+		<activity android:name=".view.overlays.ShuffleModeMenu"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+		
+		<activity android:name=".view.overlays.SimilarModeMenu"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+		
+		<activity android:name=".view.overlays.AlbumDetails"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+		
+		<activity android:name=".view.overlays.SongContextMenu"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+			
+		<activity android:name=".view.overlays.ImportPlaylistActivity"/>
+
+		<activity android:name=".view.overlays.JukefoxPreferenceActivity"/>
+		
+		<activity android:name=".fb.FbSendActivity" />
+		<activity android:name="fb.FbLoginActivity" />
+		
+			
+		<receiver android:name=".view.widgets.JukefoxWidgetNormalSize" 
+			android:label="@string/app_name">
+    		<intent-filter>
+    			<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+    			<action android:name="android.intent.action.CONFIGURATION_CHANGED" />
+    		</intent-filter>
+    		<intent-filter>
+    			<action android:name="android.intent.action.MEDIA_MOUNTED" />
+     			<data android:scheme="file" />    			
+    		</intent-filter>
+    		<meta-data android:name="android.appwidget.provider"
+    			android:resource="@xml/widget_provider" />
+    	</receiver>
+		
+		<receiver android:name=".view.widgets.JukefoxWidgetLargeSize" 
+			android:label="@string/widget_name_large">
+    		<intent-filter>
+    			<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+    			<action android:name="android.intent.action.CONFIGURATION_CHANGED" />
+    		</intent-filter>
+    		<intent-filter>
+    			<action android:name="android.intent.action.MEDIA_MOUNTED" />
+     			<data android:scheme="file" />    			
+    		</intent-filter>
+    		<meta-data android:name="android.appwidget.provider"
+    			android:resource="@xml/widget_provider_large" />
+    	</receiver>
+    	
+    	<receiver android:name=".controller.JukefoxIntentReceiver" >
+    		<intent-filter android:priority="1000">
+    			<action android:name="android.intent.action.MEDIA_BUTTON"/>
+    			<action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+    			<action android:name=".controller.player.PlayerService.ACTION_PLAY_DATE_RANGE"/>
+    			<action android:name=".controller.player.PlayerService.ACTION_PLAY_TAG"/>
+    			<action android:name=".controller.player.PlayerService.ACTION_STOP_MUSIC"/>
+    		</intent-filter>
+    	</receiver>
+    	
+    	<service android:name=".controller.player.PlayerService"
+    		android:enabled="true" >
+    		<!-- <intent-filter android:priority="12900">
+    			<action android:name=".model.playback.PlayerService.ACTION_PLAY_PAUSE" />
+    			<action android:name="android.net.conn.CONNECTIVITY_CHANGE"  />
+    		</intent-filter> -->
+    	</service>
+    	
+    	<service android:name=".model.libraryimport.ImportService"
+    		android:enabled="true" >
+    	</service>
+    </application>
+
+</manifest>

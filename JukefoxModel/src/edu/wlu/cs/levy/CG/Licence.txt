@@ -1,0 +1,1 @@
+KD-Tree Implementation in Java: LGPL, http://home.wlu.edu/~levys/software/kd/

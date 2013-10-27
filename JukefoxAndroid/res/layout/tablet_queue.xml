@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <View android:id="@+id/border0" style="@style/border.vertical"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:background="@color/queue_light">
+        <View android:id="@+id/border1" style="@style/border.horizontal"/>
+        <LinearLayout
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">		
+            <RelativeLayout
+                    android:id="@+id/playlistWithTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:layout_gravity="center_horizontal|center_vertical">
+                <ch.ethz.dcg.pancho3.tablet.widget.MagicView
+                        android:id="@+id/magicview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" />
+            </RelativeLayout>
+            <LinearLayout
+                    android:id="@+id/undo_container"
+                    android:layout_height="48dp"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:background="@drawable/d168_box_background"         
+                    android:padding="10dp" 
+                    android:layout_margin="8dp">
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:text="@string/clear_upcoming_songs"
+                    android:layout_weight="3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:gravity="center" />
+                <View style="@style/border.vertical"/>
+                <TextView
+                        android:id="@+id/undo"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:text="@string/undo"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/playerConsole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/queue_dark">
+                <ImageButton
+                        android:id="@+id/clearButton"
+                        android:src="@drawable/d166_clear_upcoming"
+                        style="@style/BottomBarButton"
+                        android:contentDescription="@string/clear_upcoming_songs"/>
+                <ImageButton
+                        android:id="@+id/shuffleButton"
+                        android:src="@drawable/d167_shuffle_upcoming"
+                        style="@style/BottomBarButton"
+                        android:contentDescription="@string/shuffle_upcoming_songs"/>
+                <ImageButton
+                        android:id="@+id/playPauseButton"
+                        android:src="@drawable/d165_play"
+                        style="@style/BottomBarButton"
+                        android:contentDescription="@string/play_pause_toggle"/>
+                <ImageButton
+                        android:id="@+id/skipButton"
+                        android:src="@drawable/d163_next"
+                        style="@style/BottomBarButton"
+                        android:contentDescription="@string/skip_current_song"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@+id/border2" style="@style/border.horizontal"/>
+    </LinearLayout>
+    <View android:id="@+id/border3" style="@style/border.vertical"/>
+</LinearLayout>

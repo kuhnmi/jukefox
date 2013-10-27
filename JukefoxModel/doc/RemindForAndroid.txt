@@ -1,0 +1,9 @@
+REMIND FOR ANDROID:
+
+- Directory Blacklist File contains now the absolutePath... (incl. SDCARD_PATH), same as File Blacklist -> who is writing this file?
+		Import reads it like this:
+		OLD!!! dirNames.add(Constants.SDCARD_PATH + "/" + line);
+		NEW!!! dirNames.add(line); 
+
+- We need a "Main" with getContentProvider()
+

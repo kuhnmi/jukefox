@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+    <ImageView
+            android:id="@+id/imagebackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    <LinearLayout
+            android:id="@+id/popup"
+            android:layout_width="520dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/d168_box_background"
+            android:orientation="vertical"
+            android:padding="10dp" >
+        <ch.ethz.dcg.pancho3.tablet.widget.CheckedRelativeLayout
+                android:id="@+id/headeritem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:ignoreGravity="@+id/dragger"
+                style="@android:style/Widget.Holo.Button.Borderless">
+            <TextView android:id="@+id/text1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="9dp"
+                    android:ellipsize="marquee"
+                    android:singleLine="true" />
+        </ch.ethz.dcg.pancho3.tablet.widget.CheckedRelativeLayout>
+        <View style="@style/border.horizontal"/>
+        <FrameLayout
+                 android:layout_width="500dp"
+                 android:layout_height="500dp"
+                 android:layout_gravity="center_horizontal" >
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#000000"/>
+            <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.28"/>
+            <ListView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fastScrollEnabled="true"
+                    android:choiceMode="multipleChoice"/>
+        </FrameLayout>
+        <View style="@style/border.horizontal"/>
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <SeekBar
+                    android:id="@+id/songbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"/>
+            <FrameLayout
+                    android:id="@+id/songbar_description"
+                    android:background="@color/trans_dark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/song_slider_description"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/droparea"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_toLeftOf="@id/popup"
+            android:layout_alignTop="@id/popup"
+            android:layout_alignBottom="@id/popup"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        <include
+                android:id="@+id/droparea_playnow"
+                layout="@layout/tablet_overlay_droparea" />
+        <include
+                android:id="@+id/droparea_playnext"
+                layout="@layout/tablet_overlay_droparea" />
+        <include
+                android:id="@+id/droparea_enqueue"
+                layout="@layout/tablet_overlay_droparea" />
+    </LinearLayout>
+</RelativeLayout>

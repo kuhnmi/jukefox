@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="KEY_COORD_VERSION">coordsVersion</string>
+<string name="KEY_PLAY_LOG_DB_VERSION">playLogDbVersion</string>
+<string name="KEY_LAST_SENT_PLAY_LOG_ID">lastSentPlayLogId</string>
+<string name="KEY_RANDOM_USER_HASH">randomUserHash</string>
+<string name="KEY_GAPLESS_OFFSET">manualGaplessOffset</string>
+<string name="DEFAULT_GAPLESS_OFFSET">100</string>
+<string name="KEY_APP_VERSION">version</string>
+<string name="KEY_USE_COVER_FILES">useCoverFiles</string>
+<string name="KEY_LOGGING">logging</string>
+<string name="KEY_LOG_START_TIME">logStartTime</string>
+<string name="KEY_SIMILAR_MODE_ARTIST_AVOIDANCE_NUMBER">similarModeArtistAvoidanceNumber</string>
+
+<string name="TITLE_DIRECTORY_SELECTION">Directory selection</string>
+<string name="KEY_DIRECTORY_SELECTION">Directory selection</string>
+<string name="SUMMARY_DIRECTORY_SELECTION">Choose which directories are scanned for music files</string>
+
+<string name="KEY_SHOW_ZOOM_BAR">showZoomBar</string>
+<string name="TITLE_SHOW_ZOOM_BAR">Show zoom bar</string>
+<string name="DEFAULT_SHOW_ZOOM_BAR">true</string>
+<string name="SUMMARY_SHOZ_ZOOM_BAR">Show the zoom bar in the map view</string>
+
+<string name="KEY_LOCK_SCREEN_CONTROLS">lockScreenControls</string>
+<string name="TITLE_LOCK_SCREEN_CONTROLS">Lock screen controls</string>
+<string name="DEFAULT_LOCK_SCREEN_CONTROLS">false</string>
+<string name="SUMMARY_LOCK_SCREEN_CONTROLS">Replace the default lock screen by one with player controls</string>
+
+<string name="KEY_RESUME_ON_HEADSET_PLUG">resumeOnHeadsetPlug</string>
+<string name="TITLE_RESUME_ON_HEADSET_PLUG">Resume on headset</string>
+<string name="DEFAULT_RESUME_ON_HEADSET_PLUG">false</string>
+<string name="SUMMARY_RESUME_ON_HEADSET_PLUG">Resume music when headset is plugged in</string>
+
+<string name="KEY_HAPTIC_FEEDBACK">hapticFeedback</string>
+<string name="TITLE_HAPTIC_FEEDBACK">Haptic Feedback</string>
+<string name="DEFAULT_HAPTIC_FEEDBACK">true</string>
+<string name="SUMMARY_HAPTIC_FEEDBACK">Vibrate on user input such as button clicks, etc.</string>
+
+
+<string name="KEY_GOTO_CUR_ALBUM">goToCurrentAlbumInMap</string>
+<string name="TITLE_GOTO_CUR_ALBUM">Go to current album</string>
+<string name="DEFAULT_GOTO_CUR_ALBUM">true</string>
+<string name="SUMMARY_GOTO_CUR_ALBUM">Go to the album of the currently playing song in the map.</string>
+
+
+<string name="KEY_HIGHLIGHT_CUR_ALBUM">highlightCurrentAlbumInMap</string>
+<string name="TITLE_HIGHLIGHT_CUR_ALBUM">Highlight current album</string>
+<string name="DEFAULT_HIGHLIGHT_CUR_ALBUM">true</string>
+<string name="SUMMARY_HIGHLIGHT_CUR_ALBUM">Highlight the album of the currently playing song in the map.</string>
+
+
+<string name="KEY_AUTO_SHOW_COVER">autoShowAlbumArt</string>
+<string name="TITLE_AUTO_SHOW_COVER">Show big album art</string>
+<string name="DEFAULT_AUTO_SHOW_COVER">true</string>
+<string name="SUMMARY_AUTO_SHOW_COVER">Automatically show cover instead of playlist</string>
+
+
+<string name="KEY_SHOW_TIPS">showTips</string>
+<string name="TITLE_SHOW_TIPS">Show tipps at startup</string>
+<string name="DEFAULT_SHOW_TIPS">true</string>
+<string name="SUMMARY_SHOW_TIPS"></string>
+
+
+<string name="KEY_ICON_LISTS">showIconLists</string>
+<string name="TITLE_ICON_LISTS">Show icons in lists</string>
+<string name="DEFAULT_ICON_LISTS">true</string>
+<string name="SUMMARY_ICON_LISTS">May slow down scrolling in lists.</string>
+
+
+
+
+<string name="KEY_SHOW_NOTIFICATIONS">showNotifications</string>
+<string name="TITLE_SHOW_NOTIFICATIONS">Show notifications</string>
+<string name="DEFAULT_SHOW_NOTIFICATIONS">true</string>
+<string name="SUMMARY_SHOW_NOTIFICATIONS">Always show a notification in the android notification bar.</string>
+
+
+<string name="KEY_GAPLESS">gaplessPlaybackEnabled</string>
+<string name="TITLE_GAPLESS">Gapless Playback</string>
+<string name="DEFAULT_GAPLESS">false</string>
+<string name="SUMMARY_GAPLESS">Activate gap removal between songs</string>
+
+
+<string name="KEY_SCROBBLE_ENABLED">scrobbleEnabled</string>
+<string name="TITLE_SCROBBLE_ENABLED">Scrobble to Last.fm</string>
+<string name="DEFAULT_SCROBBLE_ENABLED">false</string>
+<string name="SUMMARY_SCROBBLE_ENABLED"></string>
+
+<string name="KEY_SCROBBLE_PAUSED">scrobblePaused</string>
+<string name="TITLE_SCROBBLE_PAUSED">Pause scrobbling</string>
+<string name="DEFAULT_SCROBBLE_PAUSED">false</string>
+<string name="SUMMARY_SCROBBLE_PAUSED">Played songs are stored locally and sent when you uncheck this checkbox</string>
+
+<string name="KEY_SCROBBLE_INTERVAL">scrobbleInterval</string>
+<string name="TITLE_SCROBBLE_INTERVAL">Scrobble interval</string>
+<string name="DEFAULT_SCROBBLE_INTERVAL">1</string>
+<string name="SUMMARY_SCROBBLE_INTERVAL">Send the songs in packages</string>
+
+<string name="KEY_SCROBBLE_USERNAME">lastFmUserName</string>
+<string name="TITLE_SCROBBLE_USERNAME">Last.fm username</string>
+<string name="DEFAULT_SCROBBLE_USERNAME"></string>
+<string name="SUMMARY_SCROBBLE_USERNAME"></string>
+
+<string name="KEY_SCROBBLE_PWD">lastFmPassword</string>
+<string name="TITLE_SCROBBLE_PWD">Last.fm password</string>
+<string name="DEFAULT_SCROBBLE_PWD"></string>
+<string name="SUMMARY_SCROBBLE_PWD"></string>
+
+<string name="LAST_FM_CATEGORY">Last.fm scrobbling</string>
+<string name="LAST_FM_PREFERENCES">Last.fm preferences</string>
+<string name="LAST_FM_PREFERENCES_TITLE">Scrobble to Last.fm</string>
+<string name="LAST_FM_PREFERENCES_DESCRIPTION">Set user name, scrobble interval...</string>
+
+<string name="MUSIC_MAP_TITLE">Music Map</string>
+
+<string name="PLAYBACK_TITLE">Playback</string>
+
+<string name="GENERAL_TITLE">General</string>
+<string name="DIRECTORIES_TITLE">Directories</string>
+
+<string name="KEY_GATHER_USAGE_DATA">gatherUsageData</string>
+<string name="TITLE_GATHER_USAGE_DATA">Help improving jukefox</string>
+<string name="DEFAULT_GATHER_USAGE_DATA">true</string>
+<string name="SUMMARY_GATHER_USAGE_DATA">Help to improve jukefox by sending back anonymous usage data</string>
+
+
+<string name="KEY_HAS_SENT_DOWNLOAD_STATS">hasSentDownloadStats</string>
+
+<string name="KEY_FIX_SCREEN_ORIENTATION">fixScreenOrientation</string>
+<string name="TITLE_FIX_SCREEN_ORIENTATION">Fix screen orientation</string>
+<string name="DEFAULT_FIX_SCREEN_ORIENTATION">-1</string>
+<string name="SUMMARY_FIX_SCREEN_ORIENTATION">Fix screen orientation to landscape or portrait.</string>
+
+<string name="KEY_SCREEN_ORIENTATION">screenOrientation</string>
+
+<string name="KEY_SHARED_PREF_VERSION">sharedPrefVersion</string>
+
+<string name="KEY_IS_FIRST_START">isFirstStart</string>
+<string name="KEY_IS_COMMITTING_SERVER_DATA">isCommittingServerData</string><!-- still needed? -->
+<string name="KEY_NEEDS_RECOMPUTE">needsRecompute</string>
+
+<string name="KEY_KINETIC_MOVEMENT">kineticMovement</string>
+<string name="TITLE_KINETIC_MOVEMENT">Kinetic Movement</string>
+<string name="DEFAULT_KINETIC_MOVEMENT">true</string>
+<string name="SUMMARY_KINETIC_MOVEMENT">Use kinetic movements.</string>
+
+<string name="KEY_SEARCH_WHILE_TYPING">searchWhileTyping</string>
+<string name="TITLE_SEARCH_WHILE_TYPING">Search while typing</string>
+<string name="DEFAULT_SEARCH_WHILE_TYPING">true</string>
+<string name="SUMMARY_SEARCH_WHILE_TYPING">Turn this off on old phones</string>
+
+<string name="KEY_FAMOUS_ARTISTS_INSERTED">famousArtistsInserted</string>
+<string name="KEY_LASTPOS_IN_PCA_X">lastPositionInPcaX</string>
+<string name="KEY_LASTPOS_IN_PCA_Y">lastPositionInPcaY</string>
+
+<string name="TITLE_ADVANCED_SETTINGS">Advanced settings</string>
+<string name="SUMMARY_ADVANCED_SETTINGS">Adjust details...</string>
+
+<string name="KEY_CURRENT_LOG_FILE_NR">currentLogFileNr</string>
+<string name="KEY_LAST_APP_VERSION">lastAppVersion</string>
+
+<string name="KEY_FB_ACCESS_TOKEN">fbAccessToken</string>
+<string name="KEY_FB_EXPIRY_DATE">fbExpiryDate</string>		
+
+<string name="KEY_FB_LAST_SEND_TIME">fbLastSendTime</string>
+
+<string name="FACEBOOK_CATEGORY">Facebook</string>
+<string name="FACEBOOK_PREFERENCES_TITLE">Sending covers to facebook.</string>
+<string name="FACEBOOK_PREFERENCES_DESCRIPTION">jukefox can automatically send collages of your most listened albums to facebook. Turn automatic sending on and off, and to configure the sending interval...</string>
+
+<string name="TITLE_FACEBOOK_AUTOSEND_ENABLED">Sending covers to facebook</string>
+<string name="DEFAULT_FACEBOOK_AUTOSEND_ENABLED">false</string>
+<string name="KEY_FACEBOOK_AUTOSEND_ENABLED">fbAutoSend</string>
+
+<string name="TITLE_FACEBOOK_AUTOSEND_INTERVAL">Interval</string>
+<string name="DEFAULT_FACEBOOK_AUTOSEND_INTERVAL">weekly</string>
+<string name="KEY_FACEBOOK_AUTOSEND_INTERVAL">fbAutoSendInterval</string>
+<string name="SUMMARY_AUTOSEND_INTERVAL">Defines how often jukefox should try to send an collage of your favorite albums to facebook.</string> 
+
+<string name="KEY_ENABLE_LOG_FILE">enableLogFile</string>
+<string name="TITLE_ENABLE_LOG_FILE">Enable debug log file</string>
+<string name="DEFAULT_ENABLE_LOG_FILE">false</string>
+<string name="SUMMARY_ENABLE_LOG_FILE">Should only be enabled to report problems to the developers.</string>
+
+<string name="KEY_NUMBER_OF_STARTED_IMPORTS">numberOfStartedImports</string>
+<string name="KEY_NUMBER_OF_COMPLETED_IMPORTS">numberOfCompletedImports</string>
+
+<string name="KEY_ALBUM_NAME_MORE_THAN_TWICE_DIALOG">albumNameMoreThanTwiceDialog</string>
+<string name="KEY_ALBUM_NAMES_TO_GROUP">albumNamesToGroup</string>
+
+<string name="KEY_IGNORE_MEDIA_BUTTONS">enableMediaButton</string>
+<string name="TITLE_IGNORE_MEDIA_BUTTONS">Ignore Headset buttons</string>
+<string name="SUMMARY_IGNORE_MEDIA_BUTTONS">Ignore Headset buttons when jukefox is not running.</string>
+<string name="DEFAULT_IGNORE_MEDIA_BUTTONS">false</string>
+
+<string name="KEY_GAPLESS_AUTO_REMOVE_TIME">autoGaplessRemoveTime</string>
+<string name="DEFAULT_GAPLESS_AUTO_REMOVE_TIME">10</string>
+
+<string name="KEY_ALBUM_LIST_POSITION">albumListPosition</string>
+<string name="DEFAULT_ALBUM_LIST_POSITION">0</string>
+
+<string name="KEY_ARTIST_LIST_POSITION">artistListPosition</string>
+<string name="DEFAULT_ARTIST_LIST_POSITION">0</string>
+
+<string name="TITLE_DISPLAY_SETTINGS">Display Settings</string>
+<string name="SUMMARY_DISPLAY_SETTINGS"></string>
+
+<string name="KEY_USE_WALLPAPER_BACKGROUND">useWallpaperBackground</string>
+<string name="TITLE_USE_WALLPAPER_BACKGROUND">Use wallpaper background</string>
+<string name="SUMMARY_USE_WALLPAPER_BACKGROUND">Use the Home-wallpaper as background</string>
+<string name="DEFAULT_USE_WALLPAPER_BACKGROUND">false</string>
+
+<string name="KEY_SHAKE_SKIP">shakeSkip</string>
+<string name="TITLE_SHAKE_SKIP">Shake Skip</string>
+<string name="SUMMARY_SHAKE_SKIP">Shake your device to skip a song.</string>
+<string name="DEFAULT_SHAKE_SKIP">false</string>
+
+<string name="KEY_PICK_BACKGROUND_FROM_GALLERY">pickBackgroundFromGallery</string>
+<string name="TITLE_PICK_BACKGROUND_FROM_GALLERY">Gallery background</string>
+<string name="SUMMARY_PICK_BACKGROUND_FROM_GALLERY">Pick a custom background from gallery</string>
+<string name="DEFAULT_PICK_BACKGROUND_FROM_GALLERY">false</string>
+
+<string name="KEY_GALLERY_BACKGROUND_PATH">galleryBackgroundPath</string>
+
+<string name="KEY_COVER_HINT_COUNTER_PLAYER">coverHintCounterPlayer</string>
+
+<string name="KEY_COVER_HINT_COUNTER_ALBUM">coverHintCounterAlbum</string>
+
+<string name="KEY_SHAKE_SKIP_THRESHHOLD">shakeSkipThreshhold</string>
+<string name="TITLE_SHAKE_SKIP_THRESHHOLD">Shake sensitivity</string>
+<string name="DEFAULT_SHAKE_SKIP_THRESHHOLD">3</string>
+
+<string name="TWITTER_CATEGORY">Twitter</string>
+<string name="TWITTER_PREFERENCES">Twitter preferences</string>
+<string name="TWITTER_PREFERENCES_TITLE">Twitter preferences</string>
+<string name="TWITTER_PREFERENCES_DESCRIPTION">Enable #nowplaying messages for currently listened tracks on twitter</string>
+
+<string name="TITLE_TWITTER_NOWPLAYING_ENABLED">Enable #nowplaying messages</string>
+<string name="DEFAULT_TWITTER_NOWPLAYING_ENABLED">false</string>
+<string name="KEY_TWITTER_NOWPLAYING_ENABLED">twitterNowplayingEnabled</string>
+
+<string name="KEY_SCROBBLE_TYPE">scrobbleType</string>
+<string name="SCROBBLE_TYPE_CATEGORY">Scrobble to last.fm</string>
+<string name="DEFAULT_SCROBBLE_TYPE">1</string>
+
+<string name="KEY_IGNORE_LEADING_THE">ignoreLeadingThe</string>
+<string name="TITLE_IGNORE_LEADING_THE">Ignore leading \"the\" in lists</string>
+<string name="SUMMARY_IGNORE_LEADING_THE">List entries are sorted, ignoring the leading \"the\".</string>
+<string name="DEFAULT_IGNORE_LEADING_THE">false</string>
+
+<string name="KEY_AUTOMATIC_IMPORTS">automaticImports</string>
+<string name="TITLE_AUTOMATIC_IMPORTS">Do automatic imports</string>
+<string name="SUMMARY_AUTOMATIC_IMPORTS">Automatically check for new music at every start and when SD-card content changed.</string>
+<string name="DEFAULT_AUTOMATIC_IMPORTS">true</string>
+
+<string name="KEY_DIRECTLY_SHOW_ALBUM_LIST">directlyShowAlbumList</string>
+<string name="TITLE_DIRECTLY_SHOW_ALBUM_LIST">Directly Show Album Song List</string>
+<string name="SUMMARY_DIRECTLY_SHOW_ALBUM_LIST">Show the song list in the album view without clicking on the cover</string>
+<string name="DEFAULT_DIRECTLY_SHOW_ALBUM_LIST">false</string>
+
+<string name="KEY_CROSSFADING">crossfadingEnabled</string>
+<string name="TITLE_CROSSFADING">Crossfading</string>
+<string name="SUMMARY_CROSSFADING">Smooth transitions between songs</string>
+<string name="DEFAULT_CROSSFADING">false</string>
+
+<string name="KEY_BEAT_MATCHING">beatMatchingEnabled</string>
+<string name="TITLE_BEAT_MATCHING">Apply Beat Matching</string>
+<string name="SUMMARY_BEAT_MATCHING">Try to synchronize subsequent songs</string>
+<string name="DEFAULT_BEAT_MATCHING">false</string>
+</resources>

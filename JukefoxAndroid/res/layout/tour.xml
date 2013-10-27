@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_centerInParent="true"	
+		android:background="#ff000000"	
+		android:gravity="center_horizontal|center_vertical">			
+			
+		<!--<View android:layout_width="wrap_content"
+			android:layout_height="2dip"
+			android:layout_weight="1"/>-->
+			
+		<ImageView android:id="@+id/tourImage"
+			android:src="@drawable/d005_empty_cd"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:focusable="false"
+			android:layout_gravity="center"/>
+						
+		<TextView 
+			android:text="Hallo Welt" 
+			android:id="@+id/tourDescription" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_marginBottom="60dip"
+			android:layout_gravity="center"/>
+		
+		<View android:layout_width="fill_parent" 
+					android:layout_height="2dip" />
+		
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="60dip"
+			android:layout_centerInParent="true"		
+			android:visibility="visible"
+			android:layout_gravity="center"
+			android:layout_marginTop="-60dip">
+			
+			<LinearLayout android:orientation="horizontal"
+				android:id="@+id/previousButton"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:visibility="visible"
+				android:background="@drawable/d046_bg_button"
+				android:layout_gravity="center">
+				<ImageView android:src="@drawable/d128_back_inverted"
+					android:layout_width="50sp"
+					android:layout_height="50sp"			          	
+		          	android:visibility="visible"/>	
+				<TextView 
+					android:text="@string/previous"
+					android:id="@+id/rep" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:textColor="@color/button_text_color"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_gravity="center_vertical|center_horizontal"/>
+					
+				<View android:layout_width="2dip"
+					android:layout_height="2dip"
+					android:layout_weight="1"/>	
+			</LinearLayout>		
+			
+			<View android:layout_width="2dip"
+				android:layout_height="2dip"/>
+			
+			<LinearLayout android:orientation="horizontal"
+				android:id="@+id/menuButton"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:visibility="visible"
+				android:background="@drawable/d046_bg_button"
+				android:layout_gravity="center">
+				
+				<TextView 
+					android:text="@string/back_to_menu" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="@color/button_text_color"
+					android:layout_gravity="center"/>				
+		          	
+			</LinearLayout>		
+			
+			<View android:layout_width="2dip"
+				android:layout_height="2dip"/>
+			
+			<LinearLayout android:orientation="horizontal"
+				android:id="@+id/nextButton"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:visibility="visible"
+				android:background="@drawable/d046_bg_button"
+				android:layout_gravity="center"
+				>
+				<View android:layout_width="2dip"
+					android:layout_height="2dip"
+					android:layout_weight="1"/>	
+				<TextView 
+					android:text="@string/next" 
+					android:id="@+id/rep" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textColor="@color/button_text_color"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_gravity="center"/>
+					
+				<ImageView android:src="@drawable/d129_forward_inverted"
+					android:layout_height="50sp"
+					android:layout_width="50sp"			          	
+		          	android:visibility="visible"/>
+		          	
+			</LinearLayout>		
+
+		</LinearLayout>	
+
+</LinearLayout>

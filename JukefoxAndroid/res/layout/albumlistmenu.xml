@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+ 	xmlns:android="http://schemas.android.com/apk/res/android"
+ 	xmlns:jf="http://schemas.android.com/apk/res/ch.ethz.dcg.pancho3"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"		
+	android:focusable="false"
+	android:background="@drawable/d049_bg_overlay"
+	android:gravity="center_horizontal|center_vertical">	
+	
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"		
+		android:visibility="visible"
+		android:gravity="center_horizontal|center_vertical">
+	
+		<View android:layout_width="fill_parent"
+		android:layout_height="5dip"/>
+	
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"		
+			android:visibility="visible"
+			android:focusable="false"
+			android:gravity="center_horizontal|center_vertical">	
+			<TextView 
+				android:id="@+id/albumListMenuTitle"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:gravity="center_horizontal|center_vertical"/>			
+		</LinearLayout>
+				
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/goToAlbumButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginTop="5dip"
+			jf:img_src="@drawable/d109_space_inverted"
+			jf:text="@string/go_to_album"
+			/>
+							
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/groupAlbumButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginTop="2dip"
+			jf:img_src="@drawable/d112_genres_inverted"
+			jf:text="@string/group_album"
+			/>
+		
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/ungroupAlbumButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginTop="2dip"
+			android:layout_marginBottom="5dip"
+			jf:img_src="@drawable/d110_albums_inverted"
+			jf:text="@string/ungroup_album"
+			/>
+		
+	</LinearLayout>	 
+	     
+</LinearLayout>

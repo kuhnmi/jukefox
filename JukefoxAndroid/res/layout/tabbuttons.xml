@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:id="@+id/tabsButtons"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingTop="5dip"
+	android:focusable="true"
+	android:background="#00000000">
+	
+	<ImageView android:id="@+id/playerViewButton"
+			android:src="@drawable/d107_playlist_inverted"
+			android:layout_width="wrap_content"
+			android:layout_height="50sp"
+			android:layout_weight="0.2"
+          	android:background="@drawable/d100_bg_left_tab_button"
+          	android:visibility="visible"	     
+			/><!--	
+			
+	<View android:layout_width="2dip"
+		android:layout_height="0sp"/>
+	
+	<View android:layout_width="1px"
+		android:layout_height="fill_parent"
+		android:paddingTop="6dip"
+		android:paddingBottom="6dip"
+		android:background="#20cecece"/>	
+	<View android:layout_width="1px"
+		android:layout_height="fill_parent"
+		android:paddingTop="6dip"
+		android:paddingBottom="6dip"
+		android:background="#80555555"/>	
+	
+	<View android:layout_width="2dip"
+		android:layout_height="0sp"/>		
+
+	--><ImageView android:id="@+id/listViewButton"
+			android:src="@drawable/d105_list_inverted"
+			android:layout_width="wrap_content"
+			android:layout_height="50sp"
+			android:layout_weight="0.2"
+          	android:background="@drawable/d104_bg_middle_tab_button"
+          	android:visibility="visible"	     
+			/><!--
+			
+	<View android:layout_width="2dip"
+		android:layout_height="0sp"/>
+	
+	<View android:layout_width="1px"
+		android:layout_height="fill_parent"
+		android:paddingTop="6dip"
+		android:paddingBottom="6dip"
+		android:background="#20cecece"/>	
+	<View android:layout_width="1px"
+		android:layout_height="fill_parent"
+		android:paddingTop="6dip"
+		android:paddingBottom="6dip"
+		android:background="#80555555"/>	
+	
+	<View android:layout_width="2dip"
+		android:layout_height="0sp"/>	
+	
+	--><ImageView android:id="@+id/searchViewButton"
+			android:src="@drawable/d108_search_inverted"
+			android:layout_width="wrap_content"
+			android:layout_height="50sp"
+			android:layout_weight="0.2"
+          	android:background="@drawable/d104_bg_middle_tab_button"
+          	android:visibility="visible"	     
+			/><!--		
+	
+	<View android:layout_width="2dip"
+		android:layout_height="0sp"/>
+	
+	<View android:layout_width="1px"
+		android:layout_height="fill_parent"
+		android:paddingTop="6dip"
+		android:paddingBottom="6dip"
+		android:background="#20cecece"/>	
+	<View android:layout_width="1px"
+		android:layout_height="fill_parent"
+		android:paddingTop="6dip"
+		android:paddingBottom="6dip"
+		android:background="#80555555"/>	
+	
+	<View android:layout_width="2dip"
+		android:layout_height="0sp"/>			
+	
+	--><ImageView android:id="@+id/spaceViewButton"
+			android:src="@drawable/d109_space_inverted"
+			android:layout_width="wrap_content"
+			android:layout_height="50sp"
+			android:layout_weight="0.2"
+          	android:background="@drawable/d104_bg_middle_tab_button"
+          	android:visibility="visible"	     
+			/><!--
+			
+	<View android:layout_width="2dip"
+		android:layout_height="0sp"/>
+	
+	<View android:layout_width="1px"
+		android:layout_height="fill_parent"
+		android:paddingTop="6dip"
+		android:paddingBottom="6dip"
+		android:background="#20cecece"/>	
+	<View android:layout_width="1px"
+		android:layout_height="fill_parent"
+		android:paddingTop="6dip"
+		android:paddingBottom="6dip"
+		android:background="#80555555"/>	
+	
+	<View android:layout_width="2dip"
+		android:layout_height="0sp"/>	
+	
+	--><ImageView android:id="@+id/mapViewButton"
+			android:src="@drawable/d106_map_inverted"
+			android:layout_width="wrap_content"
+			android:layout_height="50sp"
+			android:layout_weight="0.2"
+          	android:background="@drawable/d102_bg_right_tab_button"
+          	android:visibility="visible"	     
+			/>							
+</LinearLayout>

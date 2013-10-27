@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/background"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingTop="0dip"
+	android:layout_centerInParent="true">
+		
+	<include layout="@layout/tabbuttons" />
+	
+	<RelativeLayout 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:paddingTop="10dip"
+			android:paddingBottom="10dip"
+			android:paddingLeft="30dip"
+			android:paddingRight="30dip"  
+			android:visibility="visible"
+			android:background="@drawable/d093_bg_tabs"
+			android:gravity="center"
+			android:layout_gravity="center">
+			
+	
+		<LinearLayout 
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#ff000000"	
+			android:layout_centerInParent="true">			
+		
+			<LinearLayout android:orientation="horizontal" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_weight="1">
+		
+				<LinearLayout android:orientation="vertical"
+					android:id="@+id/artistListButton" 
+					android:layout_width="150sp"
+					android:layout_height="150sp" 
+					android:layout_weight="1"
+					android:background="@drawable/d046_bg_button"
+					android:gravity="center"
+					android:layout_gravity="center" >					
+					<TextView android:text="@string/artists" 
+						android:id="@+id/listTitle"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:textColor="@color/button_text_color"
+						android:paddingLeft="6dip"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_gravity="center" />
+					<ImageView android:src="@drawable/d111_artists_inverted"
+						android:layout_width="64sp" 
+						android:layout_height="64sp"
+						android:visibility="visible" 
+						android:layout_gravity="center"/>
+				</LinearLayout>
+		
+				<View android:layout_width="5dip" android:layout_height="2dip"/>
+				
+				<LinearLayout android:orientation="vertical"
+					android:id="@+id/albumListButton" 
+					android:layout_width="150sp"
+					android:layout_height="150sp" 
+					android:focusable="true" 
+					android:layout_weight="1"
+					android:visibility="visible"
+					android:background="@drawable/d046_bg_button"
+					android:gravity="center"
+					android:layout_gravity="center" >					
+					<TextView android:text="@string/albums" 
+						android:id="@+id/listTitle"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:textColor="@color/button_text_color"
+						android:paddingLeft="6dip"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_gravity="center" />
+					<ImageView android:src="@drawable/d110_albums_inverted"
+						android:layout_width="64sp" 
+						android:layout_height="64sp"
+						android:visibility="visible"
+						android:layout_gravity="center" />
+				</LinearLayout>						
+				
+			</LinearLayout>
+					
+			<View android:layout_width="5dip" android:layout_height="5dip"/>		
+					
+			<LinearLayout android:orientation="horizontal" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_weight="1">
+				
+				<LinearLayout android:orientation="vertical"
+					android:id="@+id/songListButton" 
+					android:layout_width="150sp"
+					android:layout_height="150sp"
+					android:focusable="true" 
+					android:layout_weight="1"
+					android:visibility="visible"
+					android:background="@drawable/d046_bg_button"
+					android:gravity="center"
+					android:layout_gravity="center" >
+					<ImageView android:src="@drawable/d113_songs_inverted"
+						android:layout_width="64sp" 
+						android:layout_height="64sp"
+						android:visibility="visible"
+						android:layout_gravity="center" />	
+					<TextView android:text="@string/songs" 
+						android:id="@+id/listTitle"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:textColor="@color/button_text_color"
+						android:paddingLeft="6dip"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_gravity="center" />								
+				</LinearLayout>
+		
+				<View android:layout_width="5dip" android:layout_height="2dip"/>
+		
+				<LinearLayout android:orientation="vertical"
+					android:id="@+id/genreListButton" 
+					android:layout_width="150sp"
+					android:layout_height="150sp"
+					android:focusable="true" 
+					android:layout_weight="1"
+					android:visibility="visible"
+					android:background="@drawable/d046_bg_button"
+					android:gravity="center"
+					android:layout_gravity="center" >
+					<ImageView android:src="@drawable/d112_genres_inverted"
+						android:layout_width="64sp" 
+						android:layout_height="64sp"
+						android:visibility="visible"
+						android:layout_gravity="center" />	
+					<TextView android:text="@string/genres" 
+						android:id="@+id/listTitle"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:textColor="@color/button_text_color"
+						android:paddingLeft="6dip"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_gravity="center"/>								
+				</LinearLayout>				
+
+		
+			</LinearLayout>
+		
+		</LinearLayout>
+		
+		<LinearLayout android:orientation="vertical"
+			android:id="@+id/tagListButton" 
+			android:layout_width="120sp"
+			android:layout_height="120sp" 
+			android:layout_centerInParent="true"
+			android:focusable="true" 
+			android:visibility="visible"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:background="@drawable/d115_bg_round_button">
+			<ImageView android:src="@drawable/d114_tag_cloud_inverted"
+				android:layout_width="64sp" 
+				android:layout_height="64sp"
+				android:visibility="visible"
+				android:layout_gravity="center" />
+			<TextView android:text="@string/tags" 
+				android:id="@+id/listTitle"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:textColor="@color/button_text_color"
+				android:paddingLeft="6dip"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_gravity="center" />
+		</LinearLayout>
+		
+	</RelativeLayout>
+	
+</LinearLayout>			
+

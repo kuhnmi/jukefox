@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jf="http://schemas.android.com/apk/res/ch.ethz.dcg.pancho3"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@drawable/d049_bg_overlay"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/playModeMenuTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_play_mode"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <ch.ethz.dcg.pancho3.view.components.JfImageButton
+        android:id="@+id/repeatButton"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dip"
+        android:layout_weight="1"
+        jf:img_src="@drawable/d119_repeeat_inverted"
+        jf:text="@string/repeat"
+        android:visibility="visible" />
+
+    <ch.ethz.dcg.pancho3.view.components.JfImageButton
+        android:id="@+id/playOnceButton"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dip"
+        android:layout_weight="1"
+        jf:img_src="@drawable/d130_play_once_inverted"
+        jf:text="@string/play_once"
+        android:visibility="visible" />
+
+    <ch.ethz.dcg.pancho3.view.components.JfImageButton
+        android:id="@+id/shuffleButton"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dip"
+        android:layout_weight="1"
+        jf:img_src="@drawable/d122_shuffle_inverted"
+        jf:text="@string/shuffle"
+        android:visibility="visible" />
+
+    <ch.ethz.dcg.pancho3.view.components.JfImageButton
+        android:id="@+id/similarButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:layout_weight="1"
+        jf:img_src="@drawable/d133_similar_inverted"
+        jf:text="@string/similar"
+        android:visibility="visible" />
+
+    <ch.ethz.dcg.pancho3.view.components.JfImageButton
+        android:id="@+id/smartShuffleButton"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="2dip"
+        android:layout_weight="1"
+        jf:img_src="@drawable/d126_smart_shuffle_inverted"
+        jf:text="@string/smart_shuffle"
+        android:visibility="visible" >
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#0c0c0c" />
+
+        <ImageView
+            android:id="@+id/smartShuffleSettingsButton"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/d185_settings_inverted"
+            android:visibility="visible" />
+    </ch.ethz.dcg.pancho3.view.components.JfImageButton>
+
+    <ch.ethz.dcg.pancho3.view.components.JfImageButton
+        android:id="@+id/contextShuffleButton"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dip"
+        android:layout_weight="1"
+        jf:img_src="@drawable/d161_context_shuffle"
+        jf:text="@string/context_shuffle"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:jf="http://schemas.android.com/apk/res/ch.ethz.dcg.pancho3"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingLeft="6dip"
+	android:paddingRight="6dip"
+	android:paddingTop="0dip"
+	android:layout_centerInParent="true"
+	android:background="@drawable/d044_background">
+	
+	<RelativeLayout 
+		android:id="@+id/listsview" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:paddingTop="10dip" 
+		android:visibility="visible"
+		android:gravity="left|top">
+	
+		<LinearLayout android:orientation="vertical" 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:focusable="true">
+			
+			<LinearLayout android:orientation="horizontal"
+				android:id="@+id/listsviewtop" 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:minHeight="50sp"
+				android:focusable="true">
+				<TextView android:text="@string/get_to_know_jukefox" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_margin="10dip"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:layout_gravity="center_vertical|center_horizontal"/>
+			</LinearLayout>					
+	
+			<LinearLayout android:orientation="vertical" 
+				android:id="@+id/listButtons"
+				android:layout_width="wrap_content" 
+				android:layout_height="fill_parent"
+				android:paddingLeft="60dip" 
+				android:paddingRight="60dip"
+				android:paddingTop="40dip" 
+				android:paddingBottom="40dip"
+				android:focusable="true" 
+				android:visibility="visible"
+				android:layout_gravity="center_vertical|center_horizontal">
+				
+			<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+				android:id="@+id/generalTourButton"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:visibility="visible"
+				android:layout_weight="1"
+				jf:img_src="@drawable/d132_tour_general_inverted"
+				jf:text="@string/tour_general"
+				/>
+	
+			<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+				android:id="@+id/playlistTourButton"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:visibility="visible"
+				android:layout_weight="1"
+				android:layout_marginTop="2dip"
+				jf:img_src="@drawable/d105_list_inverted"
+				jf:text="@string/tour_playlists"
+				/>
+	
+			<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+				android:id="@+id/playModesTourButton"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:visibility="visible"
+				android:layout_weight="1"
+				android:layout_marginTop="2dip"
+				jf:img_src="@drawable/d126_smart_shuffle_inverted"
+				jf:text="@string/tour_play_modes"
+				/>
+				
+			<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+				android:id="@+id/coolFeaturesTourButton"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:visibility="visible"
+				android:layout_weight="1"
+				android:layout_marginTop="2dip"
+				jf:img_src="@drawable/d131_tour_features_inverted"
+				jf:text="@string/tour_cool_features"
+				/>
+	
+			</LinearLayout>
+	
+		</LinearLayout>
+		
+	</RelativeLayout>
+	
+</LinearLayout>			
+

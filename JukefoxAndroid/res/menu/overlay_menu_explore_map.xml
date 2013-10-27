@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/explore"
+        android:title="Explore"
+        android:showAsAction="always|withText" />
+    <item android:id="@+id/map"
+       android:title="Map"
+       android:showAsAction="always|withText" />
+</menu>

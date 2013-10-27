@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/dialog_wrapper"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom"
+    >
+
+	<LinearLayout
+		android:id="@+id/statusInfoBar"
+	    android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/d049_bg_overlay"
+    >
+		<TextView  
+			android:id="@+id/statusText"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text=""
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:gravity="bottom|center_horizontal"
+	    />
+	    
+	    <ProgressBar android:id="@+id/progressBar" 
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="5dip"
+	    	android:indeterminate="false"
+	    	style="?android:attr/progressBarStyleHorizontal"
+	    	android:progressDrawable="@drawable/d023_progress_horizontal"
+	    	android:visibility="gone"/>
+	    
+	    <!-- <ProgressBar android:id="@+id/progressBar" 
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="5dip"
+	    	android:indeterminate="false"
+	    	style="?android:attr/progressBarStyleHorizontal"
+	    	android:visibility="gone"/> -->
+	    <TextView android:id="@+id/detailStatusText" 
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:gravity="bottom|center_horizontal"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		/>	
+	   <TextView
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:text="@string/click_to_remove_status_info"
+		    android:gravity="bottom|center_horizontal"
+		    android:textAppearance="?android:attr/textAppearanceSmall"
+		/>
+	
+</LinearLayout>    
+
+</LinearLayout>

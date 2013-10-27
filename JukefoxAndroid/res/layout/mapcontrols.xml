@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/zoomBar"
+  android:layout_width="wrap_content"
+  android:layout_height="fill_parent"   
+  android:background="@drawable/d051_bg_zoom_bar">     
+  <ImageView android:id="@+id/zoomIn"
+    android:src="@drawable/d012_magnify"
+    android:layout_width="50dip"
+    android:layout_height="fill_parent"
+    android:layout_weight="0.3"
+    android:layout_gravity="top"/>
+  <View android:layout_width="50dip"            
+    android:layout_height="fill_parent"           
+    android:layout_weight="0.1" /> 
+  <ImageView android:id="@+id/zoomOut"
+    android:src="@drawable/d014_minus"
+    android:layout_width="50dip"
+    android:layout_height="fill_parent"
+    android:layout_weight="0.3"
+    android:layout_gravity="bottom"/>
+</LinearLayout>

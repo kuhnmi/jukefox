@@ -1,0 +1,23 @@
+Provider:
+
+private IDbDataPortal DataPortal;
+
+Startup:
+
+Provider.IDbDataPortal = new SQLLiteDbDataPortal();
+Provider.IDbDataPortal = new XMLDbDataPortal();
+
+SqlDbDataPortal implements IDbDataPortal;
+
+SqlLiteDataPortal extends SqlDbDataPortal;
+
+
+-----------------------------------------
+
+ProviderLocator.GetInstanceOfDb(): IDbDataPortal
+
+private IDbDataPortal DbDataPortal;
+private AlbumProvider AlbumProvider;
+
+public IDbDataPortal GetInstanceOfDb();
+public AlbumProvider GetInstanceOfAlbumProvider();

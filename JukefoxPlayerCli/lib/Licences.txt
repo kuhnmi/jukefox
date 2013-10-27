@@ -1,0 +1,2 @@
+Apache Commons: Apache Licence 2.0, http://commons.apache.org/
+Natural CLI: Apache Licence 2.0, http://naturalcli.sourceforge.net/

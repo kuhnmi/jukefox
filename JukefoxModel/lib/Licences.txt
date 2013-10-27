@@ -1,0 +1,5 @@
+Audioscrobbler: Apache Licence 2.0, http://code.google.com/p/ascrblr/
+Apache Commons: Apache Licence 2.0, http://commons.apache.org/
+Apache HTTP Components: Apache Licence 2.0, http://hc.apache.org/
+Entagged: LGPLv2 and GPLv2, http://entagged.sourceforge.net/
+Jama: Public Domain, http://math.nist.gov/javanumerics/jama

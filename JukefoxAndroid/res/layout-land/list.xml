@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/background"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_centerInParent="true">
+	
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"	
+		android:paddingTop="0dip"
+		android:layout_centerInParent="true"
+		android:background="@drawable/d093_bg_tabs">
+	
+		<include layout="@layout/tabbuttons" />
+		
+		<View android:layout_width="6dip"
+			android:layout_height="2dip"/>	
+		
+		<LinearLayout android:orientation="vertical" 
+			android:id="@+id/listviewvert"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/d094_bg_section"
+			android:visibility="visible">
+			<LinearLayout android:orientation="vertical" 
+				android:id="@+id/taglistview"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:visibility="visible" />
+			<ListView android:drawSelectorOnTop="false" 
+				android:id="@+id/listlist"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:cacheColorHint="#00000000" />
+		</LinearLayout>		
+		
+	</LinearLayout>   
+	
+</LinearLayout>			
+

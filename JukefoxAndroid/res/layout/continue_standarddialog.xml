@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:jf="http://schemas.android.com/apk/res/ch.ethz.dcg.pancho3"
+  	android:orientation="vertical"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent">
+	<View android:layout_width="2dip" 
+		android:layout_height="wrap_content"
+		android:layout_weight="1"/>
+  
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/d055_dialog_background"> 
+		<TextView 
+			android:id="@+id/continue_text" 
+			android:text="@string/continuetext"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:paddingTop="10dip"
+			android:paddingBottom="10dip"
+			android:paddingLeft="10dip"
+			android:paddingRight="10dip"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_gravity="center"/>
+	  	
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/contButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginTop="2dip"
+			jf:img_src="@drawable/d129_forward_inverted"
+			jf:text="@string/cont"
+			/>
+
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/playvideo_againButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginTop="2dip"
+			jf:img_src="@drawable/d119_repeeat_inverted"
+			jf:text="@string/play_same_video"
+			/>
+	
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/gobackButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginTop="2dip"
+			jf:img_src="@drawable/d119_repeeat_inverted"
+			jf:text="@string/back_to_menu"
+			/>
+	
+	</LinearLayout>
+	
+	<View android:layout_width="2dip" 
+	  	android:layout_height="wrap_content"
+	  	android:layout_weight="1"/>
+  	
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+ 	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center">
+	
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:gravity="center"
+			android:paddingLeft="30dip"
+			android:paddingRight="30dip">
+			<TextView
+				android:text="@string/press_home_to_unlock"
+				android:visibility="visible"
+		       	android:layout_width="wrap_content"
+		       	android:layout_height="wrap_content"	
+		       	android:layout_gravity="center_horizontal"	           
+		      	android:textAppearance="?android:attr/textAppearanceSmall"/>
+			<ch.ethz.dcg.pancho3.view.commons.TriggeringSlider
+				android:id="@+id/sliderLock"
+				android:visibility="gone"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"				
+			/>
+		</LinearLayout>
+	
+	<TableLayout  
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+	>
+	<TableRow>
+	
+			<LinearLayout android:orientation="vertical"
+			android:layout_width="0dip"
+			android:layout_height="fill_parent"
+			android:visibility="visible"
+			android:gravity="center"
+			android:layout_weight="1"
+			android:layout_centerInParent="true"
+			>
+
+			
+			<TextView
+		       	android:id="@+id/nowPlayingText"
+				android:text="@string/artist_title_place_holder"
+				android:visibility="visible"
+		       	android:layout_width="wrap_content"
+		       	android:layout_height="wrap_content"	
+		       	android:layout_gravity="center_horizontal"	          	
+		       	android:ellipsize="marquee"    
+		       	android:paddingBottom="10dip"   	        
+		      	android:textAppearance="?android:attr/textAppearanceMedium"
+		      	android:maxLines="1"/>	
+			
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"		
+				android:paddingTop="6dip"
+				android:paddingBottom="6dip"
+				android:visibility="visible">					
+				<ImageView android:id="@+id/previousButton"
+					android:src="@drawable/d003_previous_button"
+					android:layout_width="64sp"
+					android:layout_height="64sp"
+					android:maxWidth="64sp"
+					android:maxHeight="64sp"
+					android:layout_gravity="left"
+					android:visibility="visible"/>
+				<ImageView android:id="@+id/playPauseButton"
+					android:src="@drawable/d017_play_button"
+					android:layout_width="64sp"
+					android:layout_height="64sp"
+					android:maxWidth="64sp"
+					android:maxHeight="64sp"
+					android:layout_gravity="left"/>			
+				<ImageView android:id="@+id/nextButton"
+					android:src="@drawable/d007_next_button"
+					android:layout_width="64sp"
+					android:layout_height="64sp"
+					android:maxWidth="64sp"
+					android:maxHeight="64sp"
+					android:layout_gravity="left"/>
+			</LinearLayout>								
+	    
+	    </LinearLayout>  
+	
+	<ImageView android:id="@+id/bigCoverArt"
+			android:visibility="visible"
+			android:src="@drawable/d005_empty_cd"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_centerInParent="true"	
+			android:paddingBottom="10dip"
+			android:paddingRight="10dip"
+			android:paddingLeft="10dip"/>
+			
+	</TableRow>
+	</TableLayout>
+	
+
+</LinearLayout>

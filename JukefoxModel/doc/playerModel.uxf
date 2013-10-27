@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>430</x>
+      <y>170</y>
+      <w>250</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Profile
+--
+- id: Long
+- playLists: List&lt;Playlist&gt;
+- playLogger: PlayLog
+- currentPlayMode: PlayModeType
+-
+--
++ getPlayMode(): PlayModeType
++ setPlayMode(PlayModeType)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>780</x>
+      <y>170</y>
+      <w>260</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>PlayLog
+--
+- name: String
+- lastReturnedLogId: int
+- (...)
+--
++ writeToPlayLogAsync(Date, ...): void
++ sendPlayLog()
++ (...)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>170</y>
+      <w>260</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>collectionModel::Playlist
+--
+- name: String
+- songList: List&lt;PlaylistSong)
+--
++ appendSongAtEnd(PlaylistSong): void
++ (...)
++ (...)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>780</x>
+      <y>340</y>
+      <w>260</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>PlayLogEntry
+--
+- utcTime: long
+- meId: Integer
+- skipped: boolean
+--
++ getUtcTime(): long
++ setUtcTime(long): void
++ isSkipped(): boolean
++ (...)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>650</x>
+      <y>180</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>130;30;30;40</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>360</y>
+      <w>260</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>PlayModeType
+--
+- PLAY_ONCE
+- REPEAT
+- ...
+- value: int
+--
++ value(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>230</x>
+      <y>280</y>
+      <w>220</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>30;120;200;30</additional_attributes>
+  </element>
+</diagram>

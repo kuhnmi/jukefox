@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<array name="FACEBOOK_AUTOSEND_INTERVALS">
+		<item>daily</item>
+		<item>weekly</item>
+	</array>
+    <array name="ops">
+        <item>contains</item>
+        <item>starts with</item>
+        <item>equals</item>
+    </array>
+    <array name="fields">
+        <item>title</item>
+        <item>artist</item>
+    </array>
+    <array name="tips">
+		<item>Wipe your finger from left to right over the large album art to skip the current song.</item>
+		<item>Wipe your finger from right to left over the large album art to go to the previous song.</item>
+		<item>Wipe your finger from top down over the large album art to play/pause</item>
+		<item>Wipe your finger from the bottom up over the large album art to open the album detail view</item>
+		<item>Use multi touch gestures to zoom on the map on phones with Android 2.0 or newer.</item>
+		<item>Press the DPad in the map and use your finger to select several albums.</item>
+		<item>Long click on a playlist item shows the context menu.</item>
+		<item>Long click on the large album art shows the context menu.</item>
+		<item>Short click on the large album art shows the playlist.</item>
+		<item>Long click on an artist (in the artist list) lets you play all songs of an artist.</item>
+		<item>Long click on a genre (in the genre list) lets you play all songs of a genre.</item>
+		<item>Find songs on your device that are similar to a famous artist using the \'famous artist\' search.</item>
+		<item>Reset smart shuffling using \'clear playlist\'.</item>
+		<item>Enable scrobbling to last.fm in the settings dialog.</item>
+		<item>Move to the currently playing song in the space using the context menu (long click in playlist).</item>
+		<item>Wipe your finger on the zoom bar for faster and more precise control.</item>
+		<item>Activate gapless playback in the settings dialog if you feel disturbed by the gaps between the songs.</item>
+    </array>
+    
+    <string-array name="scrobbleTypeEntries">
+    	<item>do not scrobble</item>
+    	<item>use scrobbledroid</item>
+    	<item>use internal scrobbler</item>
+    </string-array>
+    <string-array name="scrobbleTypeValues">
+    	<item>1</item>
+    	<item>2</item>
+    	<item>3</item>
+    </string-array>
+
+	<!--
+		Make sure the order of this list does not change, as it is hardcoded
+		in the SearchActivity class!!!
+	-->
+    <string-array name="searchInEntries">
+    	<item>Artists</item>
+    	<item>Albums</item>
+    	<item>Titles</item>
+    	<item>Famous Artists</item>
+    </string-array>
+    
+    <!--
+		Make sure the order of this list does not change, as it is hardcoded
+		in the SleepMenu class!!!
+	-->
+    <string-array name="sleepNumEntries">
+    	<item>2</item>
+    	<item>5</item>
+    	<item>10</item>
+    	<item>20</item>
+    	<item>30</item>
+    	<item>45</item>
+    	<item>60</item>
+    	<item>90</item>
+    </string-array>
+</resources>

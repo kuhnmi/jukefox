@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+ 	xmlns:jf="http://schemas.android.com/apk/res/ch.ethz.dcg.pancho3"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:background="@drawable/d049_bg_overlay"
+	android:gravity="center_horizontal|center_vertical">
+
+	<View android:layout_width="fill_parent"
+		android:layout_height="5dip"/>
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:visibility="visible"
+		android:layout_centerInParent="true"
+		android:gravity="center_horizontal|center_vertical">
+		<TextView
+			android:text="@string/settings_shuffle"
+		  	android:visibility="visible"
+          	android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"				          	        
+          	android:textAppearance="?android:attr/textAppearanceLarge"
+          	android:gravity="center_horizontal|center_vertical"/>
+
+       </LinearLayout>
+
+	<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+		android:id="@+id/shuffleCollectionButton"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:visibility="visible"
+		android:layout_marginTop="5dip"
+		jf:img_src="@drawable/d123_shuffle_collection_inverted"
+		jf:text="@string/shuffle_collection"
+		/>
+		
+	<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+		android:id="@+id/shufflePlaylistButton"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:visibility="visible"
+		android:layout_marginTop="2dip"
+		android:layout_marginBottom="5dip"
+		jf:img_src="@drawable/d124_shuffle_playlist_inverted"
+		jf:text="@string/shuffle_playlist"
+		/>
+	
+</LinearLayout>
+

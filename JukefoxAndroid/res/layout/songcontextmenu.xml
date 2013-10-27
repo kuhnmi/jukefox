@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:jf="http://schemas.android.com/apk/res/ch.ethz.dcg.pancho3"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/d049_bg_overlay"
+	android:orientation="vertical"
+	android:layout_gravity="center">
+  	<View android:layout_width="fill_parent"
+			android:layout_height="5dip"
+			android:layout_weight="0.0"/>
+ 	 <LinearLayout android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:layout_gravity="center_horizontal|center_vertical">
+			<TextView
+		    	android:id="@+id/songContextMenuTitle"
+				android:text="@string/song_menu"
+			  	android:visibility="visible"
+	          	android:layout_width="fill_parent"
+	          	android:layout_height="wrap_content"				          	        
+	          	android:textAppearance="?android:attr/textAppearanceLarge"
+	          	android:gravity="center_horizontal|center_vertical"/>
+	        <TextView
+	          	android:id="@+id/songContextSongTitle"
+			  	android:text="Title"
+			  	android:visibility="visible"
+	          	android:layout_width="fill_parent"
+	          	android:layout_height="wrap_content"				          	        
+	         	android:textAppearance="?android:attr/textAppearanceMedium"
+	         	android:gravity="center_horizontal|center_vertical"/>
+        </LinearLayout>
+        
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/removeSongButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginTop="5dip"
+			jf:img_src="@drawable/d118_remove_inverted"
+			jf:text="@string/remove_song_from_playlist"
+			/>
+
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/showArtistButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginTop="2dip"
+			jf:img_src="@drawable/d111_artists_inverted"
+			jf:text="@string/show_artist"
+			/>
+
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/showAlbumButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginTop="2dip"
+			jf:img_src="@drawable/d110_albums_inverted"
+			jf:text="@string/show_album"
+			/>
+
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/goToAlbumButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginTop="2dip"
+			jf:img_src="@drawable/d109_space_inverted"
+			jf:text="@string/go_to_album"
+			/>
+
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/deleteSongButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginTop="2dip"
+			android:layout_marginBottom="5dip"
+			jf:img_src="@drawable/d118_remove_inverted"
+			jf:text="@string/delete_song"
+			/>
+</LinearLayout>

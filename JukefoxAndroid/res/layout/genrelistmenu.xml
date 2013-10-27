@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+ 	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:jf="http://schemas.android.com/apk/res/ch.ethz.dcg.pancho3"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"	
+	android:focusable="false"
+	android:background="@drawable/d049_bg_overlay"
+	android:gravity="center_horizontal|center_vertical">	
+	
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"		
+		android:visibility="visible"
+		android:gravity="center_horizontal|center_vertical">
+		
+		<View android:layout_width="fill_parent"
+		android:layout_height="5dip"/>
+	
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"		
+			android:visibility="visible"
+			android:focusable="false"
+			android:gravity="center_horizontal|center_vertical">	
+			<TextView 
+				android:id="@+id/genreListMenuTitle"
+				android:text="@string/genreaddmenu" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:gravity="center_horizontal|center_vertical"/>			
+		</LinearLayout>
+
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/playGenreButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginTop="5dip"
+			jf:img_src="@drawable/d134_play_button_inverted"
+			jf:text="@string/playgenretext"
+			/>
+				
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/showGenreArtistsButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginTop="2dip"
+			jf:img_src="@drawable/d111_artists_inverted"
+			jf:text="@string/show_genre_artists"
+			/>
+
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/showGenreAlbumsButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginTop="2dip"
+			jf:img_src="@drawable/d110_albums_inverted"
+			jf:text="@string/show_genre_albums"
+			/>
+
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/showGenreSongsButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginTop="2dip"
+			android:layout_marginBottom="5dip"
+			jf:img_src="@drawable/d113_songs_inverted"
+			jf:text="@string/show_genre_songs"
+			/>
+	</LinearLayout>	 
+	     
+</LinearLayout>

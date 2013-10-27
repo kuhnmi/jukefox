@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<View android:layout_width="2dip" 
+  	android:layout_height="wrap_content"
+  	android:layout_weight="1"/>
+	
+	<LinearLayout
+	  android:orientation="vertical"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:background="@drawable/d055_dialog_background">
+	
+		<TextView 
+			android:text="@string/gapless_explanation"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal|center_vertical"
+			android:textAppearance="?android:attr/textAppearanceMedium"/>
+						
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal|center_vertical"
+			android:layout_centerInParent="true"		
+			android:focusable="false">	
+			<TextView 
+				android:text="@string/remove"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal|center_vertical"
+				android:textAppearance="?android:attr/textAppearanceMedium"/>
+			<EditText  
+				android:id="@+id/gaplessOffset"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal|center_vertical"
+				android:inputType="numberDecimal"
+				android:maxLength="4"/>
+			<TextView 
+				android:text="@string/milliseconds"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal|center_vertical"
+				android:textAppearance="?android:attr/textAppearanceMedium"/>
+		</LinearLayout>
+								
+		<Button android:text="@string/ok" 
+		android:id="@+id/gaplessOkButton" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip"
+		android:minWidth="60dip"
+		android:layout_gravity="center"/>			
+ 	 
+ 	</LinearLayout> 
+ 	 
+ 	<View android:layout_width="2dip" 
+	  	android:layout_height="wrap_content"
+	  	android:layout_weight="1"/>        		
+        	
+</LinearLayout>

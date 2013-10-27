@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>10</y>
+      <w>260</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+/IReadOnlyPlaylist/
+--
+ 
+--
+/+ getPlaylistName(): String/
+/+ (...)/
+/+ (...)/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>170</y>
+      <w>260</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+/IPlaylist/
+--
+ 
+--
+/+ appendSongAtEnd(PlaylistSong): void/
+/+ (...)/
+/+ (...)/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>350</y>
+      <w>260</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Playlist
+--
+- name: String
+- songList: List&lt;PlaylistSong)
+--
++ Playlist(List&lt;PlaylistSong&gt;, String)
++ appendSongAtEnd(PlaylistSong): void
++ (...)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>100</x>
+      <y>100</y>
+      <w>50</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>100</x>
+      <y>260</y>
+      <w>50</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>30;30;30;90</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>510</y>
+      <w>260</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>ImportedPlaylist
+--
+- dateAdded: Date
+- dateModified: Date
+-(...)
+--
++ getDateAdded(): Date
++ setDateAdded(): Date
++ (...)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>100</x>
+      <y>440</y>
+      <w>50</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>760</x>
+      <y>10</y>
+      <w>120</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+IBaseListItem
+--
+ 
+--
+/+ getId(): String/
+/+ (...)/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>300</x>
+      <y>150</y>
+      <w>230</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>BaseArtist
+--
+- id: int {readOnly}
+- name: String {readOnly}
+--
++ BaseArtist(int, String)
++ getId(): void
++ (...)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>300</x>
+      <y>310</y>
+      <w>230</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>CompleteArtist
+--
+- coords: float[]
+--
++ CompleteArtist(int, String, float[])
++ getCoords(): float[]
++ setCoords(float[]): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>380</x>
+      <y>240</y>
+      <w>50</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>380</x>
+      <y>0</y>
+      <w>400</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>380;30;30;30;30;150</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>360</x>
+      <y>460</y>
+      <w>230</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>BaseAlbum
+--
+- id: int {readOnly}
+- name: String {readOnly}
+--
++ BaseAlbum(int, String)
++ getId(): void
++ (...)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>530</x>
+      <y>40</y>
+      <w>250</w>
+      <h>440</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>230;30;30;30;30;80;30;420</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>780</y>
+      <w>300</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>CompleteAlbum
+--
+- albumCoverStatus: AlbumStatus
+- coordsPCA2D: float[]
+- artists: List&lt;BaseArtists&gt;
+- (...)
+--
++ CompleteAlbum(int, String, AlbumStatus,
+                             float[], List&lt;BaseArtist&gt;, ...)
++ getCoordsPCA2D(): float[]
++ getArtists(): List&lt;BaseArtist&gt;
++ (...)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>110</x>
+      <y>550</y>
+      <w>340</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>320;30;320;160;30;160;30;230</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>660</x>
+      <y>150</y>
+      <w>310</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>BaseSong
+--
+- album: AlbumType
+- artist: ArtistType
+- id: int {readOnly}
+- name: String {readOnly}
+- rating: IRating
+--
++ BaseSong(int, String, ArtistType, AlbumType)
++ getId(): void
++ getAlbum(): AlbumType
++ getArtist(): ArtistType
++ setRating(IRating): void
++ (...)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>790</x>
+      <y>410</y>
+      <w>300</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>CompleteSong
+--
+- coords: float[]
+- coordsPCA2D: float[]
+- genres: List&lt;Genre&gt; {readOnly}
+- path: String {readOnly}
+- (...)
+--
++ CompleteSong(int, String, ArtistType,
+                            AlbumType, List&lt;Genre&gt;, ...)
++ getCoords(): float[]
++ getCoordsPCA2D(): float[]
++ getArtists(): List&lt;BaseArtists&gt;
++ (...)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>670</x>
+      <y>660</y>
+      <w>420</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>PlaylistSong
+--
+- source: SongSource
+--
++ PlaylistSong(BaseSong&lt;ArtistType, AlbumType&gt;, SongSource)
++ PlaylistSong(int, String, ArtistType, AlbumType, SongSource)
++ getSongSource(): SongSource</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>710</x>
+      <y>340</y>
+      <w>50</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;320</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>830</x>
+      <y>340</y>
+      <w>50</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>790</x>
+      <y>80</y>
+      <w>50</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>30;30;30;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>990</x>
+      <y>150</y>
+      <w>230</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Genre
+--
+- id: int {readOnly}
+- name: String {readOnly}
+--
++ Genre(int, String)
++ describeContents(): int
++ getId(): void
++ (...)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>850</x>
+      <y>40</y>
+      <w>280</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>30;30;260;30;260;110</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1000</x>
+      <y>260</y>
+      <w>50</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=0..*</panel_attributes>
+    <additional_attributes>30;30;30;150</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1240</x>
+      <y>150</y>
+      <w>230</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>BaseTag
+--
+- id: int {readOnly}
+- name: String {readOnly}
+--
++ BaseTag(int, String)
++ getId(): void
++ (...)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>850</x>
+      <y>0</y>
+      <w>530</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>30;30;510;30;510;150</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>330</x>
+      <y>780</y>
+      <w>300</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>ListAlbum
+--
+- artists: List&lt;BaseArtists&gt;
+--
++ ListAlbum(int, String, List&lt;BaseArtist&gt;)
++ ListAlbum(BaseSong)
++ getArtists(): List&lt;BaseArtist&gt;
++ getFirstArtist(): BaseArtist
++ (...)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>480</x>
+      <y>550</y>
+      <w>50</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;230</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1230</x>
+      <y>320</y>
+      <w>260</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>CompleteTag
+--
+- isMapTag: bool
+- meanPcaSpaceX: float
+- meanPcaSpaceY: float
+- plsaCoords: float[]
+- (...)
+--
++ CompleteTag(int, String, int, float, ...)
++ getMeanPcaSpaceX(): float
++ getPcaCoords(): float[]
++ getPlsaCoords(): float[]
++ getMeanPcaSpaceX(float): void
++ setPlsaCoords(float[]): void
++ (...)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1330</x>
+      <y>250</y>
+      <w>50</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;70</additional_attributes>
+  </element>
+</diagram>

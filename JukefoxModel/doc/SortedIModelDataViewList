@@ -1,0 +1,75 @@
+ -----=== ALBUM PROVIDER ===-----
+
+public MapAlbum getMapAlbumBlocking(BaseSong<? extends BaseArtist, ? extends BaseAlbum> song);
+public Collection<MapAlbum> getAllMapAlbumsBlocking() throws DataUnavailableException;
+public MapAlbum getMapAlbumBlocking(BaseAlbum album) throws DataUnavailableException;
+public List<Pair<MapAlbum, Float>> getSimilarAlbums(BaseAlbum album, int number) throws DataUnavailableException;
+public CompleteAlbum getCompleteAlbumBlocking(BaseAlbum album) throws DataUnavailableException;
+public List<ListAlbum> getAllAlbumsForArtistBlocking(BaseArtist artist,	boolean includeCompilations);
+public List<ListAlbum> getAllListAlbumsBlocking() throws DataUnavailableException;
+public List<ListAlbum> findAlbumBySearchString(String searchTerm, int maxResults);
+public List<ListAlbum> getAllAlbumsForGenreBlocking(Genre genre);
+
+ -----=== SONG PROVIDER ===-----
+
+public List<BaseSong<BaseArtist, BaseAlbum>> getAllSongsBlocking();
+public List<BaseSong<BaseArtist, BaseAlbum>> getSongsForArtistBlocking(BaseArtist artist);
+public List<BaseSong<BaseArtist, BaseAlbum>> getSongsForGenreBlocking(Genre genre);
+public List<BaseSong<BaseArtist, BaseAlbum>> findTitleBySearchString(String searchTerm, int maxResults);
+public List<BaseSong<BaseArtist, BaseAlbum>> getClosestSongsToPosition(float[] position, int number) throws DataUnavailableException;
+public List<BaseSong<BaseArtist, BaseAlbum>> getAllSongsForGenreBlocking(Genre genre);
+public BaseSong<BaseArtist, BaseAlbum> getBaseSong(SongCoords song) throws DataUnavailableException;
+public BaseSong<BaseArtist, BaseAlbum> getSongForTag(String tagName) throws DataUnavailableException;
+
+public ArrayList<PlaylistSong<BaseArtist, BaseAlbum>> getSongsForTag(CompleteTag tag, int size, int sampleFactor) throws DataUnavailableException;
+
+ -----=== ARTIST PROVIDER ===-----
+
+public List<BaseArtist> getAllArtistsBlocking();
+public List<BaseArtist> findArtistBySearchString(String searchTerm, int maxResults);
+public List<BaseArtist> findFamousArtistBySearchString(String searchTerm, int maxResults);
+public List<BaseArtist> getArtistsByGenreBlocking(Genre genre);
+public CompleteArtist getCompleteArtist(BaseArtist baseArtist) throws DataUnavailableException;
+
+ -----=== TAG PROVIDER ===-----
+
+public List<MapTag> getMostRelevantTagsBlocking(int numTags);
+public List<MapTag> getMapTagsBlocking(int numMapTags);
+public Collection<CompleteTag> getCloudTagsBlocking(int numTags) throws DataUnavailableException;
+public CompleteTag getTagById(int id) throws DataUnavailableException;
+public List<Pair<CompleteTag, Float>> getTagsForArtist(CompleteArtist artist) throws DataUnavailableException;
+public List<Pair<CompleteTag, Float>> getTagsForAlbum(BaseAlbum album) throws DataUnavailableException;
+
+ -----=== GENRE PROVIDER ===-----
+
+public List<Genre> getAllGenresBlocking();
+public List<Pair<Genre, Integer>> getGenresForArtist(BaseArtist artist) throws DataUnavailableException;
+
+ -----=== SONG COORDINATES PROVIDER ===-----
+
+public List<SongCoords> getRandomSongsWithCoords(int numberOfSongs) throws DataUnavailableException;
+
+ -----=== PLAYLIST PROVIDER ===-----
+
+public Playlist readPlaylistFromFile(String fileName) throws IOException;
+
+ -----=== OTHER DATA PROVIDER ===-----
+
+public float[] getSongCoordinates(BaseSong<BaseArtist, BaseAlbum> song) throws DataUnavailableException;
+public int getNumberOfSongsWithCoords() throws DataUnavailableException;
+
+==================================================================================================================
+
+ -----=== NOT IMPLEMENTED (YET) ===-----
+
+ -----=== NONDROID ===-----
+
+public List<PlaylistInfo> getImportablePlaylists();
+
+ -----=== ANDROID ===-----
+ 
+public Bitmap getAlbumArt(BaseAlbum album, boolean forceLowResolution) throws NoAlbumArtException;
+public BitmapDrawable getListAlbumArt(ListAlbum album) throws NoAlbumArtException;
+public Cursor findTitleBySearchStringCursor(String searchTerm, int maxResults);
+public void groupAlbum(String name) throws Throwable;
+public void ungroupAlbum(String name) throws Throwable;

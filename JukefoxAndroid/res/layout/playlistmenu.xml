@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:jf="http://schemas.android.com/apk/res/ch.ethz.dcg.pancho3"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"	
+		android:background="@drawable/d049_bg_overlay"	
+		android:layout_gravity="center">	
+		
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_centerInParent="true"		
+			android:visibility="visible"
+			android:gravity="center_horizontal|center_vertical">
+		
+			<View android:layout_width="fill_parent"
+				android:layout_height="5dip"/>
+				
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"		
+				android:visibility="visible"
+				android:layout_weight="1"
+				android:focusable="false"
+				android:gravity="center_horizontal|center_vertical">	
+				<TextView 
+					android:text="@string/playlist_menu" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:gravity="center_horizontal|center_vertical"/>			
+			</LinearLayout>
+			
+			<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+				android:id="@+id/newPlaylistButton"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:visibility="visible"
+				android:layout_marginTop="5dip"
+				jf:img_src="@drawable/d116_clear_playlist_inverted"
+				jf:text="@string/clear_playlist"
+				/>
+				
+			<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+				android:id="@+id/loadPlaylistButton"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:visibility="visible"
+				android:layout_marginTop="2dip"
+				jf:img_src="@drawable/d117_open_playlist_inverted"
+				jf:text="@string/load_playlist"
+				/>
+
+			<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+				android:id="@+id/savePlaylistButton"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:visibility="visible"
+				android:layout_marginTop="2dip"
+				jf:img_src="@drawable/d121_save_inverted"
+				jf:text="@string/save_playlist"
+				/>
+				
+			<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+				android:id="@+id/sleepButton"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:visibility="visible"
+				android:layout_marginTop="2dip"
+				jf:img_src="@drawable/d125_sleep_inverted"
+				jf:text="@string/sleep"
+				/>
+				
+			<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+				android:id="@+id/videoPlaylistButton"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:visibility="gone"
+				android:layout_marginTop="2dip"
+				jf:img_src="@drawable/d088_youtube_logo"
+				jf:text="@string/video_playlist"
+				/>
+
+			<View android:layout_width="fill_parent"
+				android:layout_height="5dip"/>	
+		</LinearLayout>	
+
+</LinearLayout>

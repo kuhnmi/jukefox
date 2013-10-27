@@ -1,0 +1,3 @@
+Java Audio Player: LGPLv3, http://code.google.com/p/java-audio-player/
+Natural CLI: Apache Licence 2.0, http://naturalcli.sourceforge.net/
+Javazoom JLayer: LGPL, http://www.javazoom.net/javalayer/javalayer.html

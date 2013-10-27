@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:jf="http://schemas.android.com/apk/res/ch.ethz.dcg.pancho3"
+ 	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"		
+	android:background="@drawable/d049_bg_overlay"
+	android:gravity="center_horizontal|center_vertical">
+	
+	<TextView android:id="@+id/tagPlaylistTitle"  
+		android:text="@string/playlist" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:gravity="center_horizontal|center_vertical"/>	
+	
+	<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal|center_vertical">
+		<View android:layout_width="wrap_content"
+			android:layout_height="2dip"
+			android:layout_weight="1"/>	
+		<TextView  
+			android:text="@string/playlist_size" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal|center_vertical"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:gravity="center_horizontal|center_vertical"/>
+		<EditText 
+			android:id="@+id/playlistSize" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"			
+			android:layout_gravity="center_horizontal|center_vertical"
+			android:inputType="numberDecimal"
+			android:text="10"
+			android:maxLength="2"/>
+		<View android:layout_width="wrap_content"
+			android:layout_height="2dip"
+			android:layout_weight="1"/>	
+	</LinearLayout>
+	
+	<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			
+			<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+				android:id="@+id/regenerateButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:visibility="visible"
+				android:layout_marginRight="2dip"
+				android:layout_weight="1"
+				jf:img_src="@drawable/d119_repeeat_inverted"
+				jf:text="@string/regenerate_playlist"
+				/>
+				
+			<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+				android:id="@+id/playButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:visibility="visible"
+				android:layout_weight="1"
+				jf:img_src="@drawable/d134_play_button_inverted"
+				jf:text="@string/play"
+				/>
+	</LinearLayout>										
+	
+	<ListView 		
+		android:id="@+id/playlist"				
+   		android:layout_width="fill_parent"	    		
+   		android:layout_height="wrap_content"
+   		android:cacheColorHint="#00000000"
+   		android:paddingLeft="10dip"
+   		android:paddingRight="10dip"
+   		android:layout_marginTop="2dip"/>	
+	   	   	
+
+</LinearLayout>
+

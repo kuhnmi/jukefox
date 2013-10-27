@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/artistlistframe"
+        android:layout_width="match_parent" 
+	    android:layout_height="match_parent"
+        android:background="@drawable/d157_artist_chooser_gradient">
+    <LinearLayout
+	        android:id="@+id/column"
+	        android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="#EE000000"
+            android:orientation="horizontal"
+            android:translationX="-244dp">
+	    <ch.ethz.dcg.pancho3.tablet.widget.PinnedHeaderListView
+        	    android:id="@+id/artistlist"
+        	    android:layout_width="0dp"
+        	    android:layout_height="match_parent"
+        	    android:fastScrollEnabled="true"
+        	    android:paddingLeft="8dp"
+        	    android:fastScrollAlwaysVisible="true"
+        	    android:verticalScrollbarPosition="left"
+        	    android:scrollbarStyle="insideInset"
+        	    android:layout_weight="1"/>
+	    <View
+                style="@style/divider.vertical"
+                android:layout_marginLeft="0dp" />
+    </LinearLayout>
+</FrameLayout>

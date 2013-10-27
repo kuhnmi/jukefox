@@ -1,0 +1,1 @@
+Tritonus: Open Source Java Sound: LGPLv3, http://www.tritonus.org/

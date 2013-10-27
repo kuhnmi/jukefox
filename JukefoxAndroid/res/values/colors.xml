@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="translucent_background_color">#90000000</color>
+	<color name="button_text_color">#ff000000</color>
+	<color name="text_color">#ffffffff</color>
+	<color name="queue_dark">#212226</color>
+	<color name="queue_light">#002d2e34</color>
+	<color name="highlight">#33B5E5</color>
+	<color name="highlight_dark">#0099CC</color>
+	<color name="trans_highlight">#9933B5E5</color>
+	<color name="trans_dark">#CC000000</color>
+</resources>

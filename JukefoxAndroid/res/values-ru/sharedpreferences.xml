@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string name="TITLE_DIRECTORY_SELECTION">Выбор папок</string>
+<string name="SUMMARY_DIRECTORY_SELECTION">Выбрать папки, в которых jukefox ищет музыку</string>
+
+<string name="TITLE_SHOW_ZOOM_BAR">Полоса увеличения</string>
+<string name="SUMMARY_SHOZ_ZOOM_BAR">Показывать полосу увеличения на карте</string>
+
+<string name="TITLE_LOCK_SCREEN_CONTROLS">Блокировка экрана</string>
+<string name="SUMMARY_LOCK_SCREEN_CONTROLS">Заменить стандартный экран на экран, на котором есть кнопки плейера</string>
+
+<string name="TITLE_RESUME_ON_HEADSET_PLUG">Гарнитура</string>
+<string name="SUMMARY_RESUME_ON_HEADSET_PLUG">При подключении гарнитуры продолжать воспроизведение музыки</string>
+
+<string name="TITLE_HAPTIC_FEEDBACK">Виброотклик</string>
+<string name="SUMMARY_HAPTIC_FEEDBACK">Вибрация при нажатии кнопок, итд</string>
+
+<string name="TITLE_GOTO_CUR_ALBUM">Перейти к альбому</string>
+<string name="SUMMARY_GOTO_CUR_ALBUM">Автоматически перейти к альбому текущей песни в карте</string>
+
+<string name="TITLE_HIGHLIGHT_CUR_ALBUM">Отметить альбом</string>
+<string name="SUMMARY_HIGHLIGHT_CUR_ALBUM">Отметить альбом текущей песни на карте</string>
+
+<string name="TITLE_AUTO_SHOW_COVER">Показать альбом</string>
+<string name="SUMMARY_AUTO_SHOW_COVER">Автоматически показывать обложку альбома вместо плейлиста</string>
+
+<string name="TITLE_ICON_LISTS">Иконки в списках</string>
+<string name="SUMMARY_ICON_LISTS">Показывать иконки в списках (может замедлить прокрутку)</string>
+
+<string name="TITLE_SHOW_NOTIFICATIONS">Показывать уведомления</string>
+<string name="SUMMARY_SHOW_NOTIFICATIONS">Показывать уведомления на панели уведомлений</string>
+
+<string name="TITLE_GAPLESS">Беспрерывное вос-ие</string>
+<string name="SUMMARY_GAPLESS">Включить беспрерывное воспроизведение</string>
+
+<string name="TITLE_SCROBBLE_ENABLED">Скробблить на Last.fm</string>
+<string name="SUMMARY_SCROBBLE_ENABLED"></string>
+
+<string name="TITLE_SCROBBLE_PAUSED">Задержать отправку</string>
+<string name="SUMMARY_SCROBBLE_PAUSED">jukefox сохраняет информацию на флеш-карте и будет
+	скробблить на last.fm пока вы снимите этот флажок.</string>
+
+<string name="TITLE_SCROBBLE_INTERVAL">Скробблить в пакетах</string>
+<string name="SUMMARY_SCROBBLE_INTERVAL">Отправлять песни в пакетах</string>
+
+<string name="TITLE_SCROBBLE_USERNAME">Имя пользователя</string>
+<string name="SUMMARY_SCROBBLE_USERNAME">Имя пользователя (на Last.fm)</string>
+
+<string name="TITLE_SCROBBLE_PWD">Пароль</string>
+<string name="SUMMARY_SCROBBLE_PWD"></string>
+
+<string name="LAST_FM_CATEGORY">Скробблить на Last.fm</string>
+<string name="LAST_FM_PREFERENCES">Настройки Last.fm</string>
+<string name="LAST_FM_PREFERENCES_TITLE">Скробблить на Last.fm</string>
+<string name="LAST_FM_PREFERENCES_DESCRIPTION">Изменить имя пользователья, пароль, итд.</string>
+
+<string name="MUSIC_MAP_TITLE">Карта музыки</string>
+
+<string name="PLAYBACK_TITLE">Воспроизведение</string>
+
+<string name="GENERAL_TITLE">Общие настройки</string>
+<string name="DIRECTORIES_TITLE">Папки</string>
+
+<string name="TITLE_GATHER_USAGE_DATA">Улучшить jukefox</string>
+<string name="SUMMARY_GATHER_USAGE_DATA">Отправлять данные об использовании, чтобы помогать
+	улучшить jukefox</string>
+
+<string name="TITLE_FIX_SCREEN_ORIENTATION">Ориентация экрана</string>
+<string name="SUMMARY_FIX_SCREEN_ORIENTATION">Фиксировать ориентацию экрана.</string>
+
+<string name="TITLE_KINETIC_MOVEMENT">Кинетическое движение</string>
+<string name="SUMMARY_KINETIC_MOVEMENT">Кинетическое движение на картах.</string>
+
+<string name="TITLE_SEARCH_WHILE_TYPING">Поиск при вводе</string>
+<string name="SUMMARY_SEARCH_WHILE_TYPING">Можно отключить на старых телефонах</string>
+
+<string name="TITLE_ADVANCED_SETTINGS">Расширенные настройки</string>
+<string name="SUMMARY_ADVANCED_SETTINGS">Изменить детали....</string>
+
+<string name="FACEBOOK_CATEGORY">Facebook</string>
+<string name="FACEBOOK_PREFERENCES_TITLE">Отправить обложки на FB.</string>
+<string name="FACEBOOK_PREFERENCES_DESCRIPTION">jukefox может автоматически отправлять коллажи обложек от альбомов, которые Вы чаще всего слушали на facebook. К настройкам этой функции...</string>
+
+<string name="TITLE_FACEBOOK_AUTOSEND_ENABLED">Отправлять оболжки на FB</string>
+
+<string name="TITLE_FACEBOOK_AUTOSEND_INTERVAL">Интервал</string>
+<string name="SUMMARY_AUTOSEND_INTERVAL">Выбрать, как часто jukefox будет отправлять оболжки на facebook.</string> 
+
+<string name="TITLE_ENABLE_LOG_FILE">Журнал отладки</string>
+<string name="SUMMARY_ENABLE_LOG_FILE">Включите журнал отладки, чтобы программистам сообщить проблемы.</string>
+
+<string name="TITLE_IGNORE_MEDIA_BUTTONS">Игнорировать гарнитуру</string>
+<string name="SUMMARY_IGNORE_MEDIA_BUTTONS">Игнорировать кнопки гарнитуры когда jukefox в фоновом режиме.</string>
+
+<string name="TITLE_DISPLAY_SETTINGS">Настройки дисплея</string>
+<string name="SUMMARY_DISPLAY_SETTINGS"></string>
+
+<string name="TITLE_USE_WALLPAPER_BACKGROUND">Обои телефона</string>
+<string name="SUMMARY_USE_WALLPAPER_BACKGROUND">Использовать обои телефона как обои в jukefox</string>
+
+<string name="TITLE_SHAKE_SKIP">Встряхивание</string>
+<string name="SUMMARY_SHAKE_SKIP">Втсряхните телефон, чтобы перейти к следующей песне.</string>
+
+<string name="TITLE_PICK_BACKGROUND_FROM_GALLERY">Обои из галерей</string>
+<string name="SUMMARY_PICK_BACKGROUND_FROM_GALLERY">Выбрать обои из галерей.</string>
+
+<string name="TITLE_SHAKE_SKIP_THRESHHOLD">Чувствительность встряхивания</string>
+<string name="DEFAULT_SHAKE_SKIP_THRESHHOLD">3</string>
+
+
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jf="http://schemas.android.com/apk/res/ch.ethz.dcg.pancho3"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerInParent="true"
+    android:background="@drawable/d044_background"
+    android:orientation="vertical"
+    android:paddingLeft="6dip"
+    android:paddingRight="6dip"
+    android:paddingTop="0dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="left" >
+
+        <LinearLayout
+            android:id="@+id/layoutStatisticsTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dip"
+            android:layout_weight="1"
+            android:background="@drawable/d092_bg_player_console"
+            android:focusable="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtStatisticsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dip"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/statistics_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/layoutStatisticsTitle"
+            android:focusable="true"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="7dip"
+            android:layout_weight="1"
+            android:background="@drawable/d092_bg_player_console"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/btnStatisticsArtists"
+                    android:layout_width="44dip"
+                    android:layout_height="44dip"
+                    android:layout_gravity="left|center_vertical"
+                    android:maxHeight="44dip"
+                    android:maxWidth="44dip"
+                    android:paddingBottom="3dip"
+                    android:paddingTop="3dip"
+                    android:src="@drawable/d002_artists"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/btnStatisticsAlbums"
+                    android:layout_width="44dip"
+                    android:layout_height="44dip"
+                    android:layout_gravity="left|center_vertical"
+                    android:maxHeight="44dip"
+                    android:maxWidth="44dip"
+                    android:paddingBottom="3dip"
+                    android:paddingTop="3dip"
+                    android:src="@drawable/d181_albums_inactive"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/btnStatisticsSongs"
+                    android:layout_width="44dip"
+                    android:layout_height="44dip"
+                    android:layout_gravity="left|center_vertical"
+                    android:maxHeight="44dip"
+                    android:maxWidth="44dip"
+                    android:paddingBottom="3dip"
+                    android:paddingTop="3dip"
+                    android:src="@drawable/d184_songs_inactive"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/btnStatisticsGenres"
+                    android:layout_width="44dip"
+                    android:layout_height="44dip"
+                    android:layout_gravity="left|center_vertical"
+                    android:maxHeight="44dip"
+                    android:maxWidth="44dip"
+                    android:paddingBottom="3dip"
+                    android:paddingTop="3dip"
+                    android:src="@drawable/d183_genres_inactive"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip" >
+
+                <ImageView
+                    android:id="@+id/btnStatisticsNewData"
+                    android:layout_width="44dip"
+                    android:layout_height="44dip"
+                    android:layout_gravity="left|center_vertical"
+                    android:maxHeight="44dip"
+                    android:maxWidth="44dip"
+                    android:paddingBottom="3dip"
+                    android:paddingTop="3dip"
+                    android:src="@drawable/d180_hot_inactive"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/btnStatisticsTop"
+                    android:layout_width="44dip"
+                    android:layout_height="44dip"
+                    android:layout_gravity="left|center_vertical"
+                    android:maxHeight="44dip"
+                    android:maxWidth="44dip"
+                    android:paddingBottom="3dip"
+                    android:paddingTop="3dip"
+                    android:src="@drawable/d173_thumbs_up"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/btnStatisticsFlop"
+                    android:layout_width="44dip"
+                    android:layout_height="44dip"
+                    android:layout_gravity="left|center_vertical"
+                    android:maxHeight="44dip"
+                    android:maxWidth="44dip"
+                    android:paddingBottom="3dip"
+                    android:paddingTop="3dip"
+                    android:src="@drawable/d178_thumbs_down_inactive"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/btnStatisticsSuggestions"
+                    android:layout_width="44dip"
+                    android:layout_height="44dip"
+                    android:layout_gravity="left|center_vertical"
+                    android:maxHeight="44dip"
+                    android:maxWidth="44dip"
+                    android:paddingBottom="3dip"
+                    android:paddingTop="3dip"
+                    android:src="@drawable/d179_star_inactive"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

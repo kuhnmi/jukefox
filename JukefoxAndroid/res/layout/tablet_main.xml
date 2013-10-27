@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frags">
+    <FrameLayout
+            android:id="@+id/viewmodeholder"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="0dp"
+    	    android:layout_weight="1"/>
+    <fragment class="ch.ethz.dcg.pancho3.tablet.view.queue.QueueFragment"
+            android:id="@+id/queue"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"/>
+</LinearLayout>

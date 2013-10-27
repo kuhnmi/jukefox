@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:layout_centerInParent="true" 
+	android:background="@drawable/d049_bg_overlay">
+
+	<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center">
+				
+		<View android:layout_width="fill_parent"
+			android:layout_height="4dip"/> 	
+		<RelativeLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:layout_gravity="center"
+			android:gravity="center">
+				
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"														
+				android:focusable="false"
+				android:layout_gravity="center"
+				android:gravity="center">
+				<ch.ethz.dcg.pancho3.view.commons.ScrollingTextView
+	        	  android:id="@+id/albumDetailsArtistName"
+				  android:text="@string/artist"
+				  android:visibility="visible"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"	
+		          android:focusable="false"		          
+		          android:textColor="#ffffffff"
+		          android:singleLine="true"
+		          android:ellipsize="marquee"       	        
+	          	  android:marqueeRepeatLimit="marquee_forever"
+    			  android:scrollHorizontally="true"
+		          android:textAppearance="?android:attr/textAppearanceMedium"/>
+														
+			   <ch.ethz.dcg.pancho3.view.commons.ScrollingTextView  
+			      android:id="@+id/albumDetailsAlbumName"
+				  android:text="@string/title"
+				  android:visibility="visible"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"				          	        
+		          android:textColor="#ffffffff"
+		          android:focusable="false"
+		          android:singleLine="true"
+		          android:ellipsize="marquee"       	        
+	          	  android:marqueeRepeatLimit="marquee_forever"
+    			  android:scrollHorizontally="true"
+		          android:textAppearance="?android:attr/textAppearanceMedium"/>							    
+			
+				<ImageView android:id="@+id/albumArt"
+					android:src="@drawable/d005_empty_cd"
+					android:layout_height="fill_parent"
+					android:layout_width="wrap_content"				
+					android:layout_weight="1"
+					android:focusable="false"
+					android:paddingRight="2dip"
+					/>	
+							
+			</LinearLayout>
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"														
+				android:focusable="false"
+				android:layout_gravity="left"
+				android:gravity="left">
+				<View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+				
+			<TextView android:id="@+id/clickCover"
+				  android:text=""
+				  android:visibility="gone"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"	          	        
+		          android:textColor="#ffffffff"
+		          android:focusable="false"
+		          android:layout_gravity="center_horizontal"
+		          android:paddingBottom="0dip"
+		          android:textAppearance="?android:attr/textAppearanceSmall"/>
+				
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="bottom"															
+				android:focusable="false">		
+				
+				<ImageView android:id="@+id/playButton"
+					android:src="@drawable/d017_play_button"
+					android:layout_width="fill_parent"
+					android:layout_height="64sp"
+					android:layout_weight="0.2"
+					android:maxWidth="64sp"
+					android:maxHeight="64sp"
+					android:focusable="false"
+					/>
+				<ImageView android:id="@+id/addButton"
+					android:src="@drawable/d020_playlist_append_button"
+					android:layout_width="fill_parent"
+					android:layout_height="64sp"
+					android:layout_weight="0.2"
+					android:maxWidth="64sp"
+					android:maxHeight="64sp"
+					android:focusable="false"
+					/>
+				<ImageView android:id="@+id/insertButton"
+					android:src="@drawable/d021_playlist_insert_button"
+					android:layout_width="fill_parent"
+					android:layout_height="64sp"
+					android:layout_weight="0.2"
+					android:maxWidth="64sp"
+					android:maxHeight="64sp"
+					android:focusable="false"
+					/>
+				<ImageView android:id="@+id/selectAllButton"
+					android:src="@drawable/d053_select_all_button"
+					android:layout_width="fill_parent"
+					android:layout_height="64sp"
+					android:layout_weight="0.2"
+					android:maxWidth="64sp"
+					android:maxHeight="64sp"
+					android:focusable="false"
+					/>			
+				<ImageView android:id="@+id/selectNoneButton"
+					android:src="@drawable/d054_select_none_button"
+					android:layout_width="fill_parent"
+					android:layout_height="64sp"
+					android:layout_weight="0.2"
+					android:maxWidth="64sp"
+					android:maxHeight="64sp"
+					android:focusable="false"
+					/>
+			</LinearLayout>	
+		</LinearLayout>
+		
+		</RelativeLayout>
+	</LinearLayout>
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:gravity="center_horizontal|center_vertical"															
+		android:focusable="false">	
+	    <ListView 
+			android:id="@+id/songList"				
+    		android:layout_width="fill_parent"	    		
+    		android:layout_height="wrap_content"
+    		android:cacheColorHint="#00000000"
+    		android:layout_weight="1"
+			android:gravity="center_horizontal|center_vertical"
+    		android:focusable="false"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:id="@+id/facebookwebv"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="visible" >  
+
+	<RelativeLayout
+		android:id="@+id/facebookwebvl"
+    	android:layout_width="fill_parent"
+   	 	android:layout_height="fill_parent"
+   		android:visibility="gone" >
+   		
+     <WebView 
+     	android:id="@+id/fbwebview"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:visibility="visible"
+        android:focusable="true" />
+	<ImageView
+        android:id="@+id/fbcloseview"
+        android:layout_width="25dip"
+        android:layout_height="25dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"
+        android:background="@drawable/d089_closebutton" />
+	</RelativeLayout>
+</RelativeLayout>

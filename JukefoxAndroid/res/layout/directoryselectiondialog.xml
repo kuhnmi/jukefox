@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	
+	<RelativeLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+				
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">					
+			
+			<!-- <TextView
+			  	android:text="@string/select_directories"
+			  	android:visibility="visible"
+	          	android:layout_width="wrap_content"
+	          	android:layout_height="wrap_content"				          	        
+	         	android:textAppearance="?android:attr/textAppearanceMedium"/>-->	
+
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+	
+				<Button android:text="@string/select_all" 
+					android:id="@+id/selectAllButton" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+					
+				<Button android:text="@string/deselect_all" 
+					android:id="@+id/deselectAllButton" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+					
+			</LinearLayout>					
+				
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				
+				<ListView 
+					android:id="@+id/directorylist"	
+					android:layout_marginBottom="60dip" 			
+		    		android:layout_width="fill_parent"	    		
+		    		android:layout_height="wrap_content"
+		    		android:layout_weight="1"
+					android:gravity="center_horizontal|center_vertical"
+		    		android:focusable="false"/>
+			</LinearLayout>
+
+			<RelativeLayout android:layout_marginTop="-60dip" 
+				android:gravity="bottom" 
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent">					            	
+			            
+            <Button android:text="@string/ok" 
+				android:id="@+id/dirOkButton" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"/>
+
+		        
+			</RelativeLayout>
+			
+	    </LinearLayout>        	        		
+        	
+    </RelativeLayout>
+</LinearLayout>

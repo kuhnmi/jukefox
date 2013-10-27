@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	xmlns:jf="http://schemas.android.com/apk/res/ch.ethz.dcg.pancho3"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_centerInParent="true"
+	android:background="@drawable/d049_bg_overlay"		
+	android:layout_gravity="center">	
+	
+	<View android:layout_width="fill_parent"
+		android:layout_height="5dip"/>
+	
+	<TextView 
+		android:text="@string/sleep_menu"  
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_gravity="center"/>								
+	
+	<View android:layout_width="fill_parent"
+		android:layout_height="5dip"/>
+
+	<TextView
+		android:text="@string/sleep_desc1"
+	  	android:visibility="visible"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:layout_gravity="center"
+       	android:textAppearance="?android:attr/textAppearanceMedium"/>
+        
+    <!-- <EditText 
+		android:id="@+id/sleep_num_min" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:inputType="numberDecimal"
+		android:background="@drawable/d046_bg_button"
+		android:text="20"
+		android:maxLength="2"/>-->
+	<Spinner android:id="@+id/sleep_num_min" 
+   	 	android:layout_width="fill_parent"
+   	 	android:layout_height="wrap_content"
+   	 	android:entries="@array/sleepNumEntries"
+   	 	android:background="@drawable/d145_bg_spinner"
+   	 />
+         	
+    <TextView
+		android:text="@string/sleep_desc2"
+	  	android:visibility="visible"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:layout_gravity="center_vertical|center_horizontal"
+       	android:textAppearance="?android:attr/textAppearanceMedium"/>
+   	
+  	<LinearLayout android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:visibility="visible"
+		android:layout_marginTop="2dip"
+		android:layout_marginBottom="5dip"
+		android:layout_gravity="center_horizontal">
+		
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/applySleepButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginRight="2dip"
+			jf:img_src="@drawable/d120_ok_inverted"
+			jf:text="@string/save"
+			/>
+				
+		<ch.ethz.dcg.pancho3.view.components.JfImageButton 
+			android:id="@+id/cancelSleepButton"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:visibility="visible"
+			android:layout_marginRight="2dip"
+			jf:img_src="@drawable/d127_cancel_inverted"
+			jf:text="@string/dont_sleep"
+			/>
+			
+	</LinearLayout>
+	
+</LinearLayout>

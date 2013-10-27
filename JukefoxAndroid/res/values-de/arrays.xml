@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <array name="ops">
+        <item>contains</item>
+        <item>starts with</item>
+        <item>equals</item>
+    </array>
+    <array name="fields">
+        <item>title</item>
+        <item>artist</item>
+    </array>
+    <array name="tips">
+		<item>Fahre mit dem Finger horizontal über die Playlist um das aktuelle Cover anzuzeigen.</item>
+		<item>Verwende Multitouch Gesten zum zoomen auf Telefonen mit Android 2.0 oder neuer.</item>
+		<item>Drücke auf das NaviPad im Kartenmodus und benutze den Finger um mehrere Alben auszuwählen.</item>
+		<item>Klicke lange auf einen Song in der Playlist um das Kontextmenü zu sehen.</item>
+		<item>Klicke lange auf einen Interpreten (in der Künstler-Liste) um alle Songs dieses Interpreten auszuwählen.</item>		
+		<item>Klicke lange auf ein Genre (in der Genre-Liste) um alle Songs dieses Genres auszuwählen.</item>		
+		<item>Finde Songs auf deinem Gerät die ähnlich zu einem bekannten Künstler sind mit der \'Berühmte Interpreten\'-Suche</item>
+		<item>Setze smart shuffling in den Anfangszustand indem du die Playlist leerst.</item>
+		<item>Aktiviere scrobbling zu deinem last.fm account im Einstellungsmenü.</item>
+		<item>Gehe zum Albums des aktuell gespielten Songs mit Hilfe des Kontextmenüs (langer Klick auf Song)</item>
+		<item>Fahre mit dem Finger über dem Zoombalken um schneller und präziser zu zoomen.</item>
+		<item>Aktiviere die lückenlose Wiedergabe in den Einstellungen wenn dich die Lücke zwischen den Songs stört.</item>
+    </array>
+    <string-array name="scrobbleTypeEntries">
+    	<item>nicht scrobbeln</item>
+    	<item>benutze Scrobbledroid</item>
+    	<item>benutze internen scrobbler</item>
+    </string-array>
+    
+    	<!--
+		Make sure the order of this list does not change, as it is hardcoded
+		in the SearchActivity class!!!
+	-->
+    <string-array name="searchInEntries">
+    	<item>Interpreten</item>
+    	<item>Alben</item>
+    	<item>Titeln</item>
+    	<item>Bekannten Interpreten</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:gravity="center"><!--
+  
+  <View android:id="@+id/statusBarWindow"
+  	android:layout_width="fill_parent"
+  	android:layout_height="50sp"
+  	android:background="#aaff0000"/>
+  -->
+	  
+	  <LinearLayout
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent"
+	  android:orientation="vertical"
+	  android:gravity="center"
+	  android:background="@drawable/d044_background">
+				
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:gravity="center"
+			android:paddingLeft="30dip"
+			android:paddingRight="30dip">
+			<TextView
+				android:text="@string/press_home_to_unlock"
+				android:visibility="visible"
+		       	android:layout_width="wrap_content"
+		       	android:layout_height="wrap_content"	
+		       	android:layout_gravity="center_horizontal"	           
+		      	android:textAppearance="?android:attr/textAppearanceSmall"/>
+			<ch.ethz.dcg.pancho3.view.commons.TriggeringSlider
+				android:id="@+id/sliderLock"
+				android:visibility="gone"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"				
+			/>
+		</LinearLayout>
+		
+		<View android:layout_width="fill_parent"
+			android:layout_height="10dip"
+		/>
+		
+		<TextView
+	       	android:id="@+id/nowPlayingText"
+			android:text="@string/artist_title_place_holder"
+			android:visibility="visible"
+	       	android:layout_width="wrap_content"
+	       	android:layout_height="wrap_content"	
+	       	android:layout_gravity="center_horizontal"	          	
+	       	android:ellipsize="marquee"    
+	       	android:paddingBottom="10dip"   	        
+	      	android:textAppearance="?android:attr/textAppearanceMedium"
+	      	android:maxLines="1"/>	
+		
+						
+	    <RelativeLayout
+			  android:layout_width="fill_parent"
+			  android:layout_height="fill_parent"
+			  android:gravity="bottom|center_horizontal"
+			  android:layout_gravity="bottom|center_horizontal">
+		    <ImageView android:id="@+id/bigCoverArt"
+				android:visibility="visible"
+				android:src="@drawable/d005_empty_cd"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_centerInParent="true"	
+				android:paddingBottom="10dip"
+				android:paddingRight="30dip"
+				android:paddingLeft="30dip"/>
+			<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"		
+			android:paddingTop="6dip"
+			android:paddingBottom="6dip"
+			android:visibility="visible"
+			android:gravity="bottom|center_horizontal"
+			android:layout_gravity="bottom|center_horizontal">					
+			<ImageView android:id="@+id/previousButton"
+				android:src="@drawable/d003_previous_button"
+				android:layout_width="64sp"
+				android:layout_height="64sp"
+				android:maxWidth="64sp"
+				android:maxHeight="64sp"
+				android:layout_gravity="bottom|center_horizontal"
+				android:visibility="visible"/>
+			<ImageView android:id="@+id/playPauseButton"
+				android:src="@drawable/d017_play_button"
+				android:layout_width="64sp"
+				android:layout_height="64sp"
+				android:maxWidth="64sp"
+				android:maxHeight="64sp"
+				android:layout_gravity="bottom|center_horizontal"/>			
+			<ImageView android:id="@+id/nextButton"
+				android:src="@drawable/d007_next_button"
+				android:layout_width="64sp"
+				android:layout_height="64sp"
+				android:maxWidth="64sp"
+				android:maxHeight="64sp"
+				android:layout_gravity="bottom|center_horizontal"/>
+		</LinearLayout>	
+		</RelativeLayout>
+	  
+	  	<!--<View android:layout_width="fill_parent"
+		  	android:layout_height="2dip"
+		  	android:layout_weight="1"/>
+  
+  		
+-->	
+</LinearLayout>
+	
+	<!--<SurfaceView android:id="@+id/surfaceView" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:background="#00000000"/>
+	
+--></RelativeLayout>

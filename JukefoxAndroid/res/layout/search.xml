@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/background"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_centerInParent="true">
+	
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"	
+		android:paddingTop="0dip"
+		android:layout_centerInParent="true"
+		android:background="@drawable/d093_bg_tabs">
+	
+		<include layout="@layout/tabbuttons" />
+		
+		<!--<View android:layout_width="fill_parent"
+			android:layout_height="6dip"
+			android:layout_weight="1"/>-->	
+			
+		<View android:layout_width="fill_parent"
+		android:layout_height="5dip"/>
+		
+		<TextView 
+			android:text="@string/search_screen_title" 
+			android:id="@+id/searchTitle" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"/>
+		
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:focusable="false"
+			android:gravity="center_vertical">
+			
+			<EditText 
+				android:text="" 
+				android:id="@+id/searchTerm" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:background="@drawable/d046_bg_button"
+				android:layout_weight="1"
+				android:maxLines="1"/>
+		
+		</LinearLayout>	
+		<!--<TableLayout
+		    android:layout_height="wrap_content"
+		    android:layout_width="fill_parent"
+		    android:layout_gravity="center"
+		    android:stretchColumns="0">
+		<TableRow>    
+		   <EditText 
+				android:text="" 
+				android:id="@+id/searchTerm" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:maxLines="1"/>
+			<ImageButton android:src="@drawable/d108_search_inverted" 
+				android:layout_width="wrap_content" 
+				android:layout_height="fill_parent" 
+				android:id="@+id/searchButton"
+				android:background="@drawable/d046_bg_button"/>
+		</TableRow>
+		</TableLayout>		
+		
+		--><View 
+			android:layout_width="fill_parent"
+			android:layout_height="6dip"
+			android:background="#00000000" />
+			<LinearLayout android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical">
+				<!-- 
+				<RadioGroup android:id="@+id/searchCriterion"
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical">	
+					<RadioButton android:id="@+id/searchInArtists"
+						android:checked="false"
+						android:text="@string/search_artists"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+					<RadioButton android:id="@+id/searchInAlbums"
+						android:checked="false"
+						android:text="@string/albums"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>
+					<RadioButton android:id="@+id/searchInTitles"
+						android:checked="true"
+						android:text="@string/search_titles"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"/>					
+					<RadioButton android:id="@+id/searchInSimilarArtists"
+						android:checked="false"
+						android:text="@string/famous_artists"
+						android:layout_width="wrap_content"
+						android:singleLine="true"
+						android:layout_height="wrap_content"/>
+		       	</RadioGroup>
+		       	 -->
+		       	 <LinearLayout android:layout_width="fill_parent"
+		       	 	android:layout_height="wrap_content"
+		       	 	android:gravity="center_vertical"
+		       	 	android:orientation="horizontal"
+		       	 >
+		       	 <TextView android:layout_width="wrap_content"
+		       	 	android:layout_height="wrap_content"
+		       	 	android:text="@string/search_in_label"
+		       	 />
+		       	 <Spinner android:id="@+id/searchInSelectionSpinner" 
+		       	 	android:layout_width="fill_parent"
+		       	 	android:layout_height="wrap_content"
+		       	 	android:entries="@array/searchInEntries"
+		       	 	android:background="@drawable/d145_bg_spinner"
+		       	 />
+		       	 </LinearLayout> 
+			</LinearLayout>
+		<LinearLayout android:orientation="vertical" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="0"
+			android:background="@drawable/d094_bg_section"
+			android:visibility="visible">
+			<TextView 
+				android:text="" 
+				android:id="@+id/resultListTitle" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"/>
+			<ListView 
+				android:id="@+id/resultList"				
+		   		android:layout_width="fill_parent"	    		
+		   		android:layout_height="wrap_content"   		
+		   		/>
+	   	</LinearLayout>
+	   		
+	   	<View android:layout_width="fill_parent"
+			android:layout_height="6dip"
+			android:layout_weight="1"/>		    
+			
+		<!-- <include layout="@layout/playerconsole" />-->
+		
+	</LinearLayout>
+
+</LinearLayout>			
+

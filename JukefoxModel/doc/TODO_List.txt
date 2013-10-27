@@ -1,0 +1,55 @@
+ToDo:
+	-	implement: Functions from <IModelControllerApplicationState> (e.g. DeleteOldDB)
+	-	reimplement:	Reimplement android.os.Parcel into providers or after the providers ( -> wrappers? )
+	-	Split up UTILS: 	Mathematical functions (e.g. distance)	=>	MathUtils
+							All others								=>	Utils
+	-	Random numbers: not Jukefox-Application: instead "RandomProvider"
+	-	New exceptions where thrown in the Database.
+	-	"getMapAlbumBlocking(BaseSong<? extends BaseArtist, ? extends BaseAlbum> song)" from the interface throws now
+		a "DataUnavailableException" instead of nothing
+	-	"readPlaylistFromFile(String fileName)" from the interface throws now a "DataUnavailableException" instead
+		of "IOException"
+	
+Important Changes:
+
+	-	All Model Objects do not implements Parcelable, Parcel
+	
+ICursor
+
+	void close();	
+	
+		Closes the Cursor, releasing all of its resources and making it completely invalid.
+		JDBC: same
+
+!!	boolean isNull(int i);
+	
+		Returns true if the value in the indicated column is null.
+		JDBC: wasNull()??? not sure
+
+!!	int getCount();
+		
+		Returns the numbers of rows in the cursor.
+		JDBC: getFetchSize() 
+			Retrieves the fetch size for this ResultSet object.
+
+	String getString(int i);
+
+	int getInt(int i);
+
+	long getLong(int i);
+
+	float getFloat(int i);
+
+		JDBC: all exactly the same
+
+	boolean moveToNext();
+		
+		Move the cursor to the next row.
+		JDBC: next() 
+          Moves the cursor down one row from its current position.
+	
+	boolean moveToFirst();
+		
+		Move the cursor to the first row.
+		JDBC: first() 
+          Moves the cursor to the first row in this ResultSet object.

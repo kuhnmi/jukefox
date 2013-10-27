@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:id="@+id/playerConsole"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:focusable="true"
+	android:background="#00000000">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"	
+		android:paddingLeft="6dip"
+		android:paddingRight="6dip"	
+		android:paddingBottom="6dip"
+		android:visibility="visible"
+		android:background="@drawable/d092_bg_player_console">
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"	
+			android:visibility="visible">				
+				
+			<View android:layout_width="wrap_content"
+				android:layout_height="0sp"
+				android:layout_weight="1"/>	
+											
+			<ImageView android:id="@+id/previousButton"
+				android:src="@drawable/d003_previous_button"
+				android:layout_width="64sp"
+				android:layout_height="64sp"
+				android:maxWidth="64sp"
+				android:maxHeight="64sp"
+				android:layout_gravity="center"
+				android:visibility="visible"/>
+			<ImageView android:id="@+id/playPauseButton"
+				android:src="@drawable/d017_play_button"
+				android:layout_width="64sp"
+				android:layout_height="64sp"
+				android:maxWidth="64sp"
+				android:maxHeight="64sp"
+				android:layout_gravity="center"/>			
+			<ImageView android:id="@+id/nextButton"
+				android:src="@drawable/d007_next_button"
+				android:layout_width="64sp"
+				android:layout_height="64sp"
+				android:maxWidth="64sp"
+				android:maxHeight="64sp"
+				android:layout_gravity="center"/>
+				
+			<View android:layout_width="wrap_content"
+				android:layout_height="0sp"
+				android:layout_weight="1"/>					
+				 
+		</LinearLayout>	
+		
+		<View android:layout_width="wrap_content"
+				android:layout_height="2sp"/>	
+		
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"	
+			android:visibility="visible">	
+			
+			<View android:layout_width="wrap_content"
+				android:layout_height="0sp"
+				android:layout_weight="1"/>	
+			
+			<ImageView android:id="@+id/playlistMenuButton"
+				android:visibility="visible"
+				android:src="@drawable/d030_playlist_settings"
+				android:layout_width="50sp"
+				android:layout_height="50sp"
+				android:maxHeight="50sp"
+				android:maxWidth="50sp"
+				android:layout_gravity="left|center_vertical"
+				android:background="@drawable/d046_bg_button"/>
+			
+			<View android:layout_width="wrap_content"
+				android:layout_height="0sp"
+				android:layout_weight="1"/>	
+					
+			<ImageView android:id="@+id/playModeButton"
+				android:src="@drawable/d037_smart_shuffle"
+				android:layout_width="50sp"
+				android:layout_height="50sp"
+				android:maxHeight="50sp"
+				android:maxWidth="50sp"
+				android:layout_gravity="right|center_vertical"
+				android:background="@drawable/d046_bg_button"/>
+			
+			<View android:layout_width="wrap_content"
+				android:layout_height="0sp"
+				android:layout_weight="1"/>	
+			
+		</LinearLayout>	
+	</LinearLayout>					
+</LinearLayout>

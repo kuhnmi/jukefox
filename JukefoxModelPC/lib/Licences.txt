@@ -1,0 +1,2 @@
+Java Audio Player: LGPLv3, http://code.google.com/p/java-audio-player/
+SQLITEJDBC: Apache Licence 2.0, https://bitbucket.org/xerial/sqlite-jdbc

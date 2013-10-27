@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/queue_dark">
+    <FrameLayout
+            android:id="@+id/headercontainer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            style="@android:style/Widget.Holo.Button.Borderless" />
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_margin="6dp"
+                android:layout_height="32dp"
+                android:gravity="center_horizontal|center_vertical">
+            <ch.ethz.dcg.pancho3.view.commons.SongProgressBar
+                    android:id="@+id/songProgressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:max="10000"
+                    android:layout_centerHorizontal="true"
+                    android:progressDrawable="@drawable/d023_progress_horizontal"/>
+            <TextView android:id="@+id/songProgressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0:00"
+                    android:textColor="@color/text_color"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>       
+    </RelativeLayout>
+</LinearLayout>			
