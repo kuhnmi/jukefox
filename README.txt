@@ -8,7 +8,7 @@ The project consists of 6 parts:
 JukefoxAndroid: The Android client of jukefox (depends on JukefoxModel)
 JukefoxModel: The platform-independent core functionality of jukefox
 JukefoxModelPC: The UI independent part of the desktop version (depends on JukefoxModel)
-JukefoxPlayerCLI: jukefox for desktop PCs with a command line interface (depends on JukefoxModel and JukefoxModelPC)
+JukefoxPlayerCLI: jukefox for desktop PCs with a command line interface (depends on JukefoxModel, JukefoxModelPC, and MiniPlayer)
 MiniPlayer: Music Player for CLI version
 UnitTests: Some few test for the core functionality (depends on JukefoxModel and JukefoxModelPC)
 
