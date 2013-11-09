@@ -707,7 +707,7 @@ public class SqlJdbcDbDataPortal extends SqlDbDataPortal<JdbcContentValues> {
 			try {
 				Connection db = getDatabase();
 				if (db == null && ((JdbcSqlDbConnection) getDefaultConnection()).getDatabase() == null) {
-					// we are in the startup case. 
+					// we are in the startup case (transaction connection is opened first and tries to read the version). 
 					// TODO(kuhnmi): find a better solution for that...
 					db = ((JdbcSqlDbConnection) getTransactionConnection()).getDatabase();
 				}
