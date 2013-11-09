@@ -114,9 +114,12 @@ public class PreloadedDataManager implements MapDataCalculatorListener, ImportSt
 			Log.v(TAG, "preloaded data loaded.");
 		} catch (Exception e) {
 			Log.w(TAG, e);
+			Log.v(TAG, "creating preloaded albums class");
 			// Load albums to ensure a quick loading of the activity
 			PreloadedAlbums preloadedAlbums = new PreloadedAlbums(dbDataPortal);
+			Log.v(TAG, "loading preloaded albums");
 			preloadedAlbums.loadFromDb(false);
+			Log.v(TAG, "preloaded albums loaded.");
 			this.preloadedAlbums = preloadedAlbums;
 			modelSettingsManager.incRecomputeTaskId();
 			importState.setMapDataCalculated(false);

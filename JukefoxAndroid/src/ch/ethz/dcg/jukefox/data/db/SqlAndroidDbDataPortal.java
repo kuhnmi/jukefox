@@ -276,7 +276,8 @@ public class SqlAndroidDbDataPortal extends SqlDbDataPortal<AndroidContentValues
 	@Override
 	public void execSQLNoLock(String sql, ISqlDbConnection connection) {
 		try {
-			((AndroidSqlDbConnection) connection).getDatabase().execSQL(sql);
+			AndroidSqlDbConnection androidConnection = (AndroidSqlDbConnection) connection;
+			androidConnection.getDatabase().execSQL(sql);
 		} catch (SQLException e) {
 			throw new UncheckedSqlException(e);
 		}

@@ -337,7 +337,6 @@ public class ModelSettings implements Serializable {
 			this.currentLogFileNumber = settings.getCurrentLogFileNumber();
 
 		} catch (Exception e) {
-			Log.w(TAG, e);
 			throw new DataUnavailableException(e);
 		} finally {
 			if (ois != null) {

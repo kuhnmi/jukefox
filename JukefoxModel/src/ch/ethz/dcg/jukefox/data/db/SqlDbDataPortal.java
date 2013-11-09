@@ -419,11 +419,12 @@ public abstract class SqlDbDataPortal<ContentValues extends IContentValues> impl
 	 * @return True, if successful.
 	 */
 	protected final boolean open() {
-		if (!defaultConnection.open()) {
+		Log.v(TAG, "defaultConnection: " + defaultConnection + ", transactionConnection: " + transactionConnection);
+		if (!transactionConnection.open()) {
 			return false;
 		}
-		if (!transactionConnection.open()) {
-			defaultConnection.close();
+		if (!defaultConnection.open()) {
+			transactionConnection.close();
 			return false;
 		}
 		return true;

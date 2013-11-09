@@ -66,6 +66,20 @@ public class AndroidDirectoryManager extends DirectoryManager {
 
 	private static final String SCROBBLE_BUFFER_FILE = jukefoxRootDir + FS + "scrobbleBuffer.txt";
 
+	private static final String[] CORE_DIRECTORIES = new String[] { jukefoxRootDir, COVER_DIRECTORY, DATA_DIRECTORY,
+			BLACKLIST_DIRECTORY, PLAYER_MODEL_DIRECTORY };
+	private static final String[] ALL_DIRECTORIES = new String[CORE_DIRECTORIES.length];
+	{
+		for (int i = 0; i < CORE_DIRECTORIES.length; i++) {
+			ALL_DIRECTORIES[i] = CORE_DIRECTORIES[i];
+		}
+		ALL_DIRECTORIES[ALL_DIRECTORIES.length - 1] = PLAYLIST_DIRECTORY;
+	}
+
+	public AndroidDirectoryManager() {
+		createAllDirectories();
+	}
+
 	@Override
 	public void deleteDirectories() {
 		File rootDir = new File(jukefoxRootDir);
@@ -74,28 +88,15 @@ public class AndroidDirectoryManager extends DirectoryManager {
 
 	@Override
 	public void createAllDirectories() {
-		// root
-		createDirectory(jukefoxRootDir);
-
-		// root/data
-		createDirectory(DATA_DIRECTORY);
-
-		// root/covers
-		createDirectory(COVER_DIRECTORY);
-
-		// root/blacklists
-		createDirectory(BLACKLIST_DIRECTORY);
-
-		// root/playerModels
-		createDirectory(PLAYER_MODEL_DIRECTORY);
-
-		createDirectory(PLAYLIST_DIRECTORY);
+		for (String dir : ALL_DIRECTORIES) {
+			createDirectory(dir);
+		}
 	}
 
 	private void createDirectory(String dir) {
 		File directory = new File(dir);
 		if (!directory.exists() || !directory.isDirectory()) {
-			if (!directory.mkdir()) {
+			if (!directory.mkdirs()) {
 				Log.w(TAG, "Could not create directory: " + directory.getAbsolutePath());
 			}
 		}
@@ -103,9 +104,12 @@ public class AndroidDirectoryManager extends DirectoryManager {
 
 	@Override
 	public boolean isDirectoryMissing() {
-		return isDirectoryMissing(jukefoxRootDir) || isDirectoryMissing(DATA_DIRECTORY)
-				|| isDirectoryMissing(COVER_DIRECTORY) || isDirectoryMissing(BLACKLIST_DIRECTORY)
-				|| isDirectoryMissing(PLAYER_MODEL_DIRECTORY);
+		for (String dir : CORE_DIRECTORIES) {
+			if (isDirectoryMissing(dir)) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	private void deleteRecursive(File location) {
