@@ -173,6 +173,7 @@ public class SqlAndroidDbDataPortal extends SqlDbDataPortal<AndroidContentValues
 		beginTransaction();
 		try {
 			for (String statement : statements) {
+				Log.v(TAG, "dropRegularTables: " + statement);
 				execSQL(statement);
 			}
 			setTransactionSuccessful();

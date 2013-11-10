@@ -121,14 +121,10 @@ public class AndroidDirectoryManager extends DirectoryManager {
 			return;
 		}
 		File[] files = location.listFiles();
-		if (files == null) {
-			if (!location.delete()) {
-				Log.w(TAG, "Could not delete file: " + location.getAbsolutePath());
+		if (files != null) {
+			for (File file : files) {
+				deleteRecursive(file);
 			}
-			return;
-		}
-		for (File file : files) {
-			deleteRecursive(file);
 		}
 		if (!location.delete()) {
 			Log.w(TAG, "Could not delete: " + location.getAbsolutePath());

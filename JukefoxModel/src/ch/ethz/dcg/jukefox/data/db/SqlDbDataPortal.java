@@ -3052,6 +3052,7 @@ public abstract class SqlDbDataPortal<ContentValues extends IContentValues> impl
 
 			Map<String, Integer> artistIdMap = new HashMap<String, Integer>();
 			while (cursor.moveToNext()) {
+				//				Log.v(TAG, "artistIdMap: " + cursor.getString(1) + "->" + cursor.getInt(0));
 				artistIdMap.put(cursor.getString(1), cursor.getInt(0));
 			}
 

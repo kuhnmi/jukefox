@@ -192,7 +192,6 @@ public class ResourceLoader {
 					dbDataPortal.endTransaction();
 				}
 			}
-
 		} catch (IOException e) {
 			throw new DataUnavailableException(e);
 		} finally {

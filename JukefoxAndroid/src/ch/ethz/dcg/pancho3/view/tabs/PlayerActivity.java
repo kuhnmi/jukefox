@@ -443,14 +443,14 @@ public class PlayerActivity extends JukefoxTabActivity {
 				try {
 					adapter.setHighlightPosition(PlayerActivity.this.playerController.getCurrentSongIndex());
 				} catch (EmptyPlaylistException e) {
-					Log.w(TAG, e);
+					Log.w(TAG, "Empty playlist: Cannot highlight position.");
 				}
 				list.setAdapter(adapter);
 
 				try {
 					list.setSelection(PlayerActivity.this.playerController.getCurrentSongIndex());
 				} catch (EmptyPlaylistException e) {
-					Log.w(TAG, e);
+					Log.w(TAG, "Empty playlist: Cannot select song.");
 				}
 
 				list.setDropListener(onDrop);

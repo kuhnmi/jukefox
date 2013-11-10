@@ -186,6 +186,9 @@ public class LibraryImportManager implements CoordinateFetcherListener, ImportSt
 	}
 
 	private void doImport(boolean clearDb, boolean reduced) throws DataUnavailableException {
+
+		Log.v(TAG, "doImport: isFamousArtistsInserted at start: " + modelSettingsManager.isFamousArtistsInserted());
+
 		Log.v(TAG, "doImport: clearDb: " + clearDb + ", reduced: " + reduced);
 		importState.setImportStarted();
 		importStatistics = createImportStatistics(clearDb, reduced);
@@ -248,7 +251,7 @@ public class LibraryImportManager implements CoordinateFetcherListener, ImportSt
 		}
 
 		// Start the collection properties fetcher thread
-		collectionPropertiesFetcher.start();
+		collectionPropertiesFetcher.startInThread();
 
 		// TODO: remove libraryChanges parameter, as this should be executed
 		// anyways?
@@ -257,7 +260,7 @@ public class LibraryImportManager implements CoordinateFetcherListener, ImportSt
 
 		// Wait for the collectionPropertiesFetcher thread to finish
 		try {
-			collectionPropertiesFetcher.realJoin();
+			collectionPropertiesFetcher.join();
 		} catch (InterruptedException e) {
 			Log.w(TAG, e);
 			throw new DataUnavailableException();
@@ -307,7 +310,7 @@ public class LibraryImportManager implements CoordinateFetcherListener, ImportSt
 		importState.setBaseDataCommitted(true);
 
 		// Start the collection properties fetcher thread
-		collectionPropertiesFetcher.start();
+		collectionPropertiesFetcher.startInThread();
 
 		// TODO: remove libraryChanges parameter, as this should be executed
 		// anyways?
@@ -316,7 +319,7 @@ public class LibraryImportManager implements CoordinateFetcherListener, ImportSt
 
 		// Wait for the collectionPropertiesFetcher thread to finish
 		try {
-			collectionPropertiesFetcher.realJoin();
+			collectionPropertiesFetcher.join();
 		} catch (InterruptedException e) {
 			Log.w(TAG, e);
 			throw new DataUnavailableException();

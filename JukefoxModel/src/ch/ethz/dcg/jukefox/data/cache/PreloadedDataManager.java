@@ -179,7 +179,7 @@ public class PreloadedDataManager implements MapDataCalculatorListener, ImportSt
 		songCoordsLoaderThread.start();
 	}
 
-	private void processSongInfos(List<PreloadedSongInfo> songInfos, PreloadedData data) throws Exception {
+	private void processSongInfos(List<PreloadedSongInfo> songInfos, PreloadedData data) {
 		ArrayList<Integer> idsWithoutCoords = new ArrayList<Integer>();
 		ArrayList<Integer> idsWithCoords = new ArrayList<Integer>();
 		AdvancedKdTree<Integer> songKdTree = new AdvancedKdTree<Integer>(Constants.DIM);
@@ -189,10 +189,10 @@ public class PreloadedDataManager implements MapDataCalculatorListener, ImportSt
 		// int i = 0;
 		for (PreloadedSongInfo songInfo : songInfos) {
 			if (songInfo.getSongPcaCoords() == null && songInfo.getSongCoords() != null) {
-				throw new Exception("coords without pca coords, song id: " + songInfo.getSongId());
+				throw new IllegalStateException("coords without pca coords, song id: " + songInfo.getSongId());
 			}
 			if (songInfo.getSongPcaCoords() != null && songInfo.getSongCoords() == null) {
-				throw new Exception("pca coords without coords, song id: " + songInfo.getSongId());
+				throw new IllegalStateException("pca coords without coords, song id: " + songInfo.getSongId());
 			}
 			if (songInfo.getSongCoords() == null) {
 				idsWithoutCoords.add(songInfo.getSongId());

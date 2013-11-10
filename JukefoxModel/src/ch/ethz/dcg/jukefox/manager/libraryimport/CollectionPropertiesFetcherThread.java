@@ -34,7 +34,7 @@ import ch.ethz.dcg.jukefox.model.libraryimport.ImportState;
 import ch.ethz.dcg.jukefox.model.providers.OtherDataProvider;
 import ch.ethz.dcg.jukefox.model.providers.SongCoordinatesProvider;
 
-public class CollectionPropertiesFetcherThread extends JoinableThread {
+public class CollectionPropertiesFetcherThread implements Runnable {
 
 	private final static String TAG = CollectionPropertiesFetcherThread.class.getName();
 	private final static int NUM_SONGS_FOR_CALCULATION = 1000;
@@ -44,11 +44,29 @@ public class CollectionPropertiesFetcherThread extends JoinableThread {
 
 	private ImportState importState;
 
+	private JoinableThread currentThread = null;
+
 	public CollectionPropertiesFetcherThread(OtherDataProvider otherDataProvider,
 			SongCoordinatesProvider songCoordinatesProvider, ImportState importState) {
 		this.otherDataProvider = otherDataProvider;
 		this.songCoordinatesProvider = songCoordinatesProvider;
 		this.importState = importState;
+	}
+
+	public synchronized void startInThread() {
+		if (currentThread != null) {
+			throw new IllegalStateException("Another instance is already running.");
+		}
+		currentThread = new JoinableThread(this);
+		currentThread.start();
+	}
+
+	public synchronized void join() throws InterruptedException {
+		if (currentThread == null) {
+			throw new IllegalStateException("Not running.");
+		}
+		currentThread.realJoin();
+		currentThread = null;
 	}
 
 	@Override

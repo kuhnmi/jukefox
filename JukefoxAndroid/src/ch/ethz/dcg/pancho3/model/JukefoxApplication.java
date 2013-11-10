@@ -106,6 +106,10 @@ public class JukefoxApplication extends Application {
 
 		if (!AndroidSettingsManager.getAndroidSettingsReader().isFirstStart()) {
 			controller.startStartupManager();
+		} else {
+			// ensure clean start...
+			directoryManager.deleteDirectories();
+			directoryManager.createAllDirectories();
 		}
 		notificationManager = new JukefoxNotificationManager(this, playerController);
 		keyguardManager = (KeyguardManager) getSystemService(Activity.KEYGUARD_SERVICE);
